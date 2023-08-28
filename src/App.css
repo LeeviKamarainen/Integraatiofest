@@ -36,3 +36,24 @@
     transform: rotate(360deg);
   }
 }
+
+.countdown-timer {
+  display: flex;
+  align-items: center;
+  background-color: inherit;
+}
+
+.timer-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.timer-value {
+  font-size: 2rem;
+}
+
+.timer-label {
+  font-size: 0.8rem;
+}
