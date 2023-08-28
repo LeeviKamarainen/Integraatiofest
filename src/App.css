@@ -1,5 +1,15 @@
+:root {
+  --modifiedValue: 20;
+}
+
 .App {
   text-align: center;
+  background-color: #282c34;
+}
+
+.SnakeGame {
+  text-align: center;
+  background-color: #282c34;
 }
 
 .App-logo {
@@ -29,10 +39,10 @@
 }
 
 @keyframes App-logo-spin {
-  from {
+  0% {
     transform: rotate(0deg);
   }
-  to {
+  100% {
     transform: rotate(360deg);
   }
 }
