@@ -15,7 +15,7 @@ function App() {
     <div className="App" style={{
       backgroundImage: `url(${bground})`,
       backgroundSize: 'cover',
-      height: '100vh',
+      height: '100%',
     }}>
       <div className="App-counter">
         <CountdownTimer targetDate={targetDate} animationSpeed={animationSpeed} />
