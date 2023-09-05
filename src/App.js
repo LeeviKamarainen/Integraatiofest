@@ -1,4 +1,5 @@
 import logo from './norppa.png';
+import bground from './bground.png';
 import './App.css';
 import React, { useState, useEffect } from 'react';
 import CountdownTimer from './components/CountdownTimer';
@@ -11,18 +12,18 @@ function App() {
   };
   const targetDate = '2023-11-10T00:00:00'
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" style={{
+    <div className="App" style={{
+      backgroundImage: `url(${bground})`,
+      backgroundSize: 'cover',
+      height: '100vh',
+    }}>
+      <div className="App-counter">
+        <CountdownTimer targetDate={targetDate} animationSpeed={animationSpeed} />
+        {/* <Slider onSliderChange={handleSliderChange} />
+        <img src={logo} className="App-logo" alt="logo"style={{
           animationDuration: `${20 / animationSpeed}s`
-          }}/>
-        <p>
-          Integraatiofest soon<sup>TM</sup>
-        </p>
-        
-      <CountdownTimer targetDate={targetDate}/>
-      <Slider onSliderChange={handleSliderChange} />
-      </header>
+          }}/> */}
+      </div>
     </div>
   );
 }
