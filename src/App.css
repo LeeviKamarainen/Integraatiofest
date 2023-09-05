@@ -3,16 +3,19 @@
 }
 
 .App {
-  text-align: center;
-  background-color: #282c34;
-  min-width: 100vh;
+  width: 100%;
+  height: auto;
+  background-image: url('bground.png');
+  background-size: cover;
+  background-position: center;
+  position: relative;
 }
 
 .App-counter {
   overflow: auto;
-  position: sticky;
-  top: 50%;
-  left: 50%;
+  position: absolute;
+  top: 70%;
+  left: 48%;
   transform: translate(0% ,0%) rotate(-5deg);
   z-index: 1;
   display: flex;
@@ -76,9 +79,9 @@
 }
 
 .timer-value {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 .timer-label {
-  font-size: 1vw;
+  font-size: 3rem;
 }
