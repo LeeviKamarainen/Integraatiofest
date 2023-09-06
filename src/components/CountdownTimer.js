@@ -44,19 +44,19 @@ const CountdownTimer = ({ targetDate }) => {
     <div className="countdown-timer">
       <div className="timer-block">
         <span className="timer-value">{timeLeft.days}</span>
-        <span className="timer-label">Days</span>
+        <span className="timer-label">Päivää</span>
       </div>
       <div className="timer-block">
         <span className="timer-value">{timeLeft.hours}</span>
-        <span className="timer-label">Hours</span>
+        <span className="timer-label">Tuntia</span>
       </div>
       <div className="timer-block">
         <span className="timer-value">{timeLeft.minutes}</span>
-        <span className="timer-label">Minutes</span>
+        <span className="timer-label">Minuuttia</span>
       </div>
       <div className="timer-block">
         <span className="timer-value">{timeLeft.seconds}</span>
-        <span className="timer-label">Seconds</span>
+        <span className="timer-label">Sekuntia</span>
       </div>
     </div>
   );
