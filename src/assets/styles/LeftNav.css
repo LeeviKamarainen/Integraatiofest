@@ -1,0 +1,9 @@
+@media screen and (max-width: 550px) {
+    .navbar {
+        height: 0 !important;
+        width: 50vh !important;
+        flex-direction: row !important;
+        top: 0% !important;
+        left: 20vw !important;
+    }
+}
