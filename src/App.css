@@ -4,7 +4,7 @@
 
 .App {
   width: 100%;
-  height: auto;
+  height: 100%;
   background-image: url('bground.png');
   background-size: cover;
   background-position: center;
@@ -14,8 +14,8 @@
 .App-counter {
   overflow: auto;
   position: absolute;
-  top: 70%;
-  left: 48%;
+  top: 60%;
+  left: 55%;
   transform: translate(0% ,0%) rotate(-5deg);
   z-index: 1;
   display: flex;
@@ -23,6 +23,7 @@
   align-items: center;
   color: white;
 }
+
 
 .App-logo {
   position: relative;
@@ -79,11 +80,11 @@
 }
 
 .timer-value {
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 .timer-label {
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 
