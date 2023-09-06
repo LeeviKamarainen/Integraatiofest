@@ -17,7 +17,7 @@ function App() {
     <div className="App" >
       <header className="App-header">
         <div className="App-background">
-          <img src={logo} className="App-logo" alt="logo" />
+          {/* <img src={logo} className="App-logo" alt="logo" /> */}
           <div className="counter-wrapper">
             <span className="counter-title">Integraatiofesteihin aikaa:</span>
             <CountdownTimer className="App-counter" targetDate={targetDate} animationSpeed={animationSpeed} />
