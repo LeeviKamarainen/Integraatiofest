@@ -85,3 +85,15 @@
 .timer-label {
   font-size: 3rem;
 }
+
+
+/* CSS for bottom navigation bar*/
+
+.bottomnav{
+  opacity: 0.3; /* Set the initial opacity to make it barely visible */
+  transition: opacity 0.3s ease; /* Add a smooth transition effect */
+}
+
+.bottomnav:hover {
+  opacity: 1; /* Set the opacity to 1 when hovering to make it completely visible */
+}
