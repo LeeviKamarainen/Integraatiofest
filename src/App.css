@@ -90,7 +90,7 @@
 /* CSS for bottom navigation bar*/
 
 .bottomnav{
-  opacity: 0.3; /* Set the initial opacity to make it barely visible */
+  opacity: 0.5; /* Set the initial opacity to make it barely visible */
   transition: opacity 0.3s ease; /* Add a smooth transition effect */
 }
 

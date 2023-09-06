@@ -4,7 +4,7 @@ import './App.css';
 import React, { useState, useEffect } from 'react';
 import CountdownTimer from './components/CountdownTimer';
 import Slider from './components/Slider';
-import BottomNav from './components/BottomNav'
+import LeftNav from './components/LeftNav'
 import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   const [animationSpeed, setAnimationSpeedValue] = useState(1);
@@ -26,7 +26,7 @@ function App() {
           animationDuration: `${20 / animationSpeed}s`
           }}/> */}
       </div>
-      <BottomNav></BottomNav>
+      <LeftNav></LeftNav>
     </div>
   );
 }
