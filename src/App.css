@@ -2,9 +2,6 @@
   --modifiedValue: 20;
 }
 
-.App-header {
-}
-
 .App-background {
   background-image: url("/src/assets/images/bground.png");
   background-color: lightblue;
@@ -15,7 +12,9 @@
   width: auto;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
+
 
 .App-logo {
   margin-top: 35rem;
@@ -27,12 +26,12 @@
 
 .counter-wrapper {
   position: absolute;
-  top: 65%;
-  right: 10%;
+  top: 60%;
+  right: 8%;
   color: white;
   font-weight: bold;
   text-shadow: 0 0 10px black;
-  font-size: 3vw;
+  font-size: 2.5vw;
 }
 
 .App-counter {
@@ -59,19 +58,19 @@
     background-repeat: no-repeat;
     background-position: center;
     height: 100vh;
-    min-width: 400px;
     width: auto;
     position: relative;
+    overflow: hidden;
   }
 
   .counter-wrapper {
     position: absolute;
     top: 50%;
-    right: 5rem;
+    right: 4rem;
     color: white;
     font-weight: bold;
     text-shadow: 0 0 10px black;
-    font-size: 4vw;
+    font-size: 3vw;
     margin: 1%
   }
 }
@@ -103,3 +102,14 @@
   align-items: center;
   margin: 0 10px;
 }
+
+/* CSS for bottom navigation bar*/
+.bottomnav{
+  opacity: 0.5; /* Set the initial opacity to make it barely visible */
+  transition: opacity 0.3s ease; /* Add a smooth transition effect */
+}
+
+.bottomnav:hover {
+  opacity: 1; /* Set the opacity to 1 when hovering to make it completely visible */
+}
+

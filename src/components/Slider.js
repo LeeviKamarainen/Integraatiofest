@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Slider.css'; // Make sure to create this CSS file
+import '../assets/styles/Slider.css'; // Make sure to create this CSS file
 
 const Slider = ({onSliderChange}) => {
   const [value, setValue] = useState(1); // Initial value

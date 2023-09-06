@@ -54,10 +54,10 @@ const CountdownTimer = ({ targetDate }) => {
         <span className="timer-value">{timeLeft.minutes}</span>
         <span className="timer-label">Minuuttia</span>
       </div>
-      {/* <div className="timer-block">
+      <div className="timer-block">
         <span className="timer-value">{timeLeft.seconds}</span>
-        <span className="timer-label">Seconds</span>
-      </div> */}
+        <span className="timer-label">Sekuntia</span>
+      </div>
     </div>
   );
 };
