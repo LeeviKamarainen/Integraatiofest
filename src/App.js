@@ -26,6 +26,8 @@ function App() {
     // Check if the image has been clicked five times.
     if (clickCount >= 5) {
       // Start the animation.
+      console.log(animationSpeed)
+      setAnimationSpeedValue(animationSpeed+0.2);
       setAnimationStarted(true);
     }
   };
@@ -35,10 +37,10 @@ function App() {
     <div className="App" >
       <header className="App-header">
         <div className="App-background">
-          { <img src={logo} className="App-logo" alt="logo" onClick={handleClick} data-animate={animationStarted}/> }
+          { <img src={logo} className="App-logo" alt="logo" onClick={handleClick} data-animate={animationStarted} style={{animationDuration: `${20 / animationSpeed}s`}}/> }
           <div className="counter-wrapper">
             <span className="counter-title">Integraatiofesteihin aikaa:</span>
-            <CountdownTimer className="App-counter" targetDate={targetDate} animationSpeed={animationSpeed} />
+            <CountdownTimer className="App-counter" targetDate={targetDate} animationSpeed={animationSpeed}  />
           </div>
         <LeftNav></LeftNav>
         </div>
