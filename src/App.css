@@ -17,11 +17,12 @@
 
 
 .App-logo {
-  margin-top: 35rem;
-  margin-left: 10rem;
+  left:10%;
+  bottom:15%;
   height: 15vmin;
+  position:absolute;
   width: auto;
-  pointer-events: none;
+  pointer-events:all
 }
 
 .counter-wrapper {
@@ -76,7 +77,7 @@
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
+  .App-logo[data-animate="true"] {
     animation: App-logo-spin infinite 20s linear;
   }
 }
