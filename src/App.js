@@ -1,10 +1,13 @@
 import logo from './assets/images/norppa.png';
 import './App.css';
+import promoVideo from './assets/videos/promoVideo1.mp4';
 import React, { useState, useEffect } from 'react';
 import CountdownTimer from './components/CountdownTimer';
 import Slider from './components/Slider';
 import LeftNav from './components/LeftNav'
+import BackgroundVideo from './components/BackgroundVideo';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Back } from 'react-bootstrap-icons';
 
 
 
@@ -37,16 +40,14 @@ function App() {
     <div className="App" >
       <header className="App-header">
         <div className="App-background">
-          { <img src={logo} className="App-logo" alt="logo" onClick={handleClick} data-animate={animationStarted} style={{animationDuration: `${20 / animationSpeed}s`}}/> }
-          <div className="counter-wrapper">
-            <span className="counter-title">Integraatiofesteihin aikaa:</span>
-            <CountdownTimer className="App-counter" targetDate={targetDate} animationSpeed={animationSpeed}  />
-          </div>
-        <LeftNav></LeftNav>
+          <BackgroundVideo />
+            <div className="content-wrapper">
+              <span className="counter-title">Integraatiofesteihin aikaa:</span>
+              <CountdownTimer className="App-counter" targetDate={targetDate} animationSpeed={animationSpeed}  />
+            </div>
+          <LeftNav></LeftNav>
         </div>
-
       </header>
-
     </div>
   );
 }

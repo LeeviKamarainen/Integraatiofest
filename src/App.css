@@ -2,37 +2,29 @@
   --modifiedValue: 20;
 }
 
+
 .App-background {
-  background-image: url("/src/assets/images/bground.png");
+  /* background-image: url("/src/assets/images/bground.png");
   background-color: lightblue;
   background-size: 100% 100%, cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center; */
   height: 100vh;
   width: auto;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
 }
 
-
-.App-logo {
-  left:10%;
-  bottom:15%;
-  height: 15vmin;
-  position:absolute;
-  width: auto;
-  pointer-events:all
-}
-
-.counter-wrapper {
+.content-wrapper {
   position: absolute;
-  top: 60%;
-  right: 8%;
+  width: 50%;
+  height: auto;
+  top: 40%;
+  left: 30%;
   color: white;
   font-weight: bold;
   text-shadow: 0 0 10px black;
   font-size: 2.5vw;
+  overflow: hidden;
+  background-color: aliceblue;
 }
 
 .App-counter {
@@ -53,18 +45,18 @@
 
 @media screen and (max-width: 550px) {
   .App-background {
-    background-image: url("/src/assets/images/bgroundMobile.png");
+    /* background-image: url("/src/assets/images/bgroundMobile.png");
     background-color: lightblue;
     background-size: 100% 100%, cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center; */
     height: 100vh;
     width: auto;
     position: relative;
     overflow: hidden;
   }
 
-  .counter-wrapper {
+  .content-wrapper {
     position: absolute;
     top: 50%;
     right: 4rem;
