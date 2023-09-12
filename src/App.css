@@ -8,23 +8,57 @@
   background-color: lightblue;
   background-size: 100% 100%, cover;
   background-repeat: no-repeat;
-  background-position: center; */
+  background-position: center;
+  height: 100vh; */
   height: 100vh;
   width: auto;
+  position: relative;
+  overflow: hidden;
 }
 
 .content-wrapper {
   position: absolute;
-  width: 50%;
+  top: 65%;
+  left: 70%;
   height: auto;
-  top: 40%;
-  left: 30%;
-  color: white;
-  font-weight: bold;
-  text-shadow: 0 0 10px black;
-  font-size: 2.5vw;
+  width: 45%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  /*
+  border-radius: 10px;
+  margin:0 50px 0 50px;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 85% 100% , 50% 89%, 20% 74%, 0% 63%);
+  overflow: auto; */
+}
+
+.App-title-logo {
+  background-color: red;
+  width: 100%;
+}
+
+video {
+  border: 1px solid white;
+  border-radius: 10px;
   overflow: hidden;
-  background-color: aliceblue;
+}
+
+.countdown-wrapper {
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  border-radius: 10px;
+  background: rgb(255, 255, 255, 1);
+  overflow: hidden;
+  transform: skew(0deg, -12deg);
+}
+
+.App-logo {
+  left:10%;
+  bottom:15%;
+  height: 15vmin;
+  position:absolute;
+  width: auto;
+  pointer-events:all
 }
 
 .App-counter {
@@ -45,11 +79,11 @@
 
 @media screen and (max-width: 550px) {
   .App-background {
-    /* background-image: url("/src/assets/images/bgroundMobile.png");
+    background-image: url("/src/assets/images/bgroundMobile.png");
     background-color: lightblue;
     background-size: 100% 100%, cover;
     background-repeat: no-repeat;
-    background-position: center; */
+    background-position: center;
     height: 100vh;
     width: auto;
     position: relative;
@@ -106,3 +140,18 @@
   opacity: 1; /* Set the opacity to 1 when hovering to make it completely visible */
 }
 
+.flex-container {
+  display: flex;
+}
+
+.flex-child {
+  flex: 1;
+  padding: 5px;
+  text-align: center;
+}
+
+.flex-child:first-child {
+  background-color: #555;
+  color: white;
+  margin: 5px;
+}

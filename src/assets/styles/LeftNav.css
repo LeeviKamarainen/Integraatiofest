@@ -1,9 +1,27 @@
+.navbar {
+    width: fit-content;
+    height: fit-content;
+    left: 0.5rem;
+    top: 10%;
+    border-radius: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    background: white;
+    opacity: 0.8;
+}
+
+
 @media screen and (max-width: 550px) {
     .navbar {
-        height: 0 !important;
-        width: 50vh !important;
-        flex-direction: row !important;
-        top: 0% !important;
-        left: 20vw !important;
+        height: fit-content;
+        width: fit-content;
+        flex-direction: row;
+        top: 0.5rem;
+        left: 25%;
+        background: white;
+        padding: 0;
+        opacity: 0.8;
     }
 }

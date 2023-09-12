@@ -1,13 +1,18 @@
-import logo from './assets/images/norppa.png';
-import './App.css';
-import promoVideo from './assets/videos/promoVideo1.mp4';
 import React, { useState, useEffect } from 'react';
 import CountdownTimer from './components/CountdownTimer';
 import Slider from './components/Slider';
 import LeftNav from './components/LeftNav'
 import BackgroundVideo from './components/BackgroundVideo';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import { Back } from 'react-bootstrap-icons';
+import ReactPlayer from 'react-player';
+
+import logo from './assets/images/norppa.png';
+import promoVideo from './assets/videos/promoVideo1.mp4';
+import titleLogo from './assets/images/title.png';
+
+import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 
 
@@ -39,15 +44,20 @@ function App() {
   return (
     <div className="App" >
       <header className="App-header">
-        <div className="App-background">
-          <BackgroundVideo />
+        <img src={titleLogo} className="App-title-logo" alt="titleLogo" />
+      </header>
+      <div className="App-background">
+          <img src={logo} className="App-logo" alt="logo" onClick={handleClick} data-animate={animationStarted} style={{animationDuration: `${20 / animationSpeed}s`}}/>
             <div className="content-wrapper">
-              <span className="counter-title">Integraatiofesteihin aikaa:</span>
-              <CountdownTimer className="App-counter" targetDate={targetDate} animationSpeed={animationSpeed}  />
+              <h1 className="App-title">Jotain jotain</h1>
+              <ReactPlayer className="react-player" url={promoVideo} controls width='100%' height='90%'/>
+            </div>
+            <div className="countdown-wrapper">
+              <h2 className="countdown-title" >Tulossa pian</h2>
+              <CountdownTimer targetDate={targetDate} />
             </div>
           <LeftNav></LeftNav>
         </div>
-      </header>
     </div>
   );
 }
