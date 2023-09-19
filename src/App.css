@@ -13,7 +13,6 @@
   height: 100vh;
   width: auto;
   position: relative;
-  overflow: hidden;
 }
 
 .content-wrapper {
@@ -24,16 +23,12 @@
   width: 45%;
   transform: translate(-50%, -50%);
   border-radius: 10px;
-  /*
-  border-radius: 10px;
-  margin:0 50px 0 50px;
-  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 85% 100% , 50% 89%, 20% 74%, 0% 63%);
-  overflow: auto; */
 }
 
 .App-title-logo {
   background-color: red;
   width: 100%;
+  border-bottom: 10px solid black;
 }
 
 video {
@@ -42,14 +37,24 @@ video {
   overflow: hidden;
 }
 
+.countdown-title {
+  color: white;
+  font-size: 5vw;
+  font-weight: bold;
+  text-shadow: 0 0 10px black;
+  margin: 1%;
+  text-align: center;
+}
+
 .countdown-wrapper {
   position: absolute;
-  top: 40%;
-  left: 10%;
+  top: 10%;
+  left: 25%;
   border-radius: 10px;
-  background: rgb(255, 255, 255, 1);
+  width: 50%;
+  height: 20%;
   overflow: hidden;
-  transform: skew(0deg, -12deg);
+
 }
 
 .App-logo {
@@ -58,7 +63,7 @@ video {
   height: 15vmin;
   position:absolute;
   width: auto;
-  pointer-events:all
+  pointer-events: all
 }
 
 .App-counter {
@@ -79,11 +84,6 @@ video {
 
 @media screen and (max-width: 550px) {
   .App-background {
-    background-image: url("/src/assets/images/bgroundMobile.png");
-    background-color: lightblue;
-    background-size: 100% 100%, cover;
-    background-repeat: no-repeat;
-    background-position: center;
     height: 100vh;
     width: auto;
     position: relative;
@@ -93,12 +93,29 @@ video {
   .content-wrapper {
     position: absolute;
     top: 50%;
-    right: 4rem;
+    right: 5%;
     color: white;
     font-weight: bold;
     text-shadow: 0 0 10px black;
+    margin: 1%;
+    width: 90%;
+  }
+
+  .countdown-wrapper {
+    top: 10%;
+    left: 5%;
+    border-radius: 10px;
+    background: rgb(112, 111, 111, 0.8);
+    width: 90%;
+    height: 20%;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .countdown-timer {
     font-size: 3vw;
-    margin: 1%
   }
 }
 
@@ -138,20 +155,4 @@ video {
 
 .bottomnav:hover {
   opacity: 1; /* Set the opacity to 1 when hovering to make it completely visible */
-}
-
-.flex-container {
-  display: flex;
-}
-
-.flex-child {
-  flex: 1;
-  padding: 5px;
-  text-align: center;
-}
-
-.flex-child:first-child {
-  background-color: #555;
-  color: white;
-  margin: 5px;
 }

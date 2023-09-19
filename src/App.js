@@ -14,11 +14,6 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
-
-
-
-
-
 function App() {
   const [animationSpeed, setAnimationSpeedValue] = useState(1);
   const [clickCount, setClickCount] = useState(0);
@@ -53,7 +48,7 @@ function App() {
               <ReactPlayer className="react-player" url={promoVideo} controls width='100%' height='90%'/>
             </div>
             <div className="countdown-wrapper">
-              <h2 className="countdown-title" >Tulossa pian</h2>
+              <h2 className="countdown-title" >Timer</h2>
               <CountdownTimer targetDate={targetDate} />
             </div>
           <LeftNav></LeftNav>
