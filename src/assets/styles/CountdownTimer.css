@@ -1,0 +1,20 @@
+.countdown-timer {
+    position: relative;
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 1vw;
+    font-weight: bold;
+    background-color: red;
+}
+
+@media screen and (max-width: 550) {
+    .countdown-timer {
+        font-size: 5vw !important;
+    }
+}
