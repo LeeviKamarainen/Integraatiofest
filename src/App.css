@@ -1,122 +1,246 @@
+/* Onks tää tarpeellinen??? */
 :root {
   --modifiedValue: 20;
 }
 
-
-.App-background {
-  /* background-image: url("/src/assets/images/bground.png");
-  background-color: lightblue;
-  background-size: 100% 100%, cover;
+.App {
+  background-image: url("/src/assets/images/taustakuva.png");
   background-repeat: no-repeat;
-  background-position: center;
-  height: 100vh; */
-  height: 100vh;
-  width: auto;
-  position: relative;
+  background-size: cover;
+}
+
+/* Header */
+.App-header-logo {
+  width: 100%;
+  height: 25vh;
+  border-bottom: 5px solid black;
+  background-color: #E62020;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 .content-wrapper {
   position: absolute;
-  top: 65%;
-  left: 70%;
-  height: auto;
-  width: 45%;
-  transform: translate(-50%, -50%);
+  left: 7%;
+  margin: 2%;
+  height: 90%;
+  width: 87%;
+  background: rgb(255, 255, 255, 0.7);
+  backdrop-filter: blur(3px);
   border-radius: 10px;
 }
 
-.App-title-logo {
-  background-color: red;
-  width: 100%;
-  border-bottom: 10px solid black;
+/* Main page div */
+.App-content {
+  height: 100vh;
+  width: auto;
+  position: relative;
+  z-index: 1;
+}
+
+/* Norppa logo */
+.App-logo {
+  left:10%;
+  bottom:15%;
+  height: 20vmin;
+  position:absolute;
+  width: auto;
+  pointer-events: all;
+  z-index: -1;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  height: 70%;
+  margin-top: 15%;
+  width: auto;
+}
+
+.flex-wrapper {
+  flex: 1;
+  margin: 0 1%;
+}
+
+.flex-wrapper.timetable {
+  margin-right: 0;
+}
+
+.flex-wrapper.video {
+  margin-left: 0;
+  margin-right: 2%;
+}
+
+.video-title {
+  text-align: center;
+  font-size: 2.5vw;
+  font-weight: bold;
+  color: black
 }
 
 video {
-  border: 1px solid white;
   border-radius: 10px;
   overflow: hidden;
+}
+
+.timetable-title {
+  font-size: 2.5vw;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+}
+
+.timetable-list-title {
+  font-size: 1.5vw;
+  font-weight: bold;
+  color: black;
+}
+
+/* Countdown timer */
+.countdown-wrapper {
+  position: absolute;
+  top: 2%;
+  margin: 0 5% 1rem;
+  border-radius: 10px;
+  width: 90%;
+  height: 20%;
+  background-color: #E62020;
+  /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 .countdown-title {
   color: white;
-  font-size: 5vw;
+  font-size: 3vw;
   font-weight: bold;
   text-shadow: 0 0 10px black;
-  margin: 1%;
   text-align: center;
 }
 
-.countdown-wrapper {
-  position: absolute;
-  top: 10%;
-  left: 25%;
-  border-radius: 10px;
-  width: 50%;
-  height: 20%;
-  overflow: hidden;
-
+/* CSS for bottom navigation bar*/
+.bottomnav{
+  opacity: 0.6; /* Set the initial opacity to make it barely visible */
+  transition: opacity 0.3s ease; /* Add a smooth transition effect */
 }
 
-.App-logo {
-  left:10%;
-  bottom:15%;
-  height: 15vmin;
-  position:absolute;
-  width: auto;
-  pointer-events: all
+.bottomnav:hover {
+  opacity: 1; /* Set the opacity to 1 when hovering to make it completely visible */
 }
 
-.App-counter {
-  width: fit-content;
-  height: fit-content;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-@media screen and (max-width: 1200px) {
+/* CSS for responsive design */
+/* Norppa logo disappears on smaller screens */
+@media screen and (max-width: 800px) {
   .App-logo {
     visibility: hidden;
   }
-  
 }
 
+/* Mobile screens */
 @media screen and (max-width: 550px) {
-  .App-background {
-    height: 100vh;
-    width: auto;
-    position: relative;
-    overflow: hidden;
+  .App-header-logo {
+    width: 100%;
+    height: 10vh;
+    border-bottom: 5px solid black;
+    background-color: #E62020;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
   }
 
   .content-wrapper {
     position: absolute;
-    top: 50%;
-    right: 5%;
+    left: 0;
+    margin: 3%;
+    height: 95%;
+    width: 95%;
+    background: rgb(255, 255, 255, 0.7);
+    backdrop-filter: blur(3px);
+    border-radius: 10px;
+    overflow: scroll;
+  }
+  .video {
+    border-radius: 10px;
+    width: 85%;
+    height: auto;
+  }
+
+  /* Countdown timer wrapper */
+  .countdown-wrapper {
+    position: absolute;
+    top: 2%;
+    margin: 0 5% 2%;
+    border-radius: 10px;
+    width: 90%;
+    height: 13%;
+    background-color: #E62020;
+    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  }
+
+  /* Countdown timer */
+  .countdown-title {
     color: white;
+    font-size: 5vw;
     font-weight: bold;
     text-shadow: 0 0 10px black;
-    margin: 1%;
-    width: 90%;
+    text-align: center;
   }
 
-  .countdown-wrapper {
-    top: 10%;
-    left: 5%;
-    border-radius: 10px;
-    background: rgb(112, 111, 111, 0.8);
-    width: 90%;
-    height: 20%;
-    padding: 1%;
+  .flex-container {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 70%;
+    margin-top: 50%;
+    width: auto;
+  }
+  
+  .flex-wrapper {
+    flex: 1;
+    margin: 0;
+  }
+  
+  .flex-wrapper.timetable {
+    margin-right: 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
   }
 
-  .countdown-timer {
-    font-size: 3vw;
+  .timetable-list{
+    flex: 1;
+    justify-content: space-between;
   }
+
+  .timetable-list-item {
+    font-size: 2.8vw;
+    margin: 0 0 0 5%;
+  }
+
+  .timetable-list-title {
+    font-size: 3.2vw;
+  }
+
+  .timetable-title {
+    font-size: 5vw;
+  }
+  
+  .flex-wrapper.video {
+    margin: 8vw;
+    padding-top: 5%;
+  }
+  .video-title {
+    font-size: 5vw;
+    margin-top: 5%;
+    margin-bottom: 1%;
+  }
+
+}
+
+@media screen and (max-height: 700px) {
+  .flex-container {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 70%;
+    margin-top: 65%;
+    width: auto;
+  }
+  
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -132,27 +256,4 @@ video {
   100% {
     transform: rotate(360deg);
   }
-}
-
-.countdown-timer {
-  display: flex;
-  align-items: center;
-  background-color: inherit;
-}
-
-.timer-block {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0 10px;
-}
-
-/* CSS for bottom navigation bar*/
-.bottomnav{
-  opacity: 0.5; /* Set the initial opacity to make it barely visible */
-  transition: opacity 0.3s ease; /* Add a smooth transition effect */
-}
-
-.bottomnav:hover {
-  opacity: 1; /* Set the opacity to 1 when hovering to make it completely visible */
 }
