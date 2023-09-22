@@ -3,12 +3,11 @@
     width: fit-content;
     height: auto;
     margin: 0.8rem auto;
-    padding: 5px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    font-size: 1.1vw;
+    font-size: 1.2vw;
     font-weight: bold;
     color: white;
     text-shadow: 0 0 10px black;
@@ -22,8 +21,13 @@
 }
 
 @media screen and (max-width: 550px) {
-    
     .countdown-timer {
         font-size: 3.5vw !important;
+    }
+}
+
+@media screen and (max-height: 450px) {
+    .countdown-timer {
+        font-size: 1.4vw !important;
     }
 }

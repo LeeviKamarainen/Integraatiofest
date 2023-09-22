@@ -16,13 +16,6 @@
       align-items: center;
       height: 100vh; /* Ensure the container takes up the full viewport height */
     }
-
-    
-    video {
-        width: 100vw;
-        height: auto; /* Make the video height cover the full viewport height */
-        object-fit: fill; /* Maintain aspect ratio and cover entire viewport */
-    }
   
     /* Modify other content styles as needed */
   }
@@ -46,12 +39,6 @@
         align-items: center;
         height: 100vh; /* Ensure the container takes up the full viewport height */
       }
-
-      video {
-        width: 100vw;
-        height: auto; /* Make the video height cover the full viewport height */
-        object-fit: fill; /* Maintain aspect ratio and cover entire viewport */
-    }
   }
   
   /* Medium Devices (desktops, 768px and up) */
@@ -73,12 +60,6 @@
         align-items: center;
         height: 100vh; /* Ensure the container takes up the full viewport height */
       }
-
-      video {
-        width: 100vw;
-        height: auto; /* Make the video height cover the full viewport height */
-        object-fit: fill; /* Maintain aspect ratio and cover entire viewport */
-    }
   }
   
   /* Large Devices (large desktops, 992px and up) */
@@ -100,12 +81,6 @@
         align-items: center;
         height: 100vh; /* Ensure the container takes up the full viewport height */
       }
-
-      video {
-        width: 100vw;
-        height: auto; /* Make the video height cover the full viewport height */
-        object-fit: fill; /* Maintain aspect ratio and cover entire viewport */
-    }
   }
   
   /* Extra Large Devices (extra-large desktops, 1200px and up) */
@@ -125,11 +100,5 @@
         top: 0;
         left: 0;
       }
-
-      video {
-        width: 100vw;
-        height: auto; /* Make the video height cover the full viewport height */
-        object-fit: fill; /* Maintain aspect ratio and cover entire viewport */
-    }
 
 }

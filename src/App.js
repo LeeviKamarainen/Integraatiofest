@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import CountdownTimer from './components/CountdownTimer';
 import Slider from './components/Slider';
 import LeftNav from './components/LeftNav'
-import BackgroundVideo from './components/BackgroundVideo';
 import { Back } from 'react-bootstrap-icons';
 import ReactPlayer from 'react-player';
 
@@ -75,7 +74,7 @@ function App() {
             </div>
             <div className="flex-wrapper video">
               <h2 className="video-title">🤫</h2>
-              <ReactPlayer className="react-player" url={promoVideo} controls width='100%' height='90%'/>
+              <ReactPlayer className="react-player" url={promoVideo} controls width='90%' height='100%'/>
             </div>
           </div>
         </div>

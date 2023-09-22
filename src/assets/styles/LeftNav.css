@@ -17,9 +17,19 @@
     .navbar {
         height: fit-content;
         width: fit-content;
-        flex-direction: row;
-        top: 0.5rem;
-        left: 25%;
+        flex-direction: column;
+        top: 60%;
+        left: 70%;
+        background: white;
+    }
+}
+
+@media screen and (max-height: 450px) {
+    .navbar {
+        height: fit-content;
+        width: fit-content;
+        flex-direction: column;
+        top: 1%;
         background: white;
     }
 }
