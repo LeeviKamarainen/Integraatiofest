@@ -1,14 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import CountdownTimer from './components/CountdownTimer';
-import Slider from './components/Slider';
 import LeftNav from './components/LeftNav'
-import { Back } from 'react-bootstrap-icons';
 import ReactPlayer from 'react-player';
 
 import logo from './assets/images/norppa.png';
 import promoVideo from './assets/videos/promoVideo1.mp4';
 import titleLogo from './assets/images/title.png';
-import promoVideoThumbnail from './assets/images/videoThumbnail.png';
 
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -21,7 +18,7 @@ function App() {
   const handleSliderChange = (newValue) => {
     setAnimationSpeedValue(newValue); // Update the modified value
   };
-  const targetDate = '2023-11-10T00:00:00'
+  const targetDate = '2023-11-10T10:00:00'
 
   const handleClick = () => {
     // Increment the click count when the image is clicked.
@@ -44,7 +41,7 @@ function App() {
       <div className="App-content">
         <div className="content-wrapper">
           <div className="countdown-wrapper">
-              <h1 className="countdown-title" >Integraatiofestheihin aikaa</h1>
+              <h1 className="countdown-title" >Integraatiofesteihin aikaa</h1>
               <CountdownTimer targetDate={targetDate} />
           </div>
           <div className="flex-container">
