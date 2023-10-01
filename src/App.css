@@ -37,6 +37,7 @@
   width: auto;
   position: relative;
   z-index: 1;
+  overflow-y: visible;
 }
 
 /* Norppa logo */
