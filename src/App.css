@@ -5,19 +5,18 @@
 
 /* Tää tiedosto on kyl sellasta spagettia mutta toimii XD */
 
-.App {
+.App-bg {
   background-image: url("/src/assets/images/taustakuva.png");
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100vh;
 }
 
 /* Header */
 .App-header-logo {
   width: 100%;
-  height: 25vh;
-  border-bottom: 5px solid black;
-  background-color: #E62020;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  height: 20vh;
+  background-color: #F52C21;
 }
 
 .content-wrapper {
@@ -283,13 +282,6 @@ video {
 }
 
 @media (min-width: 576px) {
-  .App-header-logo {
-    width: 100%;
-    height: 20vh;
-    border-bottom: 5px solid black;
-    background-color: #E62020;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-  }
 
   .content-wrapper {
     position: absolute;

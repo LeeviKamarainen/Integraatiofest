@@ -8,9 +8,10 @@ import TimeTable from './components/TimeTable'
 import logo from './assets/images/norppa.png';
 import promoVideo from './assets/videos/promoVideo1.mp4';
 import titleLogo from './assets/images/title.png';
+import titleLogoOld from './assets/images/titleOld.png';
 
 import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import Header from './components/Header';
 
 
 function App() {
@@ -37,28 +38,12 @@ function App() {
 
   return (
     <div className="App" >
-      <header className="App-header">
-        <img src={titleLogo} className="App-header-logo" alt="headerLogo" />
-      </header>
-      <div className="App-content">
-        <div className="content-wrapper">
-          <div className="countdown-wrapper">
-              <h1 className="countdown-title" >Integraatiofesteihin aikaa</h1>
-              <CountdownTimer targetDate={targetDate} />
-          </div>
-          <div className="flex-container">
-            <div className="flex-wrapper timetable">
-              <h1 className="timetable-title">Alustava aikataulu</h1>
-              <TimeTable />
-            </div>
-            <div className="flex-wrapper video">
-              <h2 className="video-title">🤫</h2>
-              <ReactPlayer className="react-player" url={promoVideo} controls width='90%' height='100%'/>
-            </div>
-          </div>
-        </div>
-        <img src={logo} className="App-logo" alt="logo" onClick={handleClick} data-animate={animationStarted} style={{animationDuration: `${20 / animationSpeed}s`}}/>
-        <LeftNav></LeftNav>
+       {/* <header className="App-header">
+        <img src={titleLogoOld} className="App-header-logo" alt="headerLogo" />
+      </header> */}
+      <Header />
+      <div className="App-bg">
+        <span>TESTI MOI! :)</span>
       </div>
     </div>
   );
