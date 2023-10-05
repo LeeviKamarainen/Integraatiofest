@@ -5,7 +5,7 @@
 
 /* Tää tiedosto on kyl sellasta spagettia mutta toimii XD */
 
-.App-bg {
+.App-content {
   background-image: url("/src/assets/images/taustakuva.png");
   background-repeat: no-repeat;
   background-size: cover;

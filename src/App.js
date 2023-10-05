@@ -1,18 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import ReactPlayer from 'react-player';
-import CountdownTimer from './components/CountdownTimer';
-import LeftNav from './components/LeftNav'
-import TimeTable from './components/TimeTable'
+import {BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 
-
-import logo from './assets/images/norppa.png';
-import promoVideo from './assets/videos/promoVideo1.mp4';
-import titleLogo from './assets/images/title.png';
-import titleLogoOld from './assets/images/titleOld.png';
-
-import './App.css';
 import Header from './components/Header';
 import Navbar from './components/NavBar';
+import MainContent from './components/MainContent';
+import TimeTable from './components/TimeTable';
+
+import './App.css';
+
 
 
 function App() {
@@ -22,7 +17,7 @@ function App() {
   const handleSliderChange = (newValue) => {
     setAnimationSpeedValue(newValue); // Update the modified value
   };
-  const targetDate = '2023-11-10T10:00:00'
+
 
   const handleClick = () => {
     // Increment the click count when the image is clicked.
@@ -38,13 +33,18 @@ function App() {
 
 
   return (
-    <>
-      <Header />
-      <Navbar />
-      <div className="App-bg">
-        <span>TESTI MOI! :)</span>
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<> <Header /> <Navbar /> <MainContent  /> </>} />
+          <Route path="/aikataulu" element={<> <Header /> <Navbar /> <div className="App-content"> <TimeTable /> </div> </>} />
+          <Route path="/yhteystiedot" element={<> <Header /> <Navbar /> <MainContent /> </>} />
+          <Route path="/yhteistyokumppanit" element={<> <Header /> <Navbar /> <MainContent /> </>} />
+          <Route path="/kaljakaupat" element={<> <Header /> <Navbar /> <MainContent /> </>} />
+          <Route path="*" element={<Navigate to="/" />} />
+        </Routes>
       </div>
-    </>
+    </Router>
   );
 }
 

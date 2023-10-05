@@ -1,9 +1,23 @@
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 999px) {
+    .timer-bar {
+        flex-direction: column !important;
+    }
+
+    .header-title {
+        font-size: 0.9rem !important;
+    }
+
+    .header-timer {
+        font-size: 0.8rem !important;
+    }
+}
+
+@media screen and (max-width: 320px) {
     .header-title {
         font-size: 0.75rem !important;
     }
 
     .header-timer {
-        font-size: 0.55rem !important;
+        font-size: 0.7rem !important;
     }
 }

@@ -16,7 +16,11 @@ function Header() {
             backgroundColor: '#091720',
             height: '70px',
           }}>
-            <Toolbar>
+            <Toolbar className="timer-bar" sx={{
+              display: 'flex',
+              flexDirection: 'row',
+              justifyContent: 'flex-end',
+            }}>
               <Typography className="header-title" variant="h6" component="div" sx={{ 
                 flexGrow: 1,
                 textAlign: 'center', 
@@ -24,16 +28,16 @@ function Header() {
                 fontWeight: 'bold',
                 textTransform: 'uppercase',
                 letterSpacing: '2px',
-                fontSize: '0.9rem',
+                fontSize: '1.7rem',
                 wordBreak: 'break-word',
                 }}>
                   Integraatiofesteihin aikaa
-                  <Typography className="header-timer" variant="h6" component="span" sx={{
+              </Typography>
+              <Typography className="header-timer" variant="h6" component="div" sx={{
                     flexGrow: 1,
-                    fontSize: '0.6rem',
+                    fontSize: '1.1rem',
                   }}>
                     <CountdownTimer targetDate={targetDate}/>
-                  </Typography>
               </Typography>
             </Toolbar>
           </AppBar>
