@@ -12,6 +12,7 @@ import titleLogoOld from './assets/images/titleOld.png';
 
 import './App.css';
 import Header from './components/Header';
+import Navbar from './components/NavBar';
 
 
 function App() {
@@ -37,15 +38,13 @@ function App() {
 
 
   return (
-    <div className="App" >
-       {/* <header className="App-header">
-        <img src={titleLogoOld} className="App-header-logo" alt="headerLogo" />
-      </header> */}
+    <>
       <Header />
+      <Navbar />
       <div className="App-bg">
         <span>TESTI MOI! :)</span>
       </div>
-    </div>
+    </>
   );
 }
 

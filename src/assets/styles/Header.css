@@ -1,0 +1,9 @@
+@media screen and (max-width: 300px) {
+    .header-title {
+        font-size: 0.75rem !important;
+    }
+
+    .header-timer {
+        font-size: 0.55rem !important;
+    }
+}
