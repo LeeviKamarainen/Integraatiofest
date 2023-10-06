@@ -56,7 +56,7 @@ function Navbar() {
                     fontWeight: 'bold',
                     textTransform: 'uppercase',
                     letterSpacing: '2px',
-                    fontSize: {lg: '0.75rem', xl: '1rem',},
+                    fontSize: {lg: '0.75rem', xl: '0.9rem',},
                     wordBreak: 'break-word',
                     ml: 3,
                     mr: -2,
