@@ -2,7 +2,9 @@
     "trailingSlash": "auto",
     "routes": [
         {
-            "route": "/aikataulu"
+            "route": "/*",
+            "serve": "/index.html",
+            "statusCode": 200
         }
     ]
 }
