@@ -2,7 +2,6 @@
     "trailingSlash": "auto",
     "navigationFallback": {
         "rewrite": "index.html",
-        "statusCode": 200,
-        "exclude": ["^/assets/*.{js,css,png,jpg,jpeg,gif,svg,ico}$"]
+        "statusCode": 200
     }
 }
