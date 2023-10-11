@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -13,12 +13,7 @@ import '../assets/styles/NavBar.css';
 
 
 function Navbar() {
-    const [anchoeElNav, setAnchorElNav] = React.useState(null);
     const [openDrawer, setOpenDrawer] = React.useState(false);
-
-    const handeMenuClose = () => {
-        setAnchorElNav(null);
-    }
 
     const handleDrawerOpen = () => {
         setOpenDrawer(true);
@@ -29,14 +24,11 @@ function Navbar() {
     }
 
     const menuItems = [
-        {label: "Etusivu", href: '/', onClick: handeMenuClose},
-        {label: "Aikataulu", href: '/aikataulu', onClick: handeMenuClose},
-        {label: "Yhteystiedot", href: '/yhteystiedot', onClick: handeMenuClose},
-        {label: "Yhteistyökumppanit", href: '/yhteistyokumppanit', onClick: handeMenuClose},
-        {label: "Mistä saan lisää kaljaa?", href: '/kaljakaupat', onClick: handeMenuClose},
-        {label: "Perkele1", href: '/perkele', onClick: handeMenuClose},
-        {label: "Norppa 2.0", href: '/porkkana', onClick: handeMenuClose},
-        {label: "Juustoa", href: '/edam', onClick: handeMenuClose},
+        {label: "Etusivu", href: '/'},
+        {label: "Aikataulu", href: '/aikataulu'},
+        {label: "Yhteystiedot", href: '/yhteystiedot'},
+        {label: "Yhteistyökumppanit", href: '/yhteistyokumppanit'},
+        {label: "Mistä saan lisää kaljaa?", href: '/kaljakaupat'},
     ]
 
 
@@ -55,7 +47,7 @@ function Navbar() {
                     textShadow: '0px 4px 3px rgba(0,0,0,0.4), 0px 8px 13px rgba(0,0,0,0.1), 0px 18px 23px rgba(0,0,0,0.1)',
                     fontWeight: 'bold',
                     textTransform: 'uppercase',
-                    letterSpacing: '2px',
+                    letterSpacing: '1.8px',
                     fontSize: {lg: '0.75rem', xl: '0.9rem',},
                     wordBreak: 'break-word',
                     ml: 3,
@@ -93,7 +85,7 @@ function Navbar() {
                         textShadow: '0px 4px 3px rgba(0,0,0,0.4), 0px 8px 13px rgba(0,0,0,0.1), 0px 18px 23px rgba(0,0,0,0.1)',
                         fontWeight: 'bold',
                         textTransform: 'uppercase',
-                        letterSpacing: '2px',
+                        letterSpacing: '1.8px',
                         fontSize: '0.7rem',
                         wordBreak: 'break-word',
                         mb: 0.5,

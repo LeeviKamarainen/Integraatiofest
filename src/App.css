@@ -12,21 +12,19 @@
   position: relative;
   white-space: nowrap;
   overflow: visible;
-  margin: 1%;
+  margin: 0%;
 }
 
 .content-wrapper {
   position: absolute;
-  margin: 1% 2%;
+  margin: 1% 1%;
   height: inherit;
-  width: 96%;
+  width: 98%;
   padding-bottom: 10%;
   background: rgb(255, 255, 255, 0.7);
   backdrop-filter: blur(3px);
   border-radius: 10px;
 }
-
-
 
 /* Norppa logo */
 .App-logo {
