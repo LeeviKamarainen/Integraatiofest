@@ -9,18 +9,15 @@ import Footer from './components/Footer';
 
 import './App.css';
 
-
-
 function App() {
-
 
   return (
     <Router>
       <div className="App">
         <Routes>
-          <Route path="/" element={<> <Header /> <Navbar /> <MainContent  /> <Footer /> </>} />
-          <Route path="/aikataulu" element={<> <Header /> <Navbar /> <div className="App-content"> <TimeTable /> </div> </>} />
-          <Route path="/yhteystiedot" element={<> <Header /> <Navbar /> <MainContent /> </>} />
+          <Route path="/" element={<> <Header /> <Navbar /> <MainContent  /> <Footer />  </>} />
+          <Route path="/aikataulu" element={<> <Header /> <Navbar /> <TimeTable /> </>} />
+          <Route path="/yhteystiedot" element={<> <Header /> <Navbar /> <MainContent /> <Footer /> </>} />
           <Route path="/yhteistyokumppanit" element={<> <Header /> <Navbar /> <MainContent /> </>} />
           <Route path="/kaljakaupat" element={<> <Header /> <Navbar /> <MainContent /> </>} />
           <Route path="*" element={<Navigate to="/" />} />
