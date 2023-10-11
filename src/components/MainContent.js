@@ -33,10 +33,6 @@ function MainContent() {
   return (
       <div className="content-wrapper">
         <TimeTable />
-        <div className="countdown-wrapper">
-            <h1 className="countdown-title" >Integraatiofesteihin aikaa</h1>
-            <CountdownTimer targetDate={targetDate} />
-        </div>
         <div className="flex-container">
           <div className="flex-wrapper timetable">
             <h1 className="timetable-title">Alustava aikataulu</h1>
