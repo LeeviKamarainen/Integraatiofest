@@ -6,7 +6,6 @@ import Navbar from './components/NavBar';
 import MainContent from './components/MainContent';
 import TimeTable from './components/TimeTable';
 import Footer from './components/Footer';
-import Example from './components/Example';
 
 import './App.css';
 
@@ -16,7 +15,7 @@ function App() {
     <Router>
       <div className="App">
         <Routes>
-          <Route path="/" element={<> <Header /> <Navbar /> <MainContent  /> <Example /> <Footer />  </>} />
+          <Route path="/" element={<> <Header /> <Navbar /> <MainContent  /> <Footer />  </>} />
           <Route path="/aikataulu" element={<> <Header /> <Navbar /> <TimeTable /> </>} />
           <Route path="/yhteystiedot" element={<> <Header /> <Navbar /> <MainContent /> <Footer /> </>} />
           <Route path="/yhteistyokumppanit" element={<> <Header /> <Navbar /> <MainContent /> </>} />
