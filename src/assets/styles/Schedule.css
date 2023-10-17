@@ -42,6 +42,11 @@
     background: none !important;
 }
 
+.jatkot {
+    font-style: oblique;
+    border-bottom: 1px dotted black;
+}
+
 @media screen and (max-width: 1200px) {
     .timetable-text {
         font-size: 1rem;
