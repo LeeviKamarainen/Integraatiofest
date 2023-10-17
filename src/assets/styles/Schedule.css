@@ -1,0 +1,55 @@
+.timetable {
+    background-color: none;
+    margin: 1% 2% !important;
+}
+
+.timetable-image-1 {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.timetable-image-2 {
+    width: 100%;
+    object-fit: fill;
+}
+
+.indent {
+    margin-left: 5%;
+}
+
+.timetable-grid{
+    background: white;
+    padding: 2% 0% 0% 2% !important;
+}
+
+.timetable-title {
+    font-weight: bold !important;
+    color: black;
+}
+
+.timetable-text {
+    font-size: 1.2rem;
+    color: black;
+    line-height: 1.5;
+}
+
+.timetable-item {
+    margin-bottom: 0.5rem;
+}
+
+.content-wrapper {
+    background: none !important;
+}
+
+@media screen and (max-width: 1200px) {
+    .timetable-text {
+        font-size: 1rem;
+    }
+}
+
+@media screen  and (max-width: 600px) {
+    .timetable-text {
+        font-size: 0.5rem;
+    }
+}

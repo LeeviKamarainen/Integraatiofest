@@ -4,7 +4,7 @@ import {BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-do
 import Header from './components/Header';
 import Navbar from './components/NavBar';
 import MainContent from './components/MainContent';
-import TimeTable from './components/TimeTable';
+import TimeTable from './components/Schedule';
 import Footer from './components/Footer';
 import Example from './components/Example';
 

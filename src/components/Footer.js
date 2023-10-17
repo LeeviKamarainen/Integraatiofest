@@ -3,7 +3,7 @@ import '../assets/styles/Footer.css'
 
 function Footer() {
   return (
-    <div className="footer">I am Footer</div>
+    <div className="footer">Sponssit tähän.</div>
   )
 }
 

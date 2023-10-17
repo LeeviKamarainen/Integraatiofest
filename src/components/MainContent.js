@@ -1,5 +1,5 @@
 import React from 'react'
-import TimeTable from './TimeTable'
+import TimeTable from './Schedule'
 import CountdownTimer from './CountdownTimer'
 // import { useState } from 'react'
 
