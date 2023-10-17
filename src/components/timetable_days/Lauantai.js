@@ -6,7 +6,7 @@ import '../../assets/styles/TimeTable.css'
 function Lauantai() {
   return (
     <>
-        <Typography variant="h4" component="h2" textAlign="left" className="timetable-title"> Lauantai </Typography>
+        <Typography sx={{ typography: { xs: 'h6', md: 'h2'}}} component="h2" textAlign="left" className="timetable-title"> Lauantai </Typography>
         <p className="timetable-text">
             <span className="timetable-item">09:00 - 10:00 Luento <br /></span>
             <span className="timetable-item">12:00 - 14:00 Posterisessio ja haalarimerkkitori @ ? <br /></span>

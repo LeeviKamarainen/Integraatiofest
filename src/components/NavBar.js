@@ -33,7 +33,7 @@ function Navbar() {
 
 
   return (
-    <Box sx={{ flexGrow: 1 }}>
+    <Box >
       <AppBar className="" position="static" sx={{
         backgroundColor: '#F52C21',
       }}>

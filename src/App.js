@@ -19,8 +19,8 @@ function App() {
           <Route path="/" element={<> <Header /> <Navbar /> <TimeTable />  </>} />
           <Route path="/aikataulu" element={<> <Header /> <Navbar /> <TimeTable /> </>} />
           <Route path="/yhteystiedot" element={<> <Header /> <Navbar /> <MainContent /> <Footer /> </>} />
-          <Route path="/yhteistyokumppanit" element={<> <Header /> <Navbar /> <MainContent /> </>} />
-          <Route path="/kaljakaupat" element={<> <Header /> <Navbar /> <MainContent /> </>} />
+          <Route path="/saapuminen" element={<> <Header /> <Navbar /> <MainContent /> </>} />
+          <Route path="/kartta" element={<> <Header /> <Navbar /> <MainContent /> </>} />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </div>

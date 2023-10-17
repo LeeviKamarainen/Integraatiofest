@@ -6,12 +6,12 @@
 .timetable-image-1 {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: fill;
 }
 
 .timetable-image-2 {
     width: 100%;
-    object-fit: contain;
+    object-fit: fill;
 }
 
 .indent {
@@ -25,17 +25,33 @@
 }
 
 .timetable-title {
-    font-size: 1.5vw;
-    font-weight: bold;
+    font-size: 1vw;
+    font-weight: bold !important;
     color: black;
 }
 
 .timetable-text {
-    font-size: 1.2vw;
+    font-size: 1.2rem;
     color: black;
-    line-height: 1.3;
+    line-height: 1.5;
+}
+
+.timetable-item {
+    margin-bottom: 0.5rem;
 }
 
 .content-wrapper {
     background: none !important;
+}
+
+@media screen and (max-width: 1200px) {
+    .timetable-text {
+        font-size: 1rem;
+    }
+}
+
+@media screen  and (max-width: 600px) {
+    .timetable-text {
+        font-size: 0.5rem;
+    }
 }
