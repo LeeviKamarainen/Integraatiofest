@@ -24,11 +24,11 @@ function Navbar() {
     }
 
     const menuItems = [
-        {label: "Etusivu", href: '/'},
-        {label: "Aikataulu", href: '/aikataulu'},
-        {label: "Yhteystiedot", href: '/yhteystiedot'},
-        {label: "Yhteistyökumppanit", href: '/yhteistyokumppanit'},
-        {label: "Mistä saan lisää kaljaa?", href: '/kaljakaupat'},
+        {label: "Aikataulu", href: '/'},
+        // {label: "Aikataulu", href: '/aikataulu'},
+        // {label: "Yhteystiedot", href: '/yhteystiedot'},
+        // {label: "Yhteistyökumppanit", href: '/yhteistyokumppanit'},
+        // {label: "Mistä saan lisää kaljaa?", href: '/kaljakaupat'},
     ]
 
 

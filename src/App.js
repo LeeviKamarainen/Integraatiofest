@@ -16,11 +16,11 @@ function App() {
     <Router>
       <div className="App">
         <Routes>
-          <Route path="/" element={<> <Header /> <Navbar /> <TimeTable />  </>} />
-          <Route path="/aikataulu" element={<> <Header /> <Navbar /> <TimeTable /> </>} />
+          <Route path="/" element={<> <Header /> <Navbar /> <TimeTable />  <Footer /> </>} />
+          {/* <Route path="/aikataulu" element={<> <Header /> <Navbar /> <TimeTable /> </>} />
           <Route path="/yhteystiedot" element={<> <Header /> <Navbar /> <MainContent /> <Footer /> </>} />
           <Route path="/saapuminen" element={<> <Header /> <Navbar /> <MainContent /> </>} />
-          <Route path="/kartta" element={<> <Header /> <Navbar /> <MainContent /> </>} />
+          <Route path="/kartta" element={<> <Header /> <Navbar /> <MainContent /> </>} /> */}
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </div>
