@@ -16,7 +16,7 @@ function App() {
     <Router>
       <div className="App">
         <Routes>
-          <Route path="/" element={<> <Header /> <Navbar /> <MainContent  /> <Example /> <Footer />  </>} />
+          <Route path="/" element={<> <Header /> <Navbar /> <TimeTable />  </>} />
           <Route path="/aikataulu" element={<> <Header /> <Navbar /> <TimeTable /> </>} />
           <Route path="/yhteystiedot" element={<> <Header /> <Navbar /> <MainContent /> <Footer /> </>} />
           <Route path="/yhteistyokumppanit" element={<> <Header /> <Navbar /> <MainContent /> </>} />

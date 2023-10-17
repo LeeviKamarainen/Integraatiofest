@@ -70,7 +70,7 @@ const Example = () => {
             autoPlaySpeed={3000}
             keyBoardControl={true}
             customTransition="ease-in-out"
-            transitionDuration={1000}
+            transitionDuration={200}
             containerClass="carousel-container"
             removeArrowOnDeviceType={["tablet", "mobile"]}
             dotListClass="custom-dot-list-style"
@@ -78,7 +78,7 @@ const Example = () => {
         >
         {data.map((item) => (
             <Card orientation="horizontal" size="sm" key={item.title} variant="outlined">
-            <AspectRatio ratio="1" sx={{ minWidth: 60 }}>
+            <AspectRatio ratio="1" sx={{ minWidth: 60, m: 5 }}>
                 <img
                 src={item.src}
                 alt={item.title}

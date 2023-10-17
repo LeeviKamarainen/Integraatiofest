@@ -35,9 +35,6 @@ function MainContent() {
         <TimeTable />
         <div className="flex-container">
           <div className="flex-wrapper timetable">
-            <h1 className="timetable-title">Alustava aikataulu</h1>
-            <TimeTable />
-            <TimeTable />
           </div>
         </div>
       </div>

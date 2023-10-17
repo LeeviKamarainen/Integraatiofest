@@ -1,4 +1,41 @@
 .timetable {
     background-color: none;
-    margin: 3% 2%;
+    margin: 1% 2% !important;
+}
+
+.timetable-image-1 {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.timetable-image-2 {
+    width: 100%;
+    object-fit: contain;
+}
+
+.indent {
+    margin-left: 5%;
+}
+
+.timetable-grid{
+    background: white;
+    margin-bottom: 4px;
+    padding: 2% 3% !important;
+}
+
+.timetable-title {
+    font-size: 1.5vw;
+    font-weight: bold;
+    color: black;
+}
+
+.timetable-text {
+    font-size: 1.2vw;
+    color: black;
+    line-height: 1.3;
+}
+
+.content-wrapper {
+    background: none !important;
 }
