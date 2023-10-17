@@ -3,7 +3,7 @@ import { Typography } from '@mui/material'
 
 import '../../assets/styles/Schedule.css'
 
-function Lauantai() {
+function Saturday() {
   return (
     <>
         <Typography sx={{ typography: { xs: 'h6', md: 'h3'}}} component="h2" textAlign="left" className="timetable-title"> Lauantai </Typography>
@@ -20,4 +20,4 @@ function Lauantai() {
   )
 }
 
-export default Lauantai
+export default Saturday

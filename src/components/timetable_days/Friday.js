@@ -3,7 +3,7 @@ import { Typography } from '@mui/material'
 
 import '../../assets/styles/Schedule.css'
 
-function Perjantai() {
+function Friday() {
   return (
     <>
         <Typography sx={{ typography: { xs: 'h6', md: 'h2'}, fontWeight: "bold"}} component="h2" textAlign="left" className="timetable-title"> Perjantai </Typography>
@@ -20,4 +20,4 @@ function Perjantai() {
   )
 }
 
-export default Perjantai
+export default Friday
