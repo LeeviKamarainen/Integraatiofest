@@ -4,7 +4,7 @@ import {BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-do
 import Header from './components/Header';
 import Navbar from './components/NavBar';
 import MainContent from './components/MainContent';
-import TimeTable from './components/Schedule';
+import Schedule from './components/Schedule';
 import Footer from './components/Footer';
 import Example from './components/Example';
 
@@ -16,7 +16,7 @@ function App() {
     <Router>
       <div className="App">
         <Routes>
-          <Route path="/" element={<> <Header /> <Navbar /> <TimeTable />  <Footer /> </>} />
+          <Route path="/" element={<> <Header /> <Navbar /> <Schedule />  <Footer /> </>} />
           {/* <Route path="/aikataulu" element={<> <Header /> <Navbar /> <TimeTable /> </>} />
           <Route path="/yhteystiedot" element={<> <Header /> <Navbar /> <MainContent /> <Footer /> </>} />
           <Route path="/saapuminen" element={<> <Header /> <Navbar /> <MainContent /> </>} />

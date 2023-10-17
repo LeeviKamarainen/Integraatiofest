@@ -15,7 +15,7 @@ import '../assets/styles/Schedule.css'
 function Schedule() {
 
   return (
-    <Box sx={{ flexGrow: 1 }}>
+    <Box sx={{ flexGrow: 1 }} className="content-wrapper" >
       <Grid container className="timetable" >
           <Grid xs={6} md={4} className="timetable-image">
               <img src={lut} alt="Norppa" className="timetable-image-1" />
