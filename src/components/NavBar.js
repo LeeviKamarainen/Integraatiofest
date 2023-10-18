@@ -25,7 +25,7 @@ function Navbar() {
 
     const menuItems = [
         {label: "Aikataulu", href: '/'},
-        // {label: "Aikataulu", href: '/aikataulu'},
+        {label: "Testi", href: '/aikataulu'},
         // {label: "Yhteystiedot", href: '/yhteystiedot'},
         // {label: "Yhteistyökumppanit", href: '/yhteistyokumppanit'},
         // {label: "Mistä saan lisää kaljaa?", href: '/kaljakaupat'},
