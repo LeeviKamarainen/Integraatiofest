@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import Slider from "react-slick";
 import {Link} from 'react-router-dom';
 import Box from '@mui/material/Box';
@@ -7,7 +7,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import '../assets/styles/SponsorBar.css'
 
-import kotipizza from '../assets/sponsors/Kotipizza_logo_vihreä_RGB.jpg'
+import kotipizza from '../assets/sponsors/Kotipizza_logo_vihrea_RGB.jpg'
 import loimu from '../assets/sponsors/loimu-vaaka-RGB.png'
 import syncronTech from '../assets/sponsors/syncron_tech.png'
 
