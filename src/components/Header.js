@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
@@ -7,7 +7,15 @@ import CountdownTimer from './CountdownTimer';
 import '../assets/styles/Header.css';
 
 function Header() {
-  const targetDate = '2023-11-10T10:00:00'
+  // const targetDate = '2023-11-10T10:00:00'
+  const [targetDate, setTargetDate] = useState('2023-10-21T17:29:30');
+
+  const [timerTitle, setTimerTitle] = useState('Integraatiofestit alkaa');
+
+  const handleTimerEnd = (titleText, timerDate) => {
+    setTimerTitle(titleText);
+    setTargetDate(timerDate);
+  };
 
     return (
         <header className="App-header">
@@ -31,13 +39,13 @@ function Header() {
                 fontSize: '1.7rem',
                 wordBreak: 'break-word',
                 }}>
-                  Integraatiofesteihin aikaa
+                  {timerTitle}
               </Typography>
               <Typography className="header-timer" variant="h6" component="div" sx={{
                     flexGrow: 1,
                     fontSize: '1.1rem',
                   }}>
-                    <CountdownTimer targetDate={targetDate}/>
+                    <CountdownTimer targetDate={targetDate} onTimerEnd={handleTimerEnd} />
               </Typography>
             </Toolbar>
           </AppBar>
