@@ -101,7 +101,7 @@ function Navbar() {
             flexGrow: 1,
             textAlign: 'right',
             }}>
-                <img className="navbar-title" alt="" src={title} />
+                <img className="navbar-title" alt="Integrationfest logo" src={title} />
             </Box>
         </Toolbar>
       </AppBar>
