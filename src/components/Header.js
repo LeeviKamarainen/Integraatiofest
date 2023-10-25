@@ -8,9 +8,9 @@ import '../assets/styles/Header.css';
 
 function Header() {
   // const targetDate = '2023-11-10T10:00:00'
-  const [targetDate, setTargetDate] = useState('2023-10-21T17:29:30');
+  const [targetDate, setTargetDate] = useState('2023-11-10T10:00:00');
 
-  const [timerTitle, setTimerTitle] = useState('Integraatiofestit alkaa');
+  const [timerTitle, setTimerTitle] = useState('Integraatiofesteihin aikaa');
 
   const handleTimerEnd = (titleText, timerDate) => {
     setTimerTitle(titleText);

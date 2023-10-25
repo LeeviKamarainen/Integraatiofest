@@ -17,12 +17,12 @@
 
 .content-wrapper {
   position: relative;
-  margin: 1% 1% 1% 1%;
+  margin: 0%;
   height: 100%;
-  width: 98%;
+  width: 100%;
   backdrop-filter: blur(3px);
   border-radius: 10px;
-  padding-bottom: 20%;
+  padding-bottom: 16%;
 }
 
 /* Norppa logo */
