@@ -34,7 +34,7 @@ function SponsorBar() {
       slidesToScroll: 1,
       autoplay: true,
       autoplaySpeed: 2000,
-      pauseOnHover: true,
+      pauseOnHover: false,
       initialSlide: randomNumber(0, 10),
       variableWidth: true,
     };
@@ -43,7 +43,7 @@ function SponsorBar() {
       <div className="content-wrapper sponsor-bar">
         <h2 className="sponsor-title">Tapahtumaa mahdollistamassa</h2>
         <Slider {...settings} >
-            <Link to="https://www.tek.fi/" >
+            <Link to="https://www.tek.fi/" target="_blank" >
                 <Box
                     component="img"
                     sx={{
@@ -66,7 +66,7 @@ function SponsorBar() {
                     src={tek}
                 />
             </Link>
-            <Link to="https://lappeenrantaevents.fi/">
+            <Link to="https://lappeenrantaevents.fi/" target="_blank">
                 <Box
                     component="img"
                     sx={{
@@ -91,7 +91,7 @@ function SponsorBar() {
                     src={lprVertical}
                 />
             </Link>
-            <Link to="https://kotipizza.fi/">
+            <Link to="https://kotipizza.fi/" target="_blank">
                 <Box
                     component="img"
                     sx={{
@@ -115,7 +115,7 @@ function SponsorBar() {
                     src={kotipizza}
                 />
             </Link>
-            <Link to="https://www.visma.fi/">
+            <Link to="https://www.visma.fi/" target="_blank">
                 <Box
                     component="img"
                     sx={{
@@ -139,7 +139,7 @@ function SponsorBar() {
                     src={visma}
                 />
               </Link>
-              <Link to="https://www.syncrontech.com/">
+              <Link to="https://www.syncrontech.com/" target="_blank">
                 <Box
                     component="img"
                     sx={{
@@ -163,7 +163,7 @@ function SponsorBar() {
                     src={syncronTech}
                 />
               </Link>
-              <Link to="https://www.loimu.fi/">
+              <Link to="https://www.loimu.fi/" target="_blank">
                 <Box
                     component="img"
                     sx={{
@@ -187,7 +187,7 @@ function SponsorBar() {
                     src={loimu}
                 />
               </Link>
-              <Link to="https://www.danfoss.com/fi-fi/">
+              <Link to="https://www.danfoss.com/fi-fi/" target="_blank">
                 <Box
                     component="img"
                     sx={{
@@ -211,7 +211,7 @@ function SponsorBar() {
                     src={danfoss}
                 />
               </Link>
-              <Link to="https://www.raflaamo.fi/fi/ravintola/lappeenranta/las-palmas-lappeenranta">
+              <Link to="https://www.raflaamo.fi/fi/ravintola/lappeenranta/las-palmas-lappeenranta" target="_blank">
                 <Box
                     component="img"
                     sx={{
@@ -235,7 +235,7 @@ function SponsorBar() {
                     src={lasPalmas}
                 />
               </Link>
-              <Link to="https://www.upm.com/fi/">
+              <Link to="https://www.upm.com/fi/" target="_blank">
                 <Box
                     component="img"
                     sx={{
@@ -259,7 +259,7 @@ function SponsorBar() {
                     src={upm}
                 />
               </Link>
-              <Link to="https://www.lut.fi/">
+              <Link to="https://www.lut.fi/" target="_blank">
                 <Box
                     component="img"
                     sx={{

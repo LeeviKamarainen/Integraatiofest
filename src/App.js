@@ -5,7 +5,7 @@ import Header from './components/Header';
 import Navbar from './components/NavBar';
 import Schedule from './components/Schedule';
 import Footer from './components/Footer';
-import Example from './components/SponsorBar';
+import Home from './components/Home';
 
 import './App.css';
 
@@ -15,8 +15,8 @@ function App() {
     <Router>
       <div className="App">
         <Routes>
-          <Route path="/" element={<> <Header /> <Navbar /> <Schedule />  <Footer /> </>} />
-          <Route path="/aikataulu" element={<> <Header /> <Navbar /> <Example /> <Footer /> </>} />
+          <Route path="/" element={<> <Header /> <Navbar /> <Home />  <Footer /> </>} />
+          <Route path="/aikataulu" element={<> <Header /> <Navbar /> <Schedule /> <Footer /> </>} />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </div>

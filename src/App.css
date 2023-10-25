@@ -66,11 +66,9 @@
 }
 
 video {
-  border-radius: 10px;
   overflow: hidden;
   width: 100vw;
-  height: auto;
-  object-fit: fill;
+  object-fit: cover;
 }
 
 .timetable-title {
@@ -86,34 +84,4 @@ video {
   color: black;
 }
 
-/* Countdown timer */
-.countdown-wrapper {
-  position: absolute;
-  top: 2%;
-  margin: 0 5% 1rem;
-  border-radius: 10px;
-  width: 90%;
-  height: 25%;
-  background-color: #E62020;
-  /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-}
-
-.countdown-title {
-  color: white;
-  font-size: 3vw;
-  font-weight: bold;
-  text-shadow: 0 0 10px black;
-  text-align: center;
-}
-
-/* CSS for bottom navigation bar*/
-.bottomnav{
-  opacity: 0.6; /* Set the initial opacity to make it barely visible */
-  transition: opacity 0.3s ease; /* Add a smooth transition effect */
-}
-
-.bottomnav:hover {
-  opacity: 1; /* Set the opacity to 1 when hovering to make it completely visible */
-}
 

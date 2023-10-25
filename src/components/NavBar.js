@@ -24,8 +24,11 @@ function Navbar() {
     }
 
     const menuItems = [
-        {label: "Aikataulu", href: '/'},
-        {label: "Testi", href: '/aikataulu'},
+        {label: "Etusivu", href: '/'},
+        {label: "Aikataulu", href: '/aikataulu'},
+        {label: "Kartta", href: '/kartta'},
+        {label: "Majoitus", href: '/majoitus'},
+        {label: "In English", href: '/in-english'}
         // {label: "Yhteystiedot", href: '/yhteystiedot'},
         // {label: "Yhteistyökumppanit", href: '/yhteistyokumppanit'},
         // {label: "Mistä saan lisää kaljaa?", href: '/kaljakaupat'},
@@ -47,7 +50,7 @@ function Navbar() {
                     textShadow: '0px 4px 3px rgba(0,0,0,0.4), 0px 8px 13px rgba(0,0,0,0.1), 0px 18px 23px rgba(0,0,0,0.1)',
                     fontWeight: 'bold',
                     textTransform: 'uppercase',
-                    letterSpacing: '1.8px',
+                    letterSpacing: '1px',
                     fontSize: {lg: '0.75rem', xl: '0.9rem',},
                     wordBreak: 'break-word',
                     ml: 3,
@@ -85,7 +88,7 @@ function Navbar() {
                         textShadow: '0px 4px 3px rgba(0,0,0,0.4), 0px 8px 13px rgba(0,0,0,0.1), 0px 18px 23px rgba(0,0,0,0.1)',
                         fontWeight: 'bold',
                         textTransform: 'uppercase',
-                        letterSpacing: '1.8px',
+                        letterSpacing: '1px',
                         fontSize: '0.7rem',
                         wordBreak: 'break-word',
                         mb: 0.5,

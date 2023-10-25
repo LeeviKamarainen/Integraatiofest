@@ -6,7 +6,7 @@ import '../../assets/styles/Schedule.css'
 function Friday() {
   return (
     <>
-        <Typography sx={{ variant: { xs: 'h6', md: 'h2'}, fontWeight: "bold"}} component="h2" textAlign="left" className="timetable-title"> Perjantai </Typography>
+        <Typography sx={{ typography: { xs: 'h6', md: 'h2'}, fontWeight: "bold"}} component="h2" textAlign="left" className="timetable-title"> Perjantai </Typography>
         <p className="timetable-text">
           <span className="timetable-item">10:00 - 13:00 Passien ja rannekkeiden jako @ Ylioppilastalon aula <br /></span>
           <span className="timetable-item">13:00 - 15:00 Luentoja <br /></span>
