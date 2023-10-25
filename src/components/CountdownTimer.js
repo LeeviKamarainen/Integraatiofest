@@ -1,6 +1,4 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import Typography from '@mui/material/Typography';
-import Toolbar from '@mui/material/Toolbar';
 
 import '../assets/styles/CountdownTimer.css'
 

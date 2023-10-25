@@ -31,28 +31,12 @@ function SponsorBar() {
       arrows: false,
       infinite: true,
       slidesToShow: 1,
-      slidesToScroll: 2,
+      slidesToScroll: 1,
       autoplay: true,
-      autoplaySpeed: 2500,
+      autoplaySpeed: 2000,
       pauseOnHover: true,
       initialSlide: randomNumber(0, 10),
       variableWidth: true,
-      responsive: [
-        {
-          breakpoint: 1200,
-          settings: {
-            slidesToScroll: 1,
-            autoplaySpeed: 2000,
-          }
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToScroll: 1,
-            autoplaySpeed: 2000,
-          }
-        }
-      ]
     };
 
     return (
