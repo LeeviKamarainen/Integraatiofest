@@ -27,7 +27,7 @@ function Navbar() {
         {label: "Etusivu", href: '/'},
         {label: "Aikataulu", href: '/aikataulu'},
         {label: "Kartta", href: '/kartta'},
-        {label: "Majoitus", href: '/majoitus'},
+        {label: "Majoitusinfo", href: '/majoitus'},
         {label: "In English", href: '/in-english'}
         // {label: "Yhteystiedot", href: '/yhteystiedot'},
         // {label: "Yhteistyökumppanit", href: '/yhteistyokumppanit'},
