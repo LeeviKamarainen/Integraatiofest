@@ -100,14 +100,14 @@ function SponsorBar() {
                         sm: 80,
                         md: 80,
                         lg: 80,
-                        xl: 95,
+                        xl: 100,
                       },
                       width: {
                         xs: 150,
                         sm: 150,
                         md: 150,
                         lg: 150,
-                        xl: 180,
+                        xl: 200,
                       },
                       backgroundColor: 'white',
                     }}

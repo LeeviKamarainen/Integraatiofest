@@ -15,7 +15,16 @@
 }
 
 .indent {
-    margin-left: 5%;
+    margin-left: 7.75rem;
+}
+
+.kotipizza {
+    color: green;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.small-indent {
+    margin-left: 3rem;
 }
 
 .timetable-grid{
@@ -32,12 +41,16 @@
     font-size: 1.3rem;
     color: black;
     line-height: 1.5;
+    margin-block-start: 0rem;
 }
 
 .timetable-item {
     margin-bottom: 0.5rem;
 }
 
+.location {
+    font-weight: 500;
+}
 
 .jatkot {
     font-style: oblique;
