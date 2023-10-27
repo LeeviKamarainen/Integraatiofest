@@ -41,7 +41,7 @@ function SponsorBar() {
 
     return (
       <div className="content-wrapper sponsor-bar">
-        <h2 className="sponsor-title">Tapahtumaa mahdollistamassa</h2>
+        <h2 className="sponsor-title">Festejä mahdollistamassa</h2>
         <Slider {...settings} >
             <Link to="https://www.tek.fi/" target="_blank" >
                 <Box
