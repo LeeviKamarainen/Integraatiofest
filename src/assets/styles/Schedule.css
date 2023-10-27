@@ -1,5 +1,4 @@
 .timetable {
-    background-color: none;
     margin: 1% 2% !important;
 }
 
@@ -7,6 +6,7 @@
     width: 100%;
     height: 100%;
     object-fit: fill;
+    display: block;
 }
 
 .timetable-image-2 {
@@ -61,10 +61,20 @@
     .timetable-text {
         font-size: 1rem;
     }
+
+    .indent {
+        margin-left: 3rem;
+    }
 }
 
 @media screen  and (max-width: 600px) {
     .timetable-text {
         font-size: 0.5rem;
+    }
+}
+
+@media  screen and (max-width: 400px)	 {
+    .timetable-text {
+        font-size: 0.3rem;
     }
 }

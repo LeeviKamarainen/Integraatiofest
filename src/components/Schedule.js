@@ -17,10 +17,10 @@ function Schedule() {
   return (
     <Box sx={{ flexGrow: 1 }} className="content-wrapper" >
       <Grid container className="timetable" >
-          <Grid xs={6} md={5} className="timetable-image">
-              <img src={lut} alt="Norppa" className="timetable-image-1" />
+          <Grid xs={5} md={5} className="timetable-image">
+              <img src={lut} alt="Sign of LUT" className="timetable-image-1" />
           </Grid>
-          <Grid xs={6} md={7} className="timetable-grid" backgroundColor="white">
+          <Grid xs={7} md={7} className="timetable-grid" backgroundColor="white">
               <Friday />
           </Grid>
       </Grid>
@@ -29,12 +29,12 @@ function Schedule() {
             <Saturday />
         </Grid>
         <Grid xs={5} md={4} className="timetable-image">
-          <img src={kreba} alt="Norppa" className="timetable-image-1" />
+          <img src={kreba} alt="Big Kreba" className="timetable-image-1" />
         </Grid>
       </Grid>
       <Grid container className="timetable" rowSpacing={0}>
           <Grid xs={5} md={4} className="timetable-image">
-              <img src={palju} alt="Norppa" className="timetable-image-1" />
+              <img src={palju} alt="Sillis hot tub" className="timetable-image-1" />
           </Grid>
           <Grid xs={7} md={8} className="timetable-grid" backgroundColor="white">
               <Sunday />
