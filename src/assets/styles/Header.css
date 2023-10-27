@@ -1,23 +1,10 @@
-@media screen and (max-width: 999px) {
+@media screen and ((max-width: 600px) or (max-height: 400px)) {
     .timer-bar {
         flex-direction: column !important;
     }
 
-    .header-title {
-        font-size: 0.9rem !important;
-    }
-
-    .header-timer {
-        font-size: 0.8rem !important;
-    }
-}
-
-@media screen and (max-width: 320px) {
-    .header-title {
-        font-size: 0.75rem !important;
-    }
-
-    .header-timer {
-        font-size: 0.7rem !important;
+    .App-header {
+        height: 0px;
+        visibility: hidden;
     }
 }

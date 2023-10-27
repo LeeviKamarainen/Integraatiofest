@@ -1,6 +1,5 @@
 .navbar-title {
-    height: 70px;
-    width: auto;
+    height: 65px;
 }
 
 @media screen and (max-width: 1105px) {
@@ -15,7 +14,7 @@
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 390px) {
     .navbar-title {
         height: 40px;
     }

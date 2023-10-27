@@ -22,14 +22,13 @@
     }
 }
 
-@media screen and (max-width: 380px) {
-    .footer {
-        height: 23%;
-    }
-}
 
-@media screen and (max-height: 500px) {
+@media screen and (max-height: 400px) {
     .footer {
-        visibility: hidden;
+        height: 33%;
+    }
+
+    .content-wrapper {
+        padding-bottom: 25% !important;
     }
 }

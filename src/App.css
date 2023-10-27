@@ -7,7 +7,7 @@
 
 video {
   overflow: hidden;
-  width: 100vw;
+  width: 100%;
   object-fit: cover;
 }
 
@@ -19,4 +19,5 @@ video {
   backdrop-filter: blur(3px);
   border-radius: 10px;
   padding-bottom: 16%;
+
 }

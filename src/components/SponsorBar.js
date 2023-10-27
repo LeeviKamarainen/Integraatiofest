@@ -70,7 +70,7 @@ function SponsorBar() {
                 <Box
                     component="img"
                     sx={{
-                      paddingTop: 2,
+                      marginTop: 2.5,
                       height: {
                         xs: 50,
                         sm: 50,
