@@ -21,3 +21,9 @@
         height: 18%;
     }
 }
+
+@media screen and (max-height: 500px) {
+    .footer {
+        visibility: hidden;
+    }
+}

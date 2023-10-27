@@ -6,9 +6,9 @@ import Friday from './timetable_days/Friday'
 import Saturday from './timetable_days/Saturday'
 import Sunday from './timetable_days/Sunday'
 
-import lut from '../assets/images/lut_sign2.png'
-import palju from '../assets/images/palju.png'
-import kreba from  '../assets/images/kreba.png'
+import lut from '../assets/images/lut_sign.jpg'
+import palju from '../assets/images/palju.jpg'
+import kreba from  '../assets/images/kreba.jpg'
 import '../assets/styles/Schedule.css'
 
 
