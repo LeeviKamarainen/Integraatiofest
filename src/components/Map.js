@@ -5,21 +5,21 @@ import Grid from '@mui/material/Unstable_Grid2';
 import '../assets/styles/Accommodation.css'
 import { Typography } from '@mui/material';
 
+import map from '../assets/images/map.png'
+import '../assets/styles/Map.css'
 
 function Accommodation() {
 
   return (
     <Box sx={{ flexGrow: 1 }} className="content-wrapper" >
       <Grid container className="timetable" >
-          <Grid xs={12} md={12} className="timetable-grid" backgroundColor="white">
-              <Typography sx={{ typography: {xs: 'h5', sm: 'h4', md:'h3', lg: 'h2'}}} className=""> Majoitus </Typography>
-              <p>Tärkeää infoa</p>
+          <Grid xs={12} md={12} className="" direction="column">
+              <Typography sx={{ typography: {xs: 'h5', sm: 'h4', md:'h3', lg: 'h2'}}} className="map-title"> Kartta </Typography>
           </Grid>
       </Grid>
         <Grid container className="timetable" rowSpacing={0}>
           <Grid xs={12} md={12} className="timetable-grid">
-          <Typography sx={{ typography: {xs: 'h5', sm: 'h4', md:'h3', lg: 'h2'}}} className=""> Julkinen liikenne </Typography>
-              <p>Edelleen tärkeää infoa</p>
+            <img src={map} className="map" alt="kartta" />
         </Grid>
       </Grid>
     </Box>

@@ -8,8 +8,7 @@ import { Telegram } from 'react-bootstrap-icons';
 
 import ReactPlayer from 'react-player/lazy';
 
-import promoVideo1 from '../assets/videos/promoVideo1Trim.mp4'
-import kotip from '../assets/sponsors/Kotipizza_logo_vihrea_RGB.jpg'
+import triangleMan from '../assets/videos/triangleMan_orig.mp4'
 
 import '../assets/styles/Home.css';
 
@@ -19,7 +18,7 @@ function Home() {
     return (
       <Box sx={{ flexGrow: 2 }} className="content-wrapper home" >
         <Typography sx={{ typography: {xs: 'h5', sm: 'h3', md: 'h2', lg: 'h1'}}} className="home-text main-title"> Integraatiofest 2023 </Typography>
-        <ReactPlayer url={promoVideo1} playing={true} loop={true} muted={true} width="100%" height="100%" className="home-video" />
+        <ReactPlayer url={triangleMan} playing={true} loop={true} muted={true} width="100%" height="100%" className="home-video" />
         <Typography sx={{ typography: {xs: 'h6', sm: 'h5', md:'h4', lg: 'h3'}}} className="home-text secondary-title"> Like never before </Typography>
               {/* <Button variant="link" href="https://open.spotify.com/track/7kXPGRvZAoo0J0gzc8hEGu?si=43eeb1b3df5c474f">
                 <Spotify style={{color: 'rgb(30, 215, 96)', fontSize:"2.5rem"}}/>
