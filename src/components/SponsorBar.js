@@ -52,7 +52,7 @@ function SponsorBar() {
                         sm: 80,
                         md: 80,
                         lg: 80,
-                        xl: 100,
+                        xl: 120,
                       },
                       width: {
                         xs: 150,
@@ -83,7 +83,7 @@ function SponsorBar() {
                         sm: 150,
                         md: 200,
                         lg: 300,
-                        xl: 400,
+                        xl: 300,
                       },
                       backgroundColor: 'white',
                     }}
