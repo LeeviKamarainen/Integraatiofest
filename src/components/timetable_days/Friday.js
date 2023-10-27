@@ -8,7 +8,7 @@ function Friday() {
     <>
         <Typography sx={{ typography: { xs: 'h6', md: 'h2'}, fontWeight: "bold"}} component="h2" textAlign="left" className="timetable-title"> Perjantai </Typography>
         <p className="timetable-text">
-          <span className="timetable-item">10:00 - 12:00 <span className="location">Ylioppilastalo:</span> Passien jako & lounas <br /></span>
+          <span className="timetable-item">10:00 - 12:00 <span className="location">Kellari:</span> Passien jako & lounas <br /></span>
           <span className="timetable-item">12:00 - 12:45 <span className="location">Viipuri-sali:</span> Alkuseremonia, Tekniikan akateemiset ja Lappeenrannan kaupunki <br /></span>
           <span className="timetable-item">12:45 - 13:15 <span className="location">Viipuri-sali:</span> CSC <br /></span>
           <span className="timetable-item">13:15 - 13:45 <span className="location">Viipuri-sali:</span> Lassi <br /></span>
