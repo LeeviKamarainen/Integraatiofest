@@ -5,14 +5,10 @@
   flex-direction: column;
 }
 
-.page-content {
-  flex: 1;
-  width: auto;
-  min-height: 100vh;
-  position: relative;
-  white-space: nowrap;
-  overflow: visible;
-  margin: 0%;
+video {
+  overflow: hidden;
+  width: 100vw;
+  object-fit: cover;
 }
 
 .content-wrapper {
@@ -24,64 +20,3 @@
   border-radius: 10px;
   padding-bottom: 16%;
 }
-
-/* Norppa logo */
-.App-logo {
-  left:10%;
-  bottom:15%;
-  height: 20vmin;
-  position:absolute;
-  width: auto;
-  pointer-events: all;
-  z-index: -1;
-}
-
-.flex-container {
-  display: flex;
-  flex-direction: row;
-  height: 60%;
-  margin: 5% 2%;
-  width: auto;
-}
-
-.flex-wrapper {
-  flex: 1;
-  margin: 0 1%;
-}
-
-.flex-wrapper.timetable {
-  margin-right: 0;
-}
-
-.flex-wrapper.video {
-  margin-left: 0;
-  margin-right: 2%;
-}
-
-.video-title {
-  text-align: center;
-  font-size: 2.5vw;
-  font-weight: bold;
-  color: black
-}
-
-video {
-  overflow: hidden;
-  width: 100vw;
-  object-fit: cover;
-}
-
-.timetable-title {
-  font-size: 2.5vw;
-  font-weight: bold;
-  color: black;
-  text-align: center;
-}
-
-.timetable-list-title {
-  font-size: 1.5vw;
-  font-weight: bold;
-  color: black;
-}
-
-

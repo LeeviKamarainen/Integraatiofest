@@ -9,3 +9,9 @@
     text-align: center;
     visibility: visible;
 }
+
+@media screen and (min-width: 2000px) {
+    .footer {
+        height: 18%;
+    }
+}
