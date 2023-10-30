@@ -46,10 +46,10 @@ function SponsorBar() {
       slidesToScroll: 1,
       centerMode: false,
       centerPadding: "10px",
-      autoplay: false,
+      autoplay: true,
       autoplaySpeed: 2000,
       pauseOnHover: false,
-      initialSlide: 0,
+      initialSlide: randomNumber(0, 10)
     };
 
     return (
@@ -305,19 +305,19 @@ function SponsorBar() {
           <h2 className="sponsor-title">Festejä mahdollistamassa</h2>
           <Slider {...settings2} >
               <Link to="https://www.tek.fi/" target="_blank" >
-                <img src={tek} alt="TEK logo" width="284px" height="160px" className="sponsor-logo-mobile"/>
+                <img src={tek} alt="TEK logo" width="249px" height="140px" className="sponsor-logo-mobile" style={{ marginTop: "-10px"}}/>
               </Link>
               <Link to="https://lappeenrantaevents.fi/" target="_blank">
                 <img src={lprVertical} alt="Lappeenranta Event logo" width="300px" height="76px" className="sponsor-logo-mobile" style={{ marginTop: "25px"}}/>
               </Link>
               <Link to="https://kotipizza.fi/" target="_blank">
-                <img src={kotipizza} alt="Kotipizza logo" width="172px" height="120px" className="sponsor-logo-mobile"/>
+                <img src={kotipizza} alt="Kotipizza logo" width="157px" height="110px" className="sponsor-logo-mobile"/>
               </Link>
               <Link to="https://www.visma.fi/" target="_blank">
                 <img src={visma} alt="Visma logo" width="335px" height="120px" className="sponsor-logo-mobile"/>
               </Link>
               <Link to="https://www.syncrontech.com/" target="_blank">
-                <img src={syncronTech} alt="Syncron Tech logo" width="163px" height="110px" className="sponsor-logo-mobile" style={{ marginTop: "10px"}}/>
+                <img src={syncronTech} alt="Syncron Tech logo" width="163px" height="110px" className="sponsor-logo-mobile" style={{ marginTop: "5px"}}/>
               </Link>
               <Link to="https://www.loimu.fi/" target="_blank">
                 <img src={loimu} alt="Loimu logo" width="250px" height="92px" className="sponsor-logo-mobile"/>
@@ -326,7 +326,7 @@ function SponsorBar() {
                 <img src={danfoss} alt="Danfoss logo" width="250px" height="103px" className="sponsor-logo-mobile" style={{ marginTop: "10px"}}/>
               </Link>
               <Link to="https://www.raflaamo.fi/fi/ravintola/lappeenranta/las-palmas-lappeenranta" target="_blank">
-                <img src={lasPalmas} alt="Las Palmas logo" width="180px" height="127px" className="sponsor-logo-mobile" style={{ marginTop: "5px"}}/>
+                <img src={lasPalmas} alt="Las Palmas logo" width="180px" height="127px" className="sponsor-logo-mobile" style={{ marginTop: "-5px"}}/>
               </Link>
               <Link to="https://www.upm.com/fi/" target="_blank">
                 <img src={upm} alt="UPM logo" width="150px" height="150px" className="sponsor-logo-mobile" style={{ marginTop: "-15px"}}/>

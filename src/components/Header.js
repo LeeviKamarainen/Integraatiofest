@@ -30,7 +30,6 @@ function Header() {
               flexDirection: 'row',
               justifyContent: 'flex-end',
             }}>
-              <LeftNav />
               <Typography className="header-title" variant="h6" component="div" sx={{ 
                 typography: {xs: 'body1', sm: 'body1', md:'h6', lg: 'h5', xl: 'h4'},
                 flexGrow: 1,

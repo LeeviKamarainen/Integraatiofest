@@ -21,19 +21,27 @@ function Map() {
           </Grid>
           <Grid xs={12} className="map-description-wrapper-mobile color-1">
             <Typography sx={{ typography: {xs: 'h6', sm: 'h4'}}} className="map-description-title-mobile color-1">
-              Tapahtuman kannalta olennaiset osoitteet <br />
+              Kartta ja osoitteet <br />
             </Typography>
             <p className="color-1 description-text-mobile">
-                <b> LUT-yliopisto </b> <br />
+                <b style={{color: 'red'}}> LUT-yliopisto </b> <br />
                 Yliopistonkatu 34, 53850 Lappeenranta <br />
-                <b> Ylioppilastalo </b> <br />
+                <b style={{color: 'red'}}> Ylioppilastalo </b> <br />
                 Laserkatu 10, 53850 Lappeenranta <br />
-                <b> Rakuunanmäki </b> <br />
+                <b style={{color: 'red'}}> Rakuunamäki </b> <br />
                 Mannerheiminkatu 10, 53900 Lappeenranta <br />
-                <b> Majoitus (Lappeenrannan Lyseon lukio) </b> <br />
+                <b style={{color: 'red'}}> Majoitus (Lappeenrannan Lyseon lukio) </b> <br />
                 Lönnrotinkatu 3, 53600 Lappeenranta <br />
-                <b> Las Palmas </b> <br />
+                <b style={{color: 'red'}}> Las Palmas </b> <br />
                 Valtakatu 33, 53100 Lappeenranta <br />
+            </p>
+            <p className="color-1 description-text-mobile">
+              <b style={{color: '#1C39BB'}}>LUT-yliopiston pysäkki</b> <br />
+              Sijaitsee LUTin pääovien edessä <br />
+              <b style={{color: '#1C39BB'}}>Keskustan pysäkki (Majoitus)</b> <br />
+              Sijaitsee Valtakadulla Majoituksen vieressä <br />
+              <b style={{color: '#1C39BB'}}>Keskustan pysäkki (Las Palmas)</b> <br />
+              Sijaitsee Koulukadulla kauppakeskus Armadan vieressä <br />
             </p>
           </Grid>
         </Grid>
@@ -91,19 +99,27 @@ function Map() {
           </Grid>
           <Grid md={6} className="map-description-wrapper color-1">
             <Typography variant="h4" className="map-description-title color-1">
-              Tapahtuman kannalta olennaiset osoitteet <br />
+              Kartta ja osoitteet <br />
             </Typography>
             <p className="color-1 description-text">
-                <b> LUT-yliopisto </b> <br />
+                <b style={{color: 'red'}}> LUT-yliopisto </b> <br />
                 Yliopistonkatu 34, 53850 Lappeenranta <br />
-                <b> Ylioppilastalo </b> <br />
+                <b style={{color: 'red'}}> Ylioppilastalo </b> <br />
                 Laserkatu 10, 53850 Lappeenranta <br />
-                <b> Rakuunanmäki </b> <br />
+                <b style={{color: 'red'}}> Rakuunamäki </b> <br />
                 Mannerheiminkatu 10, 53900 Lappeenranta <br />
-                <b> Majoitus (Lappeenrannan Lyseon lukio) </b> <br />
+                <b style={{color: 'red'}}> Majoitus (Lappeenrannan Lyseon lukio) </b> <br />
                 Lönnrotinkatu 3, 53600 Lappeenranta <br />
-                <b> Las Palmas </b> <br />
+                <b style={{color: 'red'}}> Las Palmas </b> <br />
                 Valtakatu 33, 53100 Lappeenranta <br />
+            </p>
+            <p className="color-1 description-text">
+              <b style={{color: '#1C39BB'}}>LUT-yliopiston pysäkki</b> <br />
+              Sijaitsee LUTin pääovien edessä <br />
+              <b style={{color: '#1C39BB'}}>Keskustan pysäkki (Majoitus)</b> <br />
+              Sijaitsee Valtakadulla Majoituksen vieressä <br />
+              <b style={{color: '#1C39BB'}}>Keskustan pysäkki (Las Palmas)</b> <br />
+              Sijaitsee Koulukadulla kauppakeskus Armadan vieressä <br />
             </p>
           </Grid>
         </Grid>

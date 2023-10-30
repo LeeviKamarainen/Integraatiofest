@@ -32,7 +32,7 @@
 
 @media screen and (max-width: 770px) {
     .footer {
-        height: 17%;
+        height: 22%;
     }
 
     .content-wrapper {
@@ -41,13 +41,13 @@
 }
 
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 425px) {
     .footer {
         height: 22%;
     }
 
     .content-wrapper {
-        padding-bottom: 50% !important;
+        padding-bottom: 55% !important;
     }
 }
 
