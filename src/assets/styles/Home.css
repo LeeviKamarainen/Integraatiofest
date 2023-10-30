@@ -35,7 +35,7 @@
     left: 0;
     object-fit: cover;
     z-index: -2;
-    filter: opacity(0.9) blur(2px) brightness(0.8) saturate(1.2);
+    filter: opacity(0.9) blur(1px) brightness(0.8);
 }
 
 @media screen and (max-width: 500px) {

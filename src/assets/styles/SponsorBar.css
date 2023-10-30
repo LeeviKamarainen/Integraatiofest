@@ -11,6 +11,10 @@
     object-fit: cover;
 }
 
+.sponsor-logo-mobile {
+    margin: auto;
+}
+
 .sponsor-title {
     font-size: 1.2rem;
     font-weight: bold;
@@ -29,5 +33,16 @@
 @media screen and (max-width: 1200px)  {
     .slick-slide {
         margin: 0 1rem 0 1rem;
+    }
+}
+
+@media screen and (max-width: 600px)  {
+    .slick-slide {
+        margin: 0;
+        padding: 0;
+    }
+
+    .sponsor-title {
+        margin-block-end: 0.2em;
     }
 }
