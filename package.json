@@ -26,7 +26,6 @@
     "react-scripts": "^5.0.1",
     "react-slick": "^0.29.0",
     "react-telegram-embed": "^0.1.1",
-    "responsive-react": "^5.0.0",
     "slick-carousel": "^1.8.1",
     "web-vitals": "^2.1.4"
   },
@@ -36,6 +35,9 @@
     "build-win": "set CI=false&&react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
+  },
+  "overrides": {
+    "responsive-react": "^5.0.0"
   },
   "eslintConfig": {
     "extends": [
