@@ -20,9 +20,19 @@
     }
 }
 
+@media screen and (max-width: 1200px) {
+    .footer {
+        height: 20%;
+    }
+
+    .content-wrapper {
+        padding-bottom: 30% !important;
+    }
+}
+
 @media screen and (max-width: 1000px) {
     .footer {
-        height: 14%;
+        height: 15%;
     }
 
     .content-wrapper {
@@ -32,7 +42,7 @@
 
 @media screen and (max-width: 770px) {
     .footer {
-        height: 22%;
+        height: 17%;
     }
 
     .content-wrapper {
