@@ -18,6 +18,5 @@ video {
   width: 100%;
   backdrop-filter: blur(3px);
   border-radius: 10px;
-  padding-bottom: 16%;
-
+  padding-bottom: 10%;
 }

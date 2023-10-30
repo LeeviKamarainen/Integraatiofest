@@ -18,28 +18,29 @@
     margin-left: 7.75rem;
 }
 
+.small-indent {
+    margin-left: 3rem;
+}
+
 .kotipizza {
     color: green;
     font-weight: bold;
     text-transform: uppercase;
 }
-.small-indent {
-    margin-left: 3rem;
-}
 
 .timetable-grid{
-    background: white;
+    background: black !important;
     padding: 2% 0% 0% 2% !important;
 }
 
 .timetable-title {
     font-weight: bold !important;
-    color: black;
+    color: white;
 }
 
 .timetable-text {
     font-size: 1.3rem;
-    color: black;
+    color: white;
     line-height: 1.5;
     margin-block-start: 0rem;
 }
@@ -75,7 +76,7 @@
 
 @media  screen and (max-width: 400px)	 {
     .timetable-text {
-        font-size: 0.4rem;
+        font-size: 0.5rem;
     }
 
     .indent {
