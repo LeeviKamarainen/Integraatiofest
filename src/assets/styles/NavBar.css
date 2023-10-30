@@ -1,0 +1,28 @@
+.navbar-title {
+    height: 65px;
+}
+
+@media screen and (max-width: 1105px) {
+    .navbar-link {
+        font-size: 1.14vw !important;
+    }
+    
+}
+@media screen and (max-width: 768px) {
+    .navbar-title {
+        height: 50px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .navbar-title {
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .navbar-title {
+        height: 32px;
+    }
+}
+

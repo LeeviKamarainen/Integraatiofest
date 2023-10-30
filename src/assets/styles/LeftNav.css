@@ -1,9 +1,15 @@
-@media screen and (max-width: 550px) {
-    .navbar {
-        height: 0 !important;
-        width: 50vh !important;
-        flex-direction: row !important;
-        top: 0% !important;
-        left: 20vw !important;
+.navbar {
+    height: 55px;
+    width: fit-content;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .home-button {
+        font-size: 3rem !important;
     }
 }

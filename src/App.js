@@ -1,53 +1,32 @@
-import logo from './assets/images/norppa.png';
+import React from 'react';
+import {BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
+
+import Header from './components/Header';
+import Navbar from './components/NavBar';
+import Schedule from './components/Schedule';
+import Footer from './components/Footer';
+import Home from './components/Home';
+import Accommodation from './components/Accommodation';
+import Map from './components/Map';
+import English from './components/English';
+
 import './App.css';
-import React, { useState, useEffect } from 'react';
-import CountdownTimer from './components/CountdownTimer';
-import Slider from './components/Slider';
-import LeftNav from './components/LeftNav'
-import 'bootstrap/dist/css/bootstrap.min.css';
-
-
-
-
-
 
 function App() {
-  const [animationSpeed, setAnimationSpeedValue] = useState(1);
-  const [clickCount, setClickCount] = useState(0);
-  const [animationStarted, setAnimationStarted] = useState(false);
-  const handleSliderChange = (newValue) => {
-    setAnimationSpeedValue(newValue); // Update the modified value
-  };
-  const targetDate = '2023-11-10T00:00:00'
-
-  const handleClick = () => {
-    // Increment the click count when the image is clicked.
-    setClickCount(clickCount + 1);
-    // Check if the image has been clicked five times.
-    if (clickCount >= 5) {
-      // Start the animation.
-      console.log(animationSpeed)
-      setAnimationSpeedValue(animationSpeed+0.2);
-      setAnimationStarted(true);
-    }
-  };
-
 
   return (
-    <div className="App" >
-      <header className="App-header">
-        <div className="App-background">
-          { <img src={logo} className="App-logo" alt="logo" onClick={handleClick} data-animate={animationStarted} style={{animationDuration: `${20 / animationSpeed}s`}}/> }
-          <div className="counter-wrapper">
-            <span className="counter-title">Integraatiofesteihin aikaa:</span>
-            <CountdownTimer className="App-counter" targetDate={targetDate} animationSpeed={animationSpeed}  />
-          </div>
-        <LeftNav></LeftNav>
-        </div>
-
-      </header>
-
-    </div>
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<> <Header /> <Navbar /> <Home />  <Footer /> </>} />
+          <Route path="/aikataulu" element={<> <Header /> <Navbar /> <Schedule /> <Footer /> </>} />
+          <Route path="/kartta" element={<> <Header /> <Navbar /> <Map /> <Footer /> </>} />
+          {/* <Route path="/majoitus" element={<> <Header /> <Navbar /> <Accommodation /> <Footer /> </>} />
+          <Route path="/in-english" element={<> <Header /> <Navbar /> <English /> <Footer /> </>} /> */}
+          <Route path="*" element={<Navigate to="/" />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

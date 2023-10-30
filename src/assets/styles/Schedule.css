@@ -1,0 +1,86 @@
+.timetable {
+    margin: 1% 2% !important;
+}
+
+.timetable-image-1 {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    display: block;
+}
+
+.timetable-image-2 {
+    width: 100%;
+    object-fit: fill;
+}
+
+.indent {
+    margin-left: 7.75rem;
+}
+
+.small-indent {
+    margin-left: 3rem;
+}
+
+.kotipizza {
+    color: green;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.timetable-grid{
+    background: black !important;
+    padding: 2% 0% 0% 2% !important;
+}
+
+.timetable-title {
+    font-weight: bold !important;
+    color: white;
+}
+
+.timetable-text {
+    font-size: 1.3rem;
+    color: white;
+    line-height: 1.5;
+    margin-block-start: 0rem;
+}
+
+.timetable-item {
+    margin-bottom: 0.5rem;
+}
+
+.location {
+    font-weight: bold;
+    color: #ff239f;
+}
+
+.jatkot {
+    font-style: oblique;
+    border-bottom: 1px dotted black;
+}
+
+@media screen and (max-width: 1200px) {
+    .timetable-text {
+        font-size: 1rem;
+    }
+
+    .indent {
+        margin-left: 6rem;
+    }
+}
+
+@media screen  and (max-width: 600px) {
+    .timetable-text {
+        font-size: 0.5rem;
+    }
+}
+
+@media  screen and (max-width: 450px)	 {
+    .timetable-text {
+        font-size: 0.5rem;
+    }
+
+    .indent {
+        margin-left: 3rem;
+    }
+}

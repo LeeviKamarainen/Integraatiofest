@@ -1,116 +1,22 @@
-:root {
-  --modifiedValue: 20;
+.App {
+  min-height: 100vh;
+  -webkit-overflow-scrolling: touch;
+  display: flex;
+  flex-direction: column;
 }
 
-.App-background {
-  background-image: url("/src/assets/images/bground.png");
-  background-color: lightblue;
-  background-size: 100% 100%, cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 100vh;
-  width: auto;
-  align-items: center;
-  justify-content: center;
+video {
   overflow: hidden;
+  width: 100%;
+  object-fit: cover;
 }
 
-
-.App-logo {
-  left:10%;
-  bottom:15%;
-  height: 15vmin;
-  position:absolute;
-  width: auto;
-  pointer-events:all
+.content-wrapper {
+  position: relative;
+  margin: 0%;
+  height: 100%;
+  width: 100%;
+  backdrop-filter: blur(3px);
+  border-radius: 10px;
+  padding-bottom: 10%;
 }
-
-.counter-wrapper {
-  position: absolute;
-  top: 60%;
-  right: 8%;
-  color: white;
-  font-weight: bold;
-  text-shadow: 0 0 10px black;
-  font-size: 2.5vw;
-}
-
-.App-counter {
-  width: fit-content;
-  height: fit-content;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-@media screen and (max-width: 1200px) {
-  .App-logo {
-    visibility: hidden;
-  }
-  
-}
-
-@media screen and (max-width: 550px) {
-  .App-background {
-    background-image: url("/src/assets/images/bgroundMobile.png");
-    background-color: lightblue;
-    background-size: 100% 100%, cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 100vh;
-    width: auto;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .counter-wrapper {
-    position: absolute;
-    top: 50%;
-    right: 4rem;
-    color: white;
-    font-weight: bold;
-    text-shadow: 0 0 10px black;
-    font-size: 3vw;
-    margin: 1%
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo[data-animate="true"] {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-@keyframes App-logo-spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-.countdown-timer {
-  display: flex;
-  align-items: center;
-  background-color: inherit;
-}
-
-.timer-block {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0 10px;
-}
-
-/* CSS for bottom navigation bar*/
-.bottomnav{
-  opacity: 0.5; /* Set the initial opacity to make it barely visible */
-  transition: opacity 0.3s ease; /* Add a smooth transition effect */
-}
-
-.bottomnav:hover {
-  opacity: 1; /* Set the opacity to 1 when hovering to make it completely visible */
-}
-
