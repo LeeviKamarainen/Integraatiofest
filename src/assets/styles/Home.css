@@ -22,6 +22,11 @@
     padding-bottom: 8rem;
 }
 
+.main-title {
+    color: red;
+    font-weight: bold !important;
+}
+
 .home-video {
     width: 100%;
     height: 85% !important;
@@ -34,6 +39,6 @@
 
 @media screen and (max-width: 500px) {
     .secondary-title {
-        padding-bottom: 80%;
+        padding-bottom: 30%;
     }
 }
