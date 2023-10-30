@@ -9,12 +9,12 @@ import '../assets/styles/SponsorBar.css'
 
 import tek from '../assets/sponsors/TEK_logo_RGB_slogan.png'
 import lprVertical from '../assets/sponsors/LPR_events_pysty1.png'
-import kotipizza from '../assets/sponsors/Kotipizza_logo_vihrea_RGB.jpg'
-import visma from '../assets/sponsors/visma_logo.jpg'
+import kotipizza from '../assets/sponsors/Kotipizza_logo_vihrea_RGB.png'
+import visma from '../assets/sponsors/visma_logo_original.jpg'
 import syncronTech from '../assets/sponsors/syncron_tech.png'
 import loimu from '../assets/sponsors/loimu_vaaka_RGB.png'
 import danfoss from '../assets/sponsors/Danfoss_logo_color.png'
-import lasPalmas from '../assets/sponsors/LasPalmas_logo_color.jpg'
+import lasPalmas from '../assets/sponsors/LasPalmas_logo_color.png'
 import upm from '../assets/sponsors/UPM_Company-Logo_RGB.png'
 import lut from '../assets/sponsors/LUT_logo_black_text.png'
 
@@ -32,10 +32,10 @@ function SponsorBar() {
       infinite: true,
       slidesToShow: 1,
       slidesToScroll: 1,
-      autoplay: true,
+      autoplay: false,
       autoplaySpeed: 2000,
       pauseOnHover: false,
-      initialSlide: randomNumber(0, 10),
+      initialSlide: 4,
       variableWidth: true,
     };
 
@@ -45,43 +45,44 @@ function SponsorBar() {
         <Slider {...settings} >
             <Link to="https://www.tek.fi/" target="_blank" >
                 <Box
-                    component="img"
                     sx={{
                       height: {
-                        xs: 80,
-                        sm: 80,
-                        md: 80,
-                        lg: 80,
-                        xl: 120,
+                        xs: 112,
+                        sm: 112,
+                        md: 124,
+                        lg: 124,
+                        xl: 141,
                       },
                       width: {
-                        xs: 150,
-                        sm: 150,
-                        md: 150,
-                        lg: 150,
-                        xl: 200,
+                        xs: 200,
+                        sm: 200,
+                        md: 220,
+                        lg: 220,
+                        xl: 250,
                       },
-                      }}
-                    alt="TEK"
-                    src={tek}
-                />
+                      }}>
+                  <img src={tek} alt="TEK logo" className="sponsor-logo" width="200px" height="120px"/>
+                </Box>
             </Link>
             <Link to="https://lappeenrantaevents.fi/" target="_blank">
                 <Box
                     component="img"
                     sx={{
-                      marginTop: 2.5,
+                      marginTop: {
+                        xs: 5,
+                        sm: 2
+                      },
                       height: {
-                        xs: 50,
-                        sm: 50,
-                        md: 50,
-                        lg: 50,
-                        xl: 65,
+                        xs: 38,
+                        sm: 76,
+                        md: 76,
+                        lg: 76,
+                        xl: 76,
                       },
                       width: {
                         xs: 150,
-                        sm: 150,
-                        md: 200,
+                        sm: 300,
+                        md: 300,
                         lg: 300,
                         xl: 300,
                       },
@@ -96,18 +97,18 @@ function SponsorBar() {
                     component="img"
                     sx={{
                       height: {
-                        xs: 80,
-                        sm: 80,
-                        md: 80,
-                        lg: 80,
-                        xl: 100,
+                        xs: 105,
+                        sm: 105,
+                        md: 105,
+                        lg: 105,
+                        xl: 105,
                       },
                       width: {
                         xs: 150,
                         sm: 150,
                         md: 150,
                         lg: 150,
-                        xl: 200,
+                        xl: 150,
                       },
                       backgroundColor: 'white',
                     }}
@@ -120,18 +121,18 @@ function SponsorBar() {
                     component="img"
                     sx={{
                       height: {
-                        xs: 80,
-                        sm: 80,
-                        md: 80,
-                        lg: 80,
+                        xs: 100,
+                        sm: 100,
+                        md: 100,
+                        lg: 100,
                         xl: 100,
                       },
                       width: {
-                        xs: 150,
-                        sm: 150,
-                        md: 150,
-                        lg: 150,
-                        xl: 200,
+                        xs: 279,
+                        sm: 279,
+                        md: 279,
+                        lg: 279,
+                        xl: 279,
                       },
                       backgroundColor: 'white',
                     }}
@@ -144,18 +145,18 @@ function SponsorBar() {
                     component="img"
                     sx={{
                       height: {
-                        xs: 80,
-                        sm: 80,
-                        md: 80,
-                        lg: 80,
-                        xl: 100,
+                        xs: 110,
+                        sm: 110,
+                        md: 110,
+                        lg: 110,
+                        xl: 110,
                       },
                       width: {
-                        xs: 150,
-                        sm: 150,
-                        md: 150,
-                        lg: 150,
-                        xl: 200,
+                        xs: 163,
+                        sm: 163,
+                        md: 163,
+                        lg: 163,
+                        xl: 163,
                       },
                       backgroundColor: 'white',
                     }}
@@ -168,18 +169,18 @@ function SponsorBar() {
                     component="img"
                     sx={{
                       height: {
-                        xs: 80,
-                        sm: 80,
-                        md: 80,
-                        lg: 80,
-                        xl: 100,
+                        xs: 92,
+                        sm: 92,
+                        md: 92,
+                        lg: 92,
+                        xl: 92,
                       },
                       width: {
-                        xs: 150,
-                        sm: 150,
-                        md: 150,
-                        lg: 150,
-                        xl: 200,
+                        xs: 250,
+                        sm: 250,
+                        md: 250,
+                        lg: 250,
+                        xl: 250,
                       },
                       backgroundColor: 'white',
                     }}
@@ -192,18 +193,18 @@ function SponsorBar() {
                     component="img"
                     sx={{
                       height: {
-                        xs: 80,
-                        sm: 80,
-                        md: 80,
-                        lg: 80,
-                        xl: 100,
+                        xs: 103,
+                        sm: 103,
+                        md: 103,
+                        lg: 103,
+                        xl: 103,
                       },
                       width: {
-                        xs: 150,
-                        sm: 150,
-                        md: 150,
-                        lg: 150,
-                        xl: 200,
+                        xs: 250,
+                        sm: 250,
+                        md: 250,
+                        lg: 250,
+                        xl: 250,
                       },
                       backgroundColor: 'white',
                     }}
@@ -216,17 +217,17 @@ function SponsorBar() {
                     component="img"
                     sx={{
                       height: {
-                        xs: 80,
-                        sm: 80,
-                        md: 80,
-                        lg: 80,
-                        xl: 110,
+                        xs: 127,
+                        sm: 127,
+                        md: 127,
+                        lg: 127,
+                        xl: 127,
                       },
                       width: {
-                        xs: 120,
-                        sm: 120,
-                        md: 120,
-                        lg: 150,
+                        xs: 180,
+                        sm: 180,
+                        md: 180,
+                        lg: 180,
                         xl: 180,
                       },
                       backgroundColor: 'white',
@@ -240,18 +241,18 @@ function SponsorBar() {
                     component="img"
                     sx={{
                       height: {
-                        xs: 90,
-                        sm: 90,
-                        md: 90,
-                        lg: 90,
-                        xl: 110,
+                        xs: 130,
+                        sm: 130,
+                        md: 130,
+                        lg: 130,
+                        xl: 130,
                       },
                       width: {
-                        xs: 100,
-                        sm: 100,
-                        md: 100,
-                        lg: 120,
-                        xl: 140,
+                        xs: 130,
+                        sm: 130,
+                        md: 130,
+                        lg: 130,
+                        xl: 130,
                       },
                       backgroundColor: 'white',
                     }}
@@ -264,17 +265,17 @@ function SponsorBar() {
                     component="img"
                     sx={{
                       height: {
-                        xs: 80,
-                        sm: 80,
-                        md: 80,
-                        lg: 80,
-                        xl: 100,
+                        xs: 111,
+                        sm: 111,
+                        md: 111,
+                        lg: 111,
+                        xl: 111,
                       },
                       width: {
-                        xs: 150,
-                        sm: 150,
-                        md: 150,
-                        lg: 150,
+                        xs: 250,
+                        sm: 250,
+                        md: 250,
+                        lg: 250,
                         xl: 250,
                       },
                       backgroundColor: 'white',

@@ -1,15 +1,11 @@
 import React from 'react'
-import { Typography, Button, Box } from '@mui/material';
+import { Typography, Box } from '@mui/material';
 
 import LeftNav from './LeftNav';
 
-import ReactPlayer from 'react-player/lazy';
-
-import triangleMan from '../assets/videos/triangleMan_orig.mp4'
 import homeTest from '../assets/videos/homeTest.mp4'
 
 import '../assets/styles/Home.css';
-import { red } from '@mui/material/colors';
 
 
 function Home() {

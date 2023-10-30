@@ -10,12 +10,6 @@
     visibility: visible;
 }
 
-@media screen and (min-width: 2000px) {
-    .footer {
-        height: 15%;
-    }
-}
-
 @media screen and (max-width: 1400px) {
     .footer {
         height: 18%;
@@ -49,7 +43,7 @@
 
 @media screen and (max-width: 400px) {
     .footer {
-        height: 20%;
+        height: 25%;
     }
 
     .content-wrapper {
