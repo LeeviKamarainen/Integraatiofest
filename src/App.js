@@ -20,9 +20,9 @@ function App() {
         <Routes>
           <Route path="/" element={<> <Header /> <Navbar /> <Home />  <Footer /> </>} />
           <Route path="/aikataulu" element={<> <Header /> <Navbar /> <Schedule /> <Footer /> </>} />
-          <Route path="/majoitus" element={<> <Header /> <Navbar /> <Accommodation /> <Footer /> </>} />
           <Route path="/kartta" element={<> <Header /> <Navbar /> <Map /> <Footer /> </>} />
-          <Route path="/in-english" element={<> <Header /> <Navbar /> <English /> <Footer /> </>} />
+          {/* <Route path="/majoitus" element={<> <Header /> <Navbar /> <Accommodation /> <Footer /> </>} />
+          <Route path="/in-english" element={<> <Header /> <Navbar /> <English /> <Footer /> </>} /> */}
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </div>

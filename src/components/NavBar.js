@@ -26,9 +26,9 @@ function Navbar() {
     const menuItems = [
         {label: "Etusivu", href: '/'},
         {label: "Aikataulu", href: '/aikataulu'},
-        {label: "Kartta", href: '/kartta'},
-        {label: "Majoitusinfo", href: '/majoitus'},
-        {label: "In English", href: '/in-english'}
+        {label: "Kartta ja bussit", href: '/kartta'},
+        // {label: "Majoitusinfo", href: '/majoitus'},
+        // {label: "In English", href: '/in-english'}
         // {label: "Yhteystiedot", href: '/yhteystiedot'},
         // {label: "Yhteistyökumppanit", href: '/yhteistyokumppanit'},
         // {label: "Mistä saan lisää kaljaa?", href: '/kaljakaupat'},

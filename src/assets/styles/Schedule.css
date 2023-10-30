@@ -51,6 +51,7 @@
 
 .location {
     font-weight: bold;
+    color: #ff239f;
 }
 
 .jatkot {
@@ -64,7 +65,7 @@
     }
 
     .indent {
-        margin-left: 3rem;
+        margin-left: 6rem;
     }
 }
 
@@ -74,12 +75,12 @@
     }
 }
 
-@media  screen and (max-width: 400px)	 {
+@media  screen and (max-width: 450px)	 {
     .timetable-text {
         font-size: 0.5rem;
     }
 
     .indent {
-        margin-left: 2.4rem;
+        margin-left: 3rem;
     }
 }
