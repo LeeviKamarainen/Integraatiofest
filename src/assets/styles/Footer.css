@@ -9,7 +9,7 @@
     text-align: center;
     visibility: visible;
 }
-
+/* 
 @media screen and (max-width: 1400px) {
     .content-wrapper {
         padding-bottom: 30% !important;
@@ -67,4 +67,4 @@
     .content-wrapper {
         padding-bottom: 2% !important;
     }
-}
+} */
