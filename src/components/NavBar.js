@@ -91,8 +91,9 @@ function Navbar() {
                         letterSpacing: '1px',
                         fontSize: '0.7rem',
                         wordBreak: 'break-word',
-                        mb: 0.5,
-                        mt: 0.5,
+                        mt: 0.8,
+                        mb: 0.8,
+                        ml: 1.5,
                     }}>
                         {item.label}
                     </Button>

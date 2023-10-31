@@ -37,7 +37,7 @@ function Header() {
                 textShadow: '0px 4px 3px rgba(0,0,0,0.4), 0px 8px 13px rgba(0,0,0,0.1), 0px 18px 23px rgba(0,0,0,0.1)',
                 fontWeight: 'bold',
                 textTransform: 'uppercase',
-                letterSpacing: '2px',
+                letterSpacing: '1px',
                 wordBreak: 'break-word',
                 }}>
                   {timerTitle}
@@ -45,6 +45,11 @@ function Header() {
               <Typography className="header-timer" variant="h5" component="div" sx={{
                     fontSize: {xs: '0.7rem', sm: '0.7rem', md:'1rem', lg: '1rem', xl: '1.2rem'},
                     flexGrow: 1,
+                    textShadow: '0px 4px 3px rgba(0,0,0,0.4), 0px 8px 13px rgba(0,0,0,0.1), 0px 18px 23px rgba(0,0,0,0.1)',
+                    fontWeight: 'bold',
+                    textTransform: 'uppercase',
+                    letterSpacing: '1px',
+                    paddingBottom: '0.5rem',
                   }}>
                     <CountdownTimer targetDate={targetDate} onTimerEnd={handleTimerEnd} />
               </Typography>
