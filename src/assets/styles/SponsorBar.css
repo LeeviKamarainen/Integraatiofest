@@ -30,11 +30,11 @@
 
 @media screen and (max-width: 600px)  {
     .slick-slide {
-        margin: 1rem 0 0.5rem 0;
+        margin: 0.5rem 0 0.5rem 0;
         padding: 0;
     }
 
     .sponsor-title {
-        margin-block-end: 0.2em;
+        font-size: 1rem !important;
     }
 }

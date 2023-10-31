@@ -20,3 +20,10 @@ video {
   border-radius: 10px;
   padding-bottom: 15rem;
 }
+
+@media screen and (max-width: 320px) {
+  .App {
+    overflow-x: hidden;
+  }
+
+}
