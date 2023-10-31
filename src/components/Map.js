@@ -6,7 +6,7 @@ import { IdResponsiveRenderOnlyIn, Responsive } from 'responsive-react';
 import {Link} from 'react-router-dom';
 import { Typography } from '@mui/material';
 
-import map from '../assets/images/map.png'
+import map from '../assets/images/map.jpg'
 import '../assets/styles/Map.css'
 
 function Map() {
@@ -17,7 +17,7 @@ function Map() {
       <Box sx={{ flexGrow: 1 }} className="content-wrapper" >
         <Grid container className="map-wrapper" direction="column">
           <Grid xs={12} className="map-image-wrapper-mobile color-1" >
-            <img src={map} className="map-mobile" alt="kartta" />
+            <img src={map} fetchPriority="high" className="map-mobile" alt="kartta" />
           </Grid>
           <Grid xs={12} className="map-description-wrapper-mobile color-1">
             <Typography sx={{ typography: {xs: 'h6', sm: 'h4'}}} className="map-description-title-mobile color-1">
@@ -95,7 +95,7 @@ function Map() {
       <Box sx={{ flexGrow: 1 }} className="content-wrapper" >
         <Grid container className="map-wrapper" >
           <Grid md={6} className="map-image-wrapper" >
-            <img src={map} className="map" alt="kartta" />
+            <img src={map} fetchPriority="high" className="map" alt="kartta" />
           </Grid>
           <Grid md={6} className="map-description-wrapper color-1">
             <Typography variant="h4" className="map-description-title color-1">

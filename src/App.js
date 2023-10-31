@@ -6,9 +6,8 @@ import Navbar from './components/NavBar';
 import Schedule from './components/Schedule';
 import Footer from './components/Footer';
 import Home from './components/Home';
-import Accommodation from './components/Accommodation';
 import Map from './components/Map';
-import English from './components/English';
+
 
 import './App.css';
 
