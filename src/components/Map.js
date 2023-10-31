@@ -24,9 +24,9 @@ function Map() {
               Kartta ja osoitteet <br />
             </Typography>
             <p className="color-1 description-text-mobile">
-                <b style={{color: 'red'}}> LUT-yliopisto </b> <br />
+                <b style={{color: 'red'}}> LUT-yliopisto (Viipuri-sali) </b> <br />
                 Yliopistonkatu 34, 53850 Lappeenranta <br />
-                <b style={{color: 'red'}}> Ylioppilastalo </b> <br />
+                <b style={{color: 'red'}}> Ylioppilastalo (kellari) </b> <br />
                 Laserkatu 10, 53850 Lappeenranta <br />
                 <b style={{color: 'red'}}> Rakuunamäki </b> <br />
                 Mannerheiminkatu 10, 53900 Lappeenranta <br />
@@ -39,7 +39,7 @@ function Map() {
               <b style={{color: '#1C39BB'}}>LUT-yliopiston pysäkki</b> <br />
               Sijaitsee LUTin pääovien edessä <br />
               <b style={{color: '#1C39BB'}}>Keskustan pysäkki (Majoitus)</b> <br />
-              Sijaitsee Valtakadulla Majoituksen vieressä <br />
+              Sijaitsee Valtakadulla majoituksen vieressä <br />
               <b style={{color: '#1C39BB'}}>Keskustan pysäkki (Las Palmas)</b> <br />
               Sijaitsee Koulukadulla kauppakeskus Armadan vieressä <br />
             </p>
@@ -102,9 +102,9 @@ function Map() {
               Kartta ja osoitteet <br />
             </Typography>
             <p className="color-1 description-text">
-                <b style={{color: 'red'}}> LUT-yliopisto </b> <br />
+                <b style={{color: 'red'}}> LUT-yliopisto (Viipuri-sali)</b> <br />
                 Yliopistonkatu 34, 53850 Lappeenranta <br />
-                <b style={{color: 'red'}}> Ylioppilastalo </b> <br />
+                <b style={{color: 'red'}}> Ylioppilastalo (kellari) </b> <br />
                 Laserkatu 10, 53850 Lappeenranta <br />
                 <b style={{color: 'red'}}> Rakuunamäki </b> <br />
                 Mannerheiminkatu 10, 53900 Lappeenranta <br />
@@ -117,7 +117,7 @@ function Map() {
               <b style={{color: '#1C39BB'}}>LUT-yliopiston pysäkki</b> <br />
               Sijaitsee LUTin pääovien edessä <br />
               <b style={{color: '#1C39BB'}}>Keskustan pysäkki (Majoitus)</b> <br />
-              Sijaitsee Valtakadulla Majoituksen vieressä <br />
+              Sijaitsee Valtakadulla majoituksen vieressä <br />
               <b style={{color: '#1C39BB'}}>Keskustan pysäkki (Las Palmas)</b> <br />
               Sijaitsee Koulukadulla kauppakeskus Armadan vieressä <br />
             </p>

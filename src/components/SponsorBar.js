@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import {Link} from 'react-router-dom';
 import Box from '@mui/material/Box';
 import { IdResponsiveRenderOnlyIn, Responsive } from 'responsive-react';
+import {Typography} from '@mui/material/';
 
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
@@ -18,6 +19,9 @@ import danfoss from '../assets/sponsors/Danfoss_logo_color.png'
 import lasPalmas from '../assets/sponsors/LasPalmas_logo_color.png'
 import upm from '../assets/sponsors/UPM_Company-Logo_RGB.png'
 import lut from '../assets/sponsors/LUT_logo_black_text.png'
+import emblica from '../assets/sponsors/emblica-logo-blue.png'
+import cafeGbar from '../assets/sponsors/g_no_bg.png'
+import viba from '../assets/sponsors/viba_logo_black.png'
 
 function SponsorBar() {
 
@@ -31,7 +35,7 @@ function SponsorBar() {
       className: "slider variable-width",
       arrows: false,
       infinite: true,
-      autoplay: true,
+      autoplay: false,
       autoplaySpeed: 2000,
       pauseOnHover: false,
       initialSlide: randomNumber(0, 10),
@@ -46,7 +50,7 @@ function SponsorBar() {
       slidesToScroll: 1,
       centerMode: false,
       centerPadding: "10px",
-      autoplay: true,
+      autoplay: false,
       autoplaySpeed: 2000,
       pauseOnHover: false,
       initialSlide: randomNumber(0, 10)
@@ -55,9 +59,9 @@ function SponsorBar() {
     return (
       <div className="content-wrapper sponsor-bar">
         <Responsive displayIn={[IdResponsiveRenderOnlyIn.Tablet, IdResponsiveRenderOnlyIn.Laptop]}>
-          <h2 className="sponsor-title">Festejä mahdollistamassa</h2>
+          <Typography variant='h6' className="sponsor-title">Festejä mahdollistamassa</Typography>
           <Slider {...settings} >
-              <Link to="https://www.tek.fi/" target="_blank" >
+              <Link to="https://www.tek.fi/" target="_blank" classname="sponsor-link" >
                   <Box
                       sx={{
                         height: {
@@ -65,20 +69,20 @@ function SponsorBar() {
                           sm: 112,
                           md: 124,
                           lg: 124,
-                          xl: 141,
+                          xl: 124,
                         },
                         width: {
                           xs: 200,
                           sm: 200,
                           md: 220,
                           lg: 220,
-                          xl: 250,
+                          xl: 220,
                         },
                         }}>
                     <img src={tek} alt="TEK logo" className="sponsor-logo" width="200px" height="120px"/>
                   </Box>
               </Link>
-              <Link to="https://lappeenrantaevents.fi/" target="_blank">
+              <Link to="https://lappeenrantaevents.fi/" target="_blank" classname="sponsor-link">
                   <Box
                       component="img"
                       sx={{
@@ -106,7 +110,7 @@ function SponsorBar() {
                       src={lprVertical}
                   />
               </Link>
-              <Link to="https://kotipizza.fi/" target="_blank">
+              <Link to="https://kotipizza.fi/" target="_blank" classname="sponsor-link">
                   <Box
                       component="img"
                       sx={{
@@ -130,7 +134,7 @@ function SponsorBar() {
                       src={kotipizza}
                   />
               </Link>
-              <Link to="https://www.visma.fi/" target="_blank">
+              <Link to="https://www.visma.fi/" target="_blank" classname="sponsor-link">
                   <Box
                       component="img"
                       sx={{
@@ -154,7 +158,7 @@ function SponsorBar() {
                       src={visma}
                   />
                 </Link>
-                <Link to="https://www.syncrontech.com/" target="_blank">
+                <Link to="https://www.syncrontech.com/" target="_blank" classname="sponsor-link">
                   <Box
                       component="img"
                       sx={{
@@ -178,7 +182,7 @@ function SponsorBar() {
                       src={syncronTech}
                   />
                 </Link>
-                <Link to="https://www.loimu.fi/" target="_blank">
+                <Link to="https://www.loimu.fi/" target="_blank" classname="sponsor-link">
                   <Box
                       component="img"
                       sx={{
@@ -202,7 +206,7 @@ function SponsorBar() {
                       src={loimu}
                   />
                 </Link>
-                <Link to="https://www.danfoss.com/fi-fi/" target="_blank">
+                <Link to="https://www.danfoss.com/fi-fi/" target="_blank" classname="sponsor-link">
                   <Box
                       component="img"
                       sx={{
@@ -226,7 +230,7 @@ function SponsorBar() {
                       src={danfoss}
                   />
                 </Link>
-                <Link to="https://www.raflaamo.fi/fi/ravintola/lappeenranta/las-palmas-lappeenranta" target="_blank">
+                <Link to="https://www.raflaamo.fi/fi/ravintola/lappeenranta/las-palmas-lappeenranta" target="_blank" classname="sponsor-link">
                   <Box
                       component="img"
                       sx={{
@@ -250,7 +254,7 @@ function SponsorBar() {
                       src={lasPalmas}
                   />
                 </Link>
-                <Link to="https://www.upm.com/fi/" target="_blank">
+                <Link to="https://www.upm.com/fi/" target="_blank" classname="sponsor-link">
                   <Box
                       component="img"
                       sx={{
@@ -274,7 +278,7 @@ function SponsorBar() {
                       src={upm}
                   />
                 </Link>
-                <Link to="https://www.lut.fi/" target="_blank">
+                <Link to="https://www.lut.fi/" target="_blank" classname="sponsor-link">
                   <Box
                       component="img"
                       sx={{
@@ -298,11 +302,61 @@ function SponsorBar() {
                       src={lut}
                   />
                 </Link>
+                <Link to="https://emblica.com/" target="_blank" classname="sponsor-link">
+                  <Box
+                      component="img"
+                      sx={{
+                        height: {
+                          xs: 64,
+                          sm: 64,
+                          md: 64,
+                          lg: 64,
+                          xl: 64,
+                        },
+                        width: {
+                          xs: 300,
+                          sm: 300,
+                          md: 300,
+                          lg: 300,
+                          xl: 300,
+                        },
+                        backgroundColor: 'white',
+                        margin: '2rem'
+                      }}
+                      alt="Emblica"
+                      src={emblica}
+                  />
+                </Link>
+                <Link >
+                  <Box
+                      component="img"
+                      sx={{
+                        height: {
+                          xs: 150,
+                          sm: 150,
+                          md: 150,
+                          lg: 150,
+                          xl: 150,
+                        },
+                        width: {
+                          xs: 150,
+                          sm: 150,
+                          md: 150,
+                          lg: 150,
+                          xl: 150,
+                        },
+                        backgroundColor: 'white',
+                        paddingBottom: '1rem'
+                      }}
+                      alt="Viba"
+                      src={viba}
+                  />
+                </Link>
           </Slider>
         </Responsive>
 
         <Responsive displayIn={IdResponsiveRenderOnlyIn.Mobile}>
-          <h2 className="sponsor-title">Festejä mahdollistamassa</h2>
+          <Typography variant='h6' className="sponsor-title">Festejä mahdollistamassa</Typography>
           <Slider {...settings2} >
               <Link to="https://www.tek.fi/" target="_blank" >
                 <img src={tek} alt="TEK logo" width="249px" height="140px" className="sponsor-logo-mobile" style={{ marginTop: "-10px"}}/>
@@ -333,6 +387,15 @@ function SponsorBar() {
               </Link>
               <Link to="https://www.lut.fi/" target="_blank">
                 <img src={lut} alt="LUT-yliopisto logo" width="250px" height="111px" className="sponsor-logo-mobile" style={{ marginTop: "-5px"}}/>
+              </Link>
+              <Link to="https://emblica.com/" target="_blank">
+                <img src={emblica} alt="Emblica logo" width="300px" height="64px" className="sponsor-logo-mobile" style={{ marginTop: "30px"}}/>
+              </Link>
+              <Link to="https://www.facebook.com/CafeGbar/?locale=fi_FI" target="_blank">
+                <img src={cafeGbar} alt="Cafe Bar G logo" width="225" height="92px" className="sponsor-logo-mobile" style={{ marginTop: "20px"}}/>
+              </Link>
+              <Link >
+                <img src={viba} alt="Viba logo" width="150px" height="150px" className="sponsor-logo-mobile" style={{ marginTop: "-20px"}}/>
               </Link>
           </Slider>
         </Responsive>
