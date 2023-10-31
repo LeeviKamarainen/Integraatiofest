@@ -35,7 +35,7 @@ function SponsorBar() {
       className: "slider variable-width",
       arrows: false,
       infinite: true,
-      autoplay: false,
+      autoplay: true,
       autoplaySpeed: 2000,
       pauseOnHover: false,
       initialSlide: randomNumber(0, 10),
@@ -50,8 +50,8 @@ function SponsorBar() {
       slidesToScroll: 1,
       centerMode: false,
       centerPadding: "10px",
-      autoplay: false,
-      autoplaySpeed: 2000,
+      autoplay: true,
+      autoplaySpeed: 1800,
       pauseOnHover: false,
       initialSlide: randomNumber(0, 10)
     };
