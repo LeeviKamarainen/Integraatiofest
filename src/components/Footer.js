@@ -1,11 +1,11 @@
 import React from 'react'
 import '../assets/styles/Footer.css'
-import Example from './SponsorBar'
+import SponsorBar from './SponsorBar'
 
 function Footer() {
   return (
     <div className="footer"> 
-      <Example />
+      <SponsorBar />
     </div>
   )
 }
