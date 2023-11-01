@@ -1,5 +1,5 @@
 .timetable {
-    margin: 1% 2% !important;
+    margin: 1% !important;
 }
 
 .timetable-image-1 {
@@ -43,6 +43,7 @@
     color: white;
     line-height: 1.5;
     margin-block-start: 0rem;
+    margin-right: 0.2rem;
 }
 
 .timetable-item {
@@ -71,16 +72,16 @@
 
 @media screen  and (max-width: 600px) {
     .timetable-text {
-        font-size: 0.5rem;
+        font-size: 0.7rem;
     }
 }
 
 @media  screen and (max-width: 450px)	 {
     .timetable-text {
-        font-size: 0.5rem;
+        font-size: 0.65rem;
     }
 
     .indent {
-        margin-left: 3rem;
+        margin-left: 4.4rem;
     }
 }
