@@ -54,7 +54,7 @@ function SponsorBar() {
       autoplay: true,
       autoplaySpeed: 1800,
       pauseOnHover: false,
-      initialSlide: randomNumber(0, 10)
+      initialSlide: randomNumber(0, 10),
     };
 
     return (
@@ -71,12 +71,12 @@ function SponsorBar() {
                   <Box
                       sx={{
                         height: {
-                          sm: 80,
+                          xs: 80,
                           md: 80,
                           // xl: 100
                         },
                         width: {
-                          sm: 143,
+                          xs: 143,
                           md: 143,
                           // xl: 179
                         },
@@ -89,16 +89,15 @@ function SponsorBar() {
                       component="img"
                       sx={{
                         marginTop: {
-                          xs: 5,
-                          sm: 2
+                          xs: 2,
                         },
                         height: {
-                          sm: 45,
+                          xs: 45,
                           md: 45,
                           // xl: 76
                         },
                         width: {
-                          sm: 178,
+                          xs: 178,
                           md: 178,
                           // xl: 300
                         },
@@ -113,12 +112,12 @@ function SponsorBar() {
                       component="img"
                       sx={{
                         height: {
-                          sm: 60,
+                          xs: 60,
                           md: 60,
                           // xl: 100
                         },
                         width: {
-                          sm: 86,
+                          xs: 86,
                           md: 86,
                           // xl: 143
                         },
@@ -134,12 +133,12 @@ function SponsorBar() {
                       component="img"
                       sx={{
                         height: {
-                          sm: 60,
+                          xs: 60,
                           md: 60,
                           // xl: 100
                         },
                         width: {
-                          sm: 167,
+                          xs: 167,
                           md: 167,
                           // xl: 279
                         },
@@ -154,12 +153,12 @@ function SponsorBar() {
                       component="img"
                       sx={{
                         height: {
-                          sm: 60,
+                          xs: 60,
                           md: 80,
                           // xl: 100
                         },
                         width: {
-                          sm: 89,
+                          xs: 89,
                           md: 119,
                           // xl: 148
                         },
@@ -174,12 +173,12 @@ function SponsorBar() {
                       component="img"
                       sx={{
                         height: {
-                          sm: 60,
+                          xs: 60,
                           md: 60,
                           // xl: 92
                         },
                         width: {
-                          sm: 163,
+                          xs: 163,
                           md: 163,
                           // xl: 250
                         },
@@ -194,12 +193,12 @@ function SponsorBar() {
                       component="img"
                       sx={{
                         height: {
-                          sm: 60,
+                          xs: 60,
                           md: 60,
                           // xl: 100
                         },
                         width: {
-                          sm: 146,
+                          xs: 146,
                           md: 146,
                           // xl: 243
                         },
@@ -215,12 +214,12 @@ function SponsorBar() {
                       component="img"
                       sx={{
                         height: {
-                          sm: 70,
+                          xs: 70,
                           md: 70,
                           // xl: 100
                         },
                         width: {
-                          sm: 100,
+                          xs: 100,
                           md: 100,
                           // xl: 142
                         },
@@ -235,12 +234,12 @@ function SponsorBar() {
                       component="img"
                       sx={{
                         height: {
-                          sm: 100,
+                          xs: 100,
                           md: 100,
                           // xl: 100
                         },
                         width: {
-                          sm: 100,
+                          xs: 100,
                           md: 100,
                           // xl: 100
                         },
@@ -256,12 +255,12 @@ function SponsorBar() {
                       component="img"
                       sx={{
                         height: {
-                          sm: 80,
+                          xs: 80,
                           md: 80,
                           // xl: 89
                         },
                         width: {
-                          sm: 179,
+                          xs: 179,
                           md: 179,
                           // xl: 200
                         },
@@ -276,11 +275,11 @@ function SponsorBar() {
                       component="img"
                       sx={{
                         height: {
-                          sm: 32,
+                          xs: 32,
                           // lg: 43,
                         },
                         width: {
-                          sm: 150,
+                          xs: 150,
                           // lg: 200,
                         },
                         backgroundColor: 'white',
@@ -295,11 +294,11 @@ function SponsorBar() {
                       component="img"
                       sx={{
                         height: {
-                          sm: 73,
+                          xs: 73,
                           // lg: 43,
                         },
                         width: {
-                          sm: 179,
+                          xs: 179,
                           // lg: 200,
                         },
                         backgroundColor: 'white',
@@ -314,12 +313,12 @@ function SponsorBar() {
                       component="img"
                       sx={{
                         height: {
-                          sm: 100,
+                          xs: 100,
                           md: 100,
                           // xl: 100
                         },
                         width: {
-                          sm: 100,
+                          xs: 100,
                           md: 100,
                           // xl: 100
                         },
