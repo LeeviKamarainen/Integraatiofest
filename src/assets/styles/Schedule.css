@@ -39,7 +39,7 @@
 }
 
 .timetable-text {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     color: white;
     line-height: 1.5;
     margin-block-start: 0rem;
@@ -83,5 +83,15 @@
 
     .indent {
         margin-left: 4.4rem;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .timetable-text {
+        font-size: 1.5rem;
+    }
+
+    .indent {
+        margin-left: 9.3rem;
     }
 }

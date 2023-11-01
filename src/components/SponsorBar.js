@@ -33,9 +33,9 @@ function SponsorBar() {
 
     const settings = {
       className: "slider variable-width",
-      arrows: true,
+      arrows: false,
       infinite: true,
-      autoplay: false,
+      autoplay: true,
       slidesToScroll: 1,
       autoplaySpeed: 2000,
       pauseOnHover: false,
@@ -51,7 +51,7 @@ function SponsorBar() {
       slidesToScroll: 1,
       centerMode: false,
       centerPadding: "10px",
-      autoplay: false,
+      autoplay: true,
       autoplaySpeed: 1800,
       pauseOnHover: false,
       initialSlide: randomNumber(0, 10)
@@ -63,7 +63,7 @@ function SponsorBar() {
           <Typography variant='h6' className="sponsor-title" sx={{
             marginBlockEnd: {
               lg: 0,
-              xl: '1rem'
+              xl: '0.2rem'
             }
           }}>Festejä mahdollistamassa</Typography>
           <Slider {...settings} >
@@ -71,12 +71,12 @@ function SponsorBar() {
                   <Box
                       sx={{
                         height: {
-                          sm: 50,
+                          sm: 80,
                           md: 80,
                           // xl: 100
                         },
                         width: {
-                          sm: 107,
+                          sm: 143,
                           md: 143,
                           // xl: 179
                         },
@@ -93,12 +93,12 @@ function SponsorBar() {
                           sm: 2
                         },
                         height: {
-                          sm: 60,
+                          sm: 45,
                           md: 45,
                           // xl: 76
                         },
                         width: {
-                          sm: 237,
+                          sm: 178,
                           md: 178,
                           // xl: 300
                         },
@@ -113,7 +113,7 @@ function SponsorBar() {
                       component="img"
                       sx={{
                         height: {
-                          sm: 50,
+                          sm: 60,
                           md: 60,
                           // xl: 100
                         },
@@ -134,7 +134,7 @@ function SponsorBar() {
                       component="img"
                       sx={{
                         height: {
-                          sm: 50,
+                          sm: 60,
                           md: 60,
                           // xl: 100
                         },
@@ -154,13 +154,13 @@ function SponsorBar() {
                       component="img"
                       sx={{
                         height: {
-                          sm: 50,
-                          md: 60,
+                          sm: 60,
+                          md: 80,
                           // xl: 100
                         },
                         width: {
                           sm: 89,
-                          md: 89,
+                          md: 119,
                           // xl: 148
                         },
                         backgroundColor: 'white',
@@ -174,7 +174,7 @@ function SponsorBar() {
                       component="img"
                       sx={{
                         height: {
-                          sm: 50,
+                          sm: 60,
                           md: 60,
                           // xl: 92
                         },
@@ -194,7 +194,7 @@ function SponsorBar() {
                       component="img"
                       sx={{
                         height: {
-                          sm: 50,
+                          sm: 60,
                           md: 60,
                           // xl: 100
                         },
@@ -215,12 +215,12 @@ function SponsorBar() {
                       component="img"
                       sx={{
                         height: {
-                          sm: 50,
+                          sm: 70,
                           md: 70,
                           // xl: 100
                         },
                         width: {
-                          sm: 86,
+                          sm: 100,
                           md: 100,
                           // xl: 142
                         },
@@ -235,12 +235,12 @@ function SponsorBar() {
                       component="img"
                       sx={{
                         height: {
-                          sm: 60,
+                          sm: 100,
                           md: 100,
                           // xl: 100
                         },
                         width: {
-                          sm: 60,
+                          sm: 100,
                           md: 100,
                           // xl: 100
                         },
@@ -256,12 +256,12 @@ function SponsorBar() {
                       component="img"
                       sx={{
                         height: {
-                          sm: 50,
+                          sm: 80,
                           md: 80,
                           // xl: 89
                         },
                         width: {
-                          sm: 135,
+                          sm: 179,
                           md: 179,
                           // xl: 200
                         },
@@ -276,11 +276,11 @@ function SponsorBar() {
                       component="img"
                       sx={{
                         height: {
-                          md: 32,
+                          sm: 32,
                           // lg: 43,
                         },
                         width: {
-                          md: 150,
+                          sm: 150,
                           // lg: 200,
                         },
                         backgroundColor: 'white',
@@ -290,17 +290,36 @@ function SponsorBar() {
                       src={emblica}
                   />
                 </Link>
+                <Link to="https://www.facebook.com/CafeGbar/?locale=fi_FI" target="_blank" classname="sponsor-link">
+                  <Box
+                      component="img"
+                      sx={{
+                        height: {
+                          sm: 73,
+                          // lg: 43,
+                        },
+                        width: {
+                          sm: 179,
+                          // lg: 200,
+                        },
+                        backgroundColor: 'white',
+                        marginTop: "0.5rem",
+                      }}
+                      alt="Cafe Bar G logo"
+                      src={cafeGbar}
+                  />
+                </Link>                
                 <Link >
                   <Box
                       component="img"
                       sx={{
                         height: {
-                          sm: 60,
+                          sm: 100,
                           md: 100,
                           // xl: 100
                         },
                         width: {
-                          sm: 60,
+                          sm: 100,
                           md: 100,
                           // xl: 100
                         },
