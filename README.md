@@ -17,4 +17,4 @@ This is a website project for the student event Integraatiofest 2023 held in Lap
 4. In `App.js`, create a route for the new page:
    1. Adjust the path and component names as follow: `<Route path="/<route path>" element={<> <Header /> <Navbar /> < <component name here> /> <Footer /> </>} />`.
    2. Import the new component to `App.js`.
-5. Profit! :D
+5. Profit! :sunglasses:
