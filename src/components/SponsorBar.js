@@ -72,12 +72,12 @@ function SponsorBar() {
                       sx={{
                         height: {
                           sm: 50,
-                          md: 60,
+                          md: 80,
                           // xl: 100
                         },
                         width: {
                           sm: 107,
-                          md: 107,
+                          md: 143,
                           // xl: 179
                         },
                         }}>
@@ -123,6 +123,7 @@ function SponsorBar() {
                           // xl: 143
                         },
                         backgroundColor: 'white',
+                        marginTop: "0.3rem"
                       }}
                       alt="Kotipizza"
                       src={kotipizza}
@@ -203,6 +204,7 @@ function SponsorBar() {
                           // xl: 243
                         },
                         backgroundColor: 'white',
+                        marginTop: "0.3rem"
                       }}
                       alt="Danfoss"
                       src={danfoss}
@@ -214,12 +216,12 @@ function SponsorBar() {
                       sx={{
                         height: {
                           sm: 50,
-                          md: 60,
+                          md: 70,
                           // xl: 100
                         },
                         width: {
                           sm: 86,
-                          md: 86,
+                          md: 100,
                           // xl: 142
                         },
                         backgroundColor: 'white',
@@ -234,15 +236,16 @@ function SponsorBar() {
                       sx={{
                         height: {
                           sm: 60,
-                          md: 60,
+                          md: 100,
                           // xl: 100
                         },
                         width: {
                           sm: 60,
-                          md: 60,
+                          md: 100,
                           // xl: 100
                         },
                         backgroundColor: 'white',
+                        marginTop: "-0.8rem",
                       }}
                       alt="UPM"
                       src={upm}
@@ -254,12 +257,12 @@ function SponsorBar() {
                       sx={{
                         height: {
                           sm: 50,
-                          md: 60,
+                          md: 80,
                           // xl: 89
                         },
                         width: {
                           sm: 135,
-                          md: 135,
+                          md: 179,
                           // xl: 200
                         },
                         backgroundColor: 'white',
@@ -281,7 +284,7 @@ function SponsorBar() {
                           // lg: 200,
                         },
                         backgroundColor: 'white',
-                        margin: '1rem'
+                        margin: '1.4rem'
                       }}
                       alt="Emblica"
                       src={emblica}
@@ -293,15 +296,17 @@ function SponsorBar() {
                       sx={{
                         height: {
                           sm: 60,
-                          md: 60,
+                          md: 100,
                           // xl: 100
                         },
                         width: {
                           sm: 60,
-                          md: 60,
+                          md: 100,
                           // xl: 100
                         },
                         backgroundColor: 'white',
+                        marginTop: "-0.7rem",
+                        marginBottom: "-1rem"
                       }}
                       alt="Viba"
                       src={viba}
