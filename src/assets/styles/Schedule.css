@@ -60,9 +60,9 @@
     border-bottom: 1px dotted black;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1500px) {
     .timetable-text {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 
     .indent {

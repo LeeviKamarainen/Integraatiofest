@@ -33,9 +33,10 @@ function SponsorBar() {
 
     const settings = {
       className: "slider variable-width",
-      arrows: false,
+      arrows: true,
       infinite: true,
-      autoplay: true,
+      autoplay: false,
+      slidesToScroll: 1,
       autoplaySpeed: 2000,
       pauseOnHover: false,
       initialSlide: randomNumber(0, 10),
@@ -50,7 +51,7 @@ function SponsorBar() {
       slidesToScroll: 1,
       centerMode: false,
       centerPadding: "10px",
-      autoplay: true,
+      autoplay: false,
       autoplaySpeed: 1800,
       pauseOnHover: false,
       initialSlide: randomNumber(0, 10)
@@ -59,27 +60,28 @@ function SponsorBar() {
     return (
       <div className="content-wrapper sponsor-bar">
         <Responsive displayIn={[IdResponsiveRenderOnlyIn.Tablet, IdResponsiveRenderOnlyIn.Laptop]}>
-          <Typography variant='h6' className="sponsor-title">Festejä mahdollistamassa</Typography>
+          <Typography variant='h6' className="sponsor-title" sx={{
+            marginBlockEnd: {
+              lg: 0,
+              xl: '1rem'
+            }
+          }}>Festejä mahdollistamassa</Typography>
           <Slider {...settings} >
               <Link to="https://www.tek.fi/" target="_blank" classname="sponsor-link" >
                   <Box
                       sx={{
                         height: {
-                          xs: 112,
-                          sm: 112,
-                          md: 124,
-                          lg: 124,
-                          xl: 124,
+                          sm: 50,
+                          md: 60,
+                          // xl: 100
                         },
                         width: {
-                          xs: 200,
-                          sm: 200,
-                          md: 220,
-                          lg: 220,
-                          xl: 220,
+                          sm: 107,
+                          md: 107,
+                          // xl: 179
                         },
                         }}>
-                    <img src={tek} alt="TEK logo" className="sponsor-logo" width="200px" height="120px"/>
+                    <img src={tek} alt="TEK logo" className="sponsor-logo"/>
                   </Box>
               </Link>
               <Link to="https://lappeenrantaevents.fi/" target="_blank" classname="sponsor-link">
@@ -91,18 +93,14 @@ function SponsorBar() {
                           sm: 2
                         },
                         height: {
-                          xs: 38,
-                          sm: 76,
-                          md: 76,
-                          lg: 76,
-                          xl: 76,
+                          sm: 60,
+                          md: 45,
+                          // xl: 76
                         },
                         width: {
-                          xs: 150,
-                          sm: 300,
-                          md: 300,
-                          lg: 300,
-                          xl: 300,
+                          sm: 237,
+                          md: 178,
+                          // xl: 300
                         },
                         backgroundColor: 'white',
                       }}
@@ -115,18 +113,14 @@ function SponsorBar() {
                       component="img"
                       sx={{
                         height: {
-                          xs: 105,
-                          sm: 105,
-                          md: 105,
-                          lg: 105,
-                          xl: 105,
+                          sm: 50,
+                          md: 60,
+                          // xl: 100
                         },
                         width: {
-                          xs: 150,
-                          sm: 150,
-                          md: 150,
-                          lg: 150,
-                          xl: 150,
+                          sm: 86,
+                          md: 86,
+                          // xl: 143
                         },
                         backgroundColor: 'white',
                       }}
@@ -139,18 +133,14 @@ function SponsorBar() {
                       component="img"
                       sx={{
                         height: {
-                          xs: 100,
-                          sm: 100,
-                          md: 100,
-                          lg: 100,
-                          xl: 100,
+                          sm: 50,
+                          md: 60,
+                          // xl: 100
                         },
                         width: {
-                          xs: 279,
-                          sm: 279,
-                          md: 279,
-                          lg: 279,
-                          xl: 279,
+                          sm: 167,
+                          md: 167,
+                          // xl: 279
                         },
                         backgroundColor: 'white',
                       }}
@@ -163,18 +153,14 @@ function SponsorBar() {
                       component="img"
                       sx={{
                         height: {
-                          xs: 110,
-                          sm: 110,
-                          md: 110,
-                          lg: 110,
-                          xl: 110,
+                          sm: 50,
+                          md: 60,
+                          // xl: 100
                         },
                         width: {
-                          xs: 163,
-                          sm: 163,
-                          md: 163,
-                          lg: 163,
-                          xl: 163,
+                          sm: 89,
+                          md: 89,
+                          // xl: 148
                         },
                         backgroundColor: 'white',
                       }}
@@ -187,18 +173,14 @@ function SponsorBar() {
                       component="img"
                       sx={{
                         height: {
-                          xs: 92,
-                          sm: 92,
-                          md: 92,
-                          lg: 92,
-                          xl: 92,
+                          sm: 50,
+                          md: 60,
+                          // xl: 92
                         },
                         width: {
-                          xs: 250,
-                          sm: 250,
-                          md: 250,
-                          lg: 250,
-                          xl: 250,
+                          sm: 163,
+                          md: 163,
+                          // xl: 250
                         },
                         backgroundColor: 'white',
                       }}
@@ -211,18 +193,14 @@ function SponsorBar() {
                       component="img"
                       sx={{
                         height: {
-                          xs: 103,
-                          sm: 103,
-                          md: 103,
-                          lg: 103,
-                          xl: 103,
+                          sm: 50,
+                          md: 60,
+                          // xl: 100
                         },
                         width: {
-                          xs: 250,
-                          sm: 250,
-                          md: 250,
-                          lg: 250,
-                          xl: 250,
+                          sm: 146,
+                          md: 146,
+                          // xl: 243
                         },
                         backgroundColor: 'white',
                       }}
@@ -235,18 +213,14 @@ function SponsorBar() {
                       component="img"
                       sx={{
                         height: {
-                          xs: 127,
-                          sm: 127,
-                          md: 127,
-                          lg: 127,
-                          xl: 127,
+                          sm: 50,
+                          md: 60,
+                          // xl: 100
                         },
                         width: {
-                          xs: 180,
-                          sm: 180,
-                          md: 180,
-                          lg: 180,
-                          xl: 180,
+                          sm: 86,
+                          md: 86,
+                          // xl: 142
                         },
                         backgroundColor: 'white',
                       }}
@@ -259,18 +233,14 @@ function SponsorBar() {
                       component="img"
                       sx={{
                         height: {
-                          xs: 130,
-                          sm: 130,
-                          md: 130,
-                          lg: 130,
-                          xl: 130,
+                          sm: 60,
+                          md: 60,
+                          // xl: 100
                         },
                         width: {
-                          xs: 130,
-                          sm: 130,
-                          md: 130,
-                          lg: 130,
-                          xl: 130,
+                          sm: 60,
+                          md: 60,
+                          // xl: 100
                         },
                         backgroundColor: 'white',
                       }}
@@ -283,18 +253,14 @@ function SponsorBar() {
                       component="img"
                       sx={{
                         height: {
-                          xs: 111,
-                          sm: 111,
-                          md: 111,
-                          lg: 111,
-                          xl: 111,
+                          sm: 50,
+                          md: 60,
+                          // xl: 89
                         },
                         width: {
-                          xs: 250,
-                          sm: 250,
-                          md: 250,
-                          lg: 250,
-                          xl: 250,
+                          sm: 135,
+                          md: 135,
+                          // xl: 200
                         },
                         backgroundColor: 'white',
                       }}
@@ -307,21 +273,15 @@ function SponsorBar() {
                       component="img"
                       sx={{
                         height: {
-                          xs: 64,
-                          sm: 64,
-                          md: 64,
-                          lg: 64,
-                          xl: 64,
+                          md: 32,
+                          // lg: 43,
                         },
                         width: {
-                          xs: 300,
-                          sm: 300,
-                          md: 300,
-                          lg: 300,
-                          xl: 300,
+                          md: 150,
+                          // lg: 200,
                         },
                         backgroundColor: 'white',
-                        margin: '2rem'
+                        margin: '1rem'
                       }}
                       alt="Emblica"
                       src={emblica}
@@ -332,21 +292,16 @@ function SponsorBar() {
                       component="img"
                       sx={{
                         height: {
-                          xs: 150,
-                          sm: 150,
-                          md: 150,
-                          lg: 150,
-                          xl: 150,
+                          sm: 60,
+                          md: 60,
+                          // xl: 100
                         },
                         width: {
-                          xs: 150,
-                          sm: 150,
-                          md: 150,
-                          lg: 150,
-                          xl: 150,
+                          sm: 60,
+                          md: 60,
+                          // xl: 100
                         },
                         backgroundColor: 'white',
-                        paddingBottom: '1rem'
                       }}
                       alt="Viba"
                       src={viba}
@@ -356,46 +311,46 @@ function SponsorBar() {
         </Responsive>
 
         <Responsive displayIn={IdResponsiveRenderOnlyIn.Mobile}>
-          <Typography variant='h6' className="sponsor-title">Festejä mahdollistamassa</Typography>
+          <Typography variant='h6' className="sponsor-title" >Festejä mahdollistamassa</Typography>
           <Slider {...settings2} >
               <Link to="https://www.tek.fi/" target="_blank" >
-                <img src={tek} alt="TEK logo" width="249px" height="140px" className="sponsor-logo-mobile" style={{ marginTop: "-10px"}}/>
+                <img src={tek} alt="TEK logo" width="179px" height="100px" className="sponsor-logo-mobile" style={{ marginTop: "0px"}}/>
               </Link>
               <Link to="https://lappeenrantaevents.fi/" target="_blank">
-                <img src={lprVertical} alt="Lappeenranta Event logo" width="300px" height="76px" className="sponsor-logo-mobile" style={{ marginTop: "25px"}}/>
+                <img src={lprVertical} alt="Lappeenranta Event logo" width="197px" height="50px" className="sponsor-logo-mobile" style={{ marginTop: "20px"}}/>
               </Link>
               <Link to="https://kotipizza.fi/" target="_blank">
-                <img src={kotipizza} alt="Kotipizza logo" width="157px" height="110px" className="sponsor-logo-mobile"/>
+                <img src={kotipizza} alt="Kotipizza logo" width="114px" height="80px" className="sponsor-logo-mobile"/>
               </Link>
               <Link to="https://www.visma.fi/" target="_blank">
-                <img src={visma} alt="Visma logo" width="335px" height="120px" className="sponsor-logo-mobile"/>
+                <img src={visma} alt="Visma logo" width="223px" height="80px" className="sponsor-logo-mobile"/>
               </Link>
               <Link to="https://www.syncrontech.com/" target="_blank">
-                <img src={syncronTech} alt="Syncron Tech logo" width="163px" height="110px" className="sponsor-logo-mobile" style={{ marginTop: "5px"}}/>
+                <img src={syncronTech} alt="Syncron Tech logo" width="103px" height="70px" className="sponsor-logo-mobile" style={{ marginTop: "10px"}}/>
               </Link>
               <Link to="https://www.loimu.fi/" target="_blank">
-                <img src={loimu} alt="Loimu logo" width="250px" height="92px" className="sponsor-logo-mobile"/>
+                <img src={loimu} alt="Loimu logo" width="219px" height="81px" className="sponsor-logo-mobile"/>
               </Link>
               <Link to="https://www.danfoss.com/fi-fi/" target="_blank">
-                <img src={danfoss} alt="Danfoss logo" width="250px" height="103px" className="sponsor-logo-mobile" style={{ marginTop: "10px"}}/>
+                <img src={danfoss} alt="Danfoss logo" width="171px" height="71px" className="sponsor-logo-mobile" style={{ marginTop: "10px"}}/>
               </Link>
               <Link to="https://www.raflaamo.fi/fi/ravintola/lappeenranta/las-palmas-lappeenranta" target="_blank">
-                <img src={lasPalmas} alt="Las Palmas logo" width="180px" height="127px" className="sponsor-logo-mobile" style={{ marginTop: "-5px"}}/>
+                <img src={lasPalmas} alt="Las Palmas logo" width="114px" height="80px" className="sponsor-logo-mobile" style={{ marginTop: "10px"}}/>
               </Link>
               <Link to="https://www.upm.com/fi/" target="_blank">
-                <img src={upm} alt="UPM logo" width="150px" height="150px" className="sponsor-logo-mobile" style={{ marginTop: "-15px"}}/>
+                <img src={upm} alt="UPM logo" width="90px" height="90px" className="sponsor-logo-mobile" style={{ marginTop: "0px"}}/>
               </Link>
               <Link to="https://www.lut.fi/" target="_blank">
-                <img src={lut} alt="LUT-yliopisto logo" width="250px" height="111px" className="sponsor-logo-mobile" style={{ marginTop: "-5px"}}/>
+                <img src={lut} alt="LUT-yliopisto logo" width="180px" height="80px" className="sponsor-logo-mobile" style={{ marginTop: "5px"}}/>
               </Link>
               <Link to="https://emblica.com/" target="_blank">
-                <img src={emblica} alt="Emblica logo" width="300px" height="64px" className="sponsor-logo-mobile" style={{ marginTop: "30px"}}/>
+                <img src={emblica} alt="Emblica logo" width="213px" height="45px" className="sponsor-logo-mobile" style={{ marginTop: "25px"}}/>
               </Link>
               <Link to="https://www.facebook.com/CafeGbar/?locale=fi_FI" target="_blank">
-                <img src={cafeGbar} alt="Cafe Bar G logo" width="225" height="92px" className="sponsor-logo-mobile" style={{ marginTop: "20px"}}/>
+                <img src={cafeGbar} alt="Cafe Bar G logo" width="179px" height="73px" className="sponsor-logo-mobile" style={{ marginTop: "15px"}}/>
               </Link>
               <Link >
-                <img src={viba} alt="Viba logo" width="150px" height="150px" className="sponsor-logo-mobile" style={{ marginTop: "-20px"}}/>
+                <img src={viba} alt="Viba logo" width="100px" height="100px" className="sponsor-logo-mobile" style={{ marginTop: "0px"}}/>
               </Link>
           </Slider>
         </Responsive>
