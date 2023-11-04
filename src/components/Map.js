@@ -20,8 +20,8 @@ function Map() {
             <img src={map} fetchPriority="high" className="map-mobile" alt="kartta" />
           </Grid>
           <Grid xs={12} className="map-description-wrapper-mobile color-1">
-            <Typography sx={{ typography: {xs: 'h6', sm: 'h4'}}} className="map-description-title-mobile color-1">
-              Kartta ja osoitteet <br />
+            <Typography sx={{ typography: {xs: 'h6', sm: 'h4'} ,textAlign: "left"}} className="map-description-title-mobile color-1">
+              Kartan selitteet <br />
             </Typography>
             <p className="color-1 description-text-mobile">
                 <b style={{color: 'red'}}> LUT-yliopisto (Viipuri-sali) </b> <br />
@@ -47,7 +47,7 @@ function Map() {
         </Grid>
         <Grid container className="bus-timetable-wrapper color-1" direction="row" >
           <Grid xs={12} className="bus-timetable-wrapper">
-            <Typography sx={{ typography: {xs: 'h6', sm: 'h4'}}} className="map-title">
+            <Typography sx={{ typography: {xs: 'h6', sm: 'h4'}, textAlign: "left"}} className="map-title">
               Julkinen liikenne Lappeenrannassa 
             </Typography>
             <p className="color-1 description-text-mobile">
@@ -99,7 +99,7 @@ function Map() {
           </Grid>
           <Grid md={6} className="map-description-wrapper color-1">
             <Typography variant="h4" className="map-description-title color-1">
-              Kartta ja osoitteet <br />
+              Kartan selitteet <br />
             </Typography>
             <p className="color-1 description-text">
                 <b style={{color: 'red'}}> LUT-yliopisto (Viipuri-sali)</b> <br />

@@ -27,13 +27,11 @@
 .map-title {
     font-weight: bold !important;
     color: white;
-    text-align: center;
     padding: 0.5rem;
 }
 
 .map-description-title-mobile {
-    text-align: left; 
-    padding: 0 0 0.1rem 0.5rem;
+    padding: 0 0 0.2rem 0.5rem;
     font-weight: bold !important;
     color: white;
 }
@@ -60,7 +58,7 @@
 }
 
 .description-text {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     color: white;
     margin: 0.5rem 1rem;
     text-wrap: wrap;

@@ -2,7 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import {Link} from 'react-router-dom';
 import Box from '@mui/material/Box';
-import { IdResponsiveRenderOnlyIn, Responsive } from 'responsive-react';
+import MediaQuery from "react-responsive";
 import {Typography} from '@mui/material/';
 
 import "slick-carousel/slick/slick.css"; 
@@ -22,363 +22,116 @@ import lut from '../assets/sponsors/LUT_logo_black_text.png'
 import emblica from '../assets/sponsors/emblica-logo-blue.png'
 import cafeGbar from '../assets/sponsors/g_no_bg.png'
 import viba from '../assets/sponsors/viba_logo_black.png'
+import loas from '../assets/sponsors/LOAS-logo-vihr.png'
 
 function SponsorBar() {
 
-    const randomNumber = (min, max) => {
-      const rand = Math.floor(Math.random() * (max - min) + min);
-      // console.log("Sponsor bar start index: " + rand);
-      return rand
-    }
+  const sponsors = [
+    { name: "TEK", link: "https://www.tek.fi/", image: tek, width: { xs: 143 }, height: { xs: 80 }, marginTop: { xs: 0 } },
+    { name: "Lappeenranta Events", link: "https://lappeenrantaevents.fi/", image: lprVertical, width: { xs: 178 }, height: { xs: 45 }, marginTop: { xs: 2 } },
+    { name: "Kotipizza", link: "https://kotipizza.fi/", image: kotipizza, width: { xs: 86 }, height: { xs: 60 }, marginTop: { xs: "0.3rem" } },
+    { name: "Visma", link: "https://www.visma.fi/", image: visma, width: { xs: 167 }, height: { xs: 60 }, marginTop: { xs: 0.5 } },
+    { name: "Syncron Tech", link: "https://www.syncrontech.com/", image: syncronTech, width: { xs: 104 }, height: { xs: 70 }, marginTop: { xs: 0 } },
+    { name: "Loimu", link: "https://www.loimu.fi/", image: loimu, width: { xs: 163 }, height: { xs: 60 }, marginTop: { xs: 0 } },
+    { name: "Danfoss", link: "https://www.danfoss.com/fi-fi/", image: danfoss, width: { xs: 146 }, height: { xs: 60 }, marginTop: { xs: "0.3rem" } },
+    { name: "Las Palmas", link: "https://www.raflaamo.fi/fi/ravintola/lappeenranta/las-palmas-lappeenranta", image: lasPalmas, width: { xs: 100 }, height: { xs: 70 }, marginTop: { xs: 0 } },
+    { name: "UPM", link: "https://www.upm.com/fi/", image: upm, width: { xs: 90 }, height: { xs: 90 }, marginTop: { xs: "-0.8rem" } },
+    { name: "LUT-yliopisto", link: "https://www.lut.fi/", image: lut, width: { xs: 179 }, height: { xs: 80 }, marginTop: { xs: -1 } },
+    { name: "Emblica", link: "https://emblica.com/", image: emblica, width: { xs: 150 }, height: { xs: 32 }, margin: { xs: "1.4rem" } },
+    { name: "Viba", image: viba, width: { xs: 100 }, height: { xs: 100 }, marginTop: { xs: "-0.8rem" }, marginBottom: { xs: "-1rem" }},
+    { name: "Cafe Bar G", link: "https://www.facebook.com/CafeGbar/?locale=fi_FI", image: cafeGbar, width: { xs: 179 }, height: { xs: 73 }, marginTop: { xs: "0rem" } },
+    { name: "LOAS", link:"https://www.loas.fi/", image: loas, width: { xs: 146 }, height: { xs: 40 }, marginTop: { xs: "0.8rem" }}
+  ];
+  
+  const sponsors_mobile = [
+  { name: "TEK", link: "https://www.tek.fi/", image: tek, width: 179, height: 100, style: { marginTop: "0px" } },
+  { name: "Lappeenranta Events", link: "https://lappeenrantaevents.fi/", image: lprVertical, width: 197, height: 50, style: { marginTop: "20px" } },
+  { name: "Kotipizza", link: "https://kotipizza.fi/", image: kotipizza, width: 114, height: 80, style: { marginTop: "0px" }},
+  { name: "Visma", link: "https://www.visma.fi/", image: visma, width: 223, height: 80, style: { marginTop: "0px" }},
+  { name: "Syncron Tech", link: "https://www.syncrontech.com/", image: syncronTech, width: 103, height: 70, style: { marginTop: "10px" } },
+  { name: "Loimu", link: "https://www.loimu.fi/", image: loimu, width: 219, height: 81, style: { marginTop: "0px" } },
+  { name: "Danfoss", link: "https://www.danfoss.com/fi-fi/", image: danfoss, width: 171, height: 71, style: { marginTop: "10px" } },
+  { name: "Las Palmas", link: "https://www.raflaamo.fi/fi/ravintola/lappeenranta/las-palmas-lappeenranta", image: lasPalmas, width: 114, height: 80, style: { marginTop: "10px" } },
+  { name: "UPM", link: "https://www.upm.com/fi/", image: upm, width: 90, height: 90, style: { marginTop: "0px" } },
+  { name: "LUT-yliopisto", link: "https://www.lut.fi/", image: lut, width: 180, height: 80, style: { marginTop: "5px" } },
+  { name: "Emblica", link: "https://emblica.com/", image: emblica, width: 213, height: 45, style: { marginTop: "25px" } },
+  { name: "Viba", image: viba, width: 100, height: 100 },
+  { name: "Cafe Bar G", link: "https://www.facebook.com/CafeGbar/?locale=fi_FI", image: cafeGbar, width: 179, height: 73, style: { marginTop: "15px" } },
+  { name: "LOAS", link: "https://www.loas.fi/", image: loas, width: 146, height: 40, style: { marginTop: "25px" }}
+  ];
 
-    const settings = {
-      className: "slider variable-width",
-      arrows: false,
-      infinite: true,
-      autoplay: true,
-      slidesToScroll: 1,
-      autoplaySpeed: 2000,
-      pauseOnHover: false,
-      initialSlide: randomNumber(0, 10),
-      variableWidth: true,
-    };
-
-    const settings2 = {
-      className: "slider",
-      arrows: false,
-      infinite: true,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      centerMode: false,
-      centerPadding: "10px",
-      autoplay: true,
-      autoplaySpeed: 1800,
-      pauseOnHover: false,
-      initialSlide: randomNumber(0, 10),
-    };
-
-    return (
-      <div className="content-wrapper sponsor-bar">
-        <Responsive displayIn={[IdResponsiveRenderOnlyIn.Tablet, IdResponsiveRenderOnlyIn.Laptop]}>
-          <Typography variant='h6' className="sponsor-title" sx={{
-            marginBlockEnd: {
-              lg: 0,
-              xl: '0.2rem'
-            }
-          }}>Festejä mahdollistamassa</Typography>
-          <Slider {...settings} >
-              <Link to="https://www.tek.fi/" target="_blank" classname="sponsor-link" >
-                  <Box
-                      sx={{
-                        height: {
-                          xs: 80,
-                          md: 80,
-                          // xl: 100
-                        },
-                        width: {
-                          xs: 143,
-                          md: 143,
-                          // xl: 179
-                        },
-                        }}>
-                    <img src={tek} alt="TEK logo" className="sponsor-logo"/>
-                  </Box>
-              </Link>
-              <Link to="https://lappeenrantaevents.fi/" target="_blank" classname="sponsor-link">
-                  <Box
-                      component="img"
-                      sx={{
-                        marginTop: {
-                          xs: 2,
-                        },
-                        height: {
-                          xs: 45,
-                          md: 45,
-                          // xl: 76
-                        },
-                        width: {
-                          xs: 178,
-                          md: 178,
-                          // xl: 300
-                        },
-                        backgroundColor: 'white',
-                      }}
-                      alt="Lappeenranta Events"
-                      src={lprVertical}
-                  />
-              </Link>
-              <Link to="https://kotipizza.fi/" target="_blank" classname="sponsor-link">
-                  <Box
-                      component="img"
-                      sx={{
-                        height: {
-                          xs: 60,
-                          md: 60,
-                          // xl: 100
-                        },
-                        width: {
-                          xs: 86,
-                          md: 86,
-                          // xl: 143
-                        },
-                        backgroundColor: 'white',
-                        marginTop: "0.3rem"
-                      }}
-                      alt="Kotipizza"
-                      src={kotipizza}
-                  />
-              </Link>
-              <Link to="https://www.visma.fi/" target="_blank" classname="sponsor-link">
-                  <Box
-                      component="img"
-                      sx={{
-                        height: {
-                          xs: 60,
-                          md: 60,
-                          // xl: 100
-                        },
-                        width: {
-                          xs: 167,
-                          md: 167,
-                          // xl: 279
-                        },
-                        backgroundColor: 'white',
-                      }}
-                      alt="Visma"
-                      src={visma}
-                  />
-                </Link>
-                <Link to="https://www.syncrontech.com/" target="_blank" classname="sponsor-link">
-                  <Box
-                      component="img"
-                      sx={{
-                        height: {
-                          xs: 60,
-                          md: 80,
-                          // xl: 100
-                        },
-                        width: {
-                          xs: 89,
-                          md: 119,
-                          // xl: 148
-                        },
-                        backgroundColor: 'white',
-                      }}
-                      alt="Syncron Tech"
-                      src={syncronTech}
-                  />
-                </Link>
-                <Link to="https://www.loimu.fi/" target="_blank" classname="sponsor-link">
-                  <Box
-                      component="img"
-                      sx={{
-                        height: {
-                          xs: 60,
-                          md: 60,
-                          // xl: 92
-                        },
-                        width: {
-                          xs: 163,
-                          md: 163,
-                          // xl: 250
-                        },
-                        backgroundColor: 'white',
-                      }}
-                      alt="Loimu"
-                      src={loimu}
-                  />
-                </Link>
-                <Link to="https://www.danfoss.com/fi-fi/" target="_blank" classname="sponsor-link">
-                  <Box
-                      component="img"
-                      sx={{
-                        height: {
-                          xs: 60,
-                          md: 60,
-                          // xl: 100
-                        },
-                        width: {
-                          xs: 146,
-                          md: 146,
-                          // xl: 243
-                        },
-                        backgroundColor: 'white',
-                        marginTop: "0.3rem"
-                      }}
-                      alt="Danfoss"
-                      src={danfoss}
-                  />
-                </Link>
-                <Link to="https://www.raflaamo.fi/fi/ravintola/lappeenranta/las-palmas-lappeenranta" target="_blank" classname="sponsor-link">
-                  <Box
-                      component="img"
-                      sx={{
-                        height: {
-                          xs: 70,
-                          md: 70,
-                          // xl: 100
-                        },
-                        width: {
-                          xs: 100,
-                          md: 100,
-                          // xl: 142
-                        },
-                        backgroundColor: 'white',
-                      }}
-                      alt="Las Palmas"
-                      src={lasPalmas}
-                  />
-                </Link>
-                <Link to="https://www.upm.com/fi/" target="_blank" classname="sponsor-link">
-                  <Box
-                      component="img"
-                      sx={{
-                        height: {
-                          xs: 100,
-                          md: 100,
-                          // xl: 100
-                        },
-                        width: {
-                          xs: 100,
-                          md: 100,
-                          // xl: 100
-                        },
-                        backgroundColor: 'white',
-                        marginTop: "-0.8rem",
-                      }}
-                      alt="UPM"
-                      src={upm}
-                  />
-                </Link>
-                <Link to="https://www.lut.fi/" target="_blank" classname="sponsor-link">
-                  <Box
-                      component="img"
-                      sx={{
-                        height: {
-                          xs: 80,
-                          md: 80,
-                          // xl: 89
-                        },
-                        width: {
-                          xs: 179,
-                          md: 179,
-                          // xl: 200
-                        },
-                        backgroundColor: 'white',
-                      }}
-                      alt="LUT-yliopisto"
-                      src={lut}
-                  />
-                </Link>
-                <Link to="https://emblica.com/" target="_blank" classname="sponsor-link">
-                  <Box
-                      component="img"
-                      sx={{
-                        height: {
-                          xs: 32,
-                          // lg: 43,
-                        },
-                        width: {
-                          xs: 150,
-                          // lg: 200,
-                        },
-                        backgroundColor: 'white',
-                        margin: '1.4rem'
-                      }}
-                      alt="Emblica"
-                      src={emblica}
-                  />
-                </Link>
-                <Link to="https://www.facebook.com/CafeGbar/?locale=fi_FI" target="_blank" classname="sponsor-link">
-                  <Box
-                      component="img"
-                      sx={{
-                        height: {
-                          xs: 73,
-                          // lg: 43,
-                        },
-                        width: {
-                          xs: 179,
-                          // lg: 200,
-                        },
-                        backgroundColor: 'white',
-                        marginTop: "0.5rem",
-                      }}
-                      alt="Cafe Bar G logo"
-                      src={cafeGbar}
-                  />
-                </Link>                
-                <Link >
-                  <Box
-                      component="img"
-                      sx={{
-                        height: {
-                          xs: 100,
-                          md: 100,
-                          // xl: 100
-                        },
-                        width: {
-                          xs: 100,
-                          md: 100,
-                          // xl: 100
-                        },
-                        backgroundColor: 'white',
-                        marginTop: "-0.7rem",
-                        marginBottom: "-1rem"
-                      }}
-                      alt="Viba"
-                      src={viba}
-                  />
-                </Link>
-          </Slider>
-        </Responsive>
-
-        <Responsive displayIn={IdResponsiveRenderOnlyIn.Mobile}>
-          <Typography variant='h6' className="sponsor-title" >Festejä mahdollistamassa</Typography>
-          <Slider {...settings2} >
-              <Link to="https://www.tek.fi/" target="_blank" >
-                <img src={tek} alt="TEK logo" width="179px" height="100px" className="sponsor-logo-mobile" style={{ marginTop: "0px"}}/>
-              </Link>
-              <Link to="https://lappeenrantaevents.fi/" target="_blank">
-                <img src={lprVertical} alt="Lappeenranta Event logo" width="197px" height="50px" className="sponsor-logo-mobile" style={{ marginTop: "20px"}}/>
-              </Link>
-              <Link to="https://kotipizza.fi/" target="_blank">
-                <img src={kotipizza} alt="Kotipizza logo" width="114px" height="80px" className="sponsor-logo-mobile"/>
-              </Link>
-              <Link to="https://www.visma.fi/" target="_blank">
-                <img src={visma} alt="Visma logo" width="223px" height="80px" className="sponsor-logo-mobile"/>
-              </Link>
-              <Link to="https://www.syncrontech.com/" target="_blank">
-                <img src={syncronTech} alt="Syncron Tech logo" width="103px" height="70px" className="sponsor-logo-mobile" style={{ marginTop: "10px"}}/>
-              </Link>
-              <Link to="https://www.loimu.fi/" target="_blank">
-                <img src={loimu} alt="Loimu logo" width="219px" height="81px" className="sponsor-logo-mobile"/>
-              </Link>
-              <Link to="https://www.danfoss.com/fi-fi/" target="_blank">
-                <img src={danfoss} alt="Danfoss logo" width="171px" height="71px" className="sponsor-logo-mobile" style={{ marginTop: "10px"}}/>
-              </Link>
-              <Link to="https://www.raflaamo.fi/fi/ravintola/lappeenranta/las-palmas-lappeenranta" target="_blank">
-                <img src={lasPalmas} alt="Las Palmas logo" width="114px" height="80px" className="sponsor-logo-mobile" style={{ marginTop: "10px"}}/>
-              </Link>
-              <Link to="https://www.upm.com/fi/" target="_blank">
-                <img src={upm} alt="UPM logo" width="90px" height="90px" className="sponsor-logo-mobile" style={{ marginTop: "0px"}}/>
-              </Link>
-              <Link to="https://www.lut.fi/" target="_blank">
-                <img src={lut} alt="LUT-yliopisto logo" width="180px" height="80px" className="sponsor-logo-mobile" style={{ marginTop: "5px"}}/>
-              </Link>
-              <Link to="https://emblica.com/" target="_blank">
-                <img src={emblica} alt="Emblica logo" width="213px" height="45px" className="sponsor-logo-mobile" style={{ marginTop: "25px"}}/>
-              </Link>
-              <Link to="https://www.facebook.com/CafeGbar/?locale=fi_FI" target="_blank">
-                <img src={cafeGbar} alt="Cafe Bar G logo" width="179px" height="73px" className="sponsor-logo-mobile" style={{ marginTop: "15px"}}/>
-              </Link>
-              <Link >
-                <img src={viba} alt="Viba logo" width="100px" height="100px" className="sponsor-logo-mobile" style={{ marginTop: "0px"}}/>
-              </Link>
-          </Slider>
-        </Responsive>
-      </div>
-    );
+  const randomNumber = (min, max) => {
+    const rand = Math.floor(Math.random() * (max - min) + min);
+    return rand
   }
+
+  const settings = {
+    className: "slider",
+    arrows: false,
+    infinite: true,
+    autoplay: true,
+    slidesToScroll: 1,
+    autoplaySpeed: 2000,
+    pauseOnHover: false,
+    initialSlide: randomNumber(0, sponsors.length),
+    variableWidth: true,
+  };
+
+  const settings_mobile = {
+    className: "slider",
+    arrows: false,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 1800,
+    pauseOnHover: false,
+    initialSlide: randomNumber(0, sponsors_mobile.length)
+  };
+
+  return (
+    <div className="content-wrapper sponsor-bar">
+      <MediaQuery minWidth={600}>
+        <Typography variant='h6' className="sponsor-title" sx={{
+          marginBlockEnd: {
+            lg: 0,
+            xl: '0.2rem'
+          }
+        }}>Festejä mahdollistamassa</Typography>
+        <Slider {...settings} >
+          {sponsors.map((sponsor, index) => (
+            <Link to={sponsor.link} target="_blank" className="sponsor-link" key={index}>
+              <Box
+                sx={{
+                  width: sponsor.width,
+                  height: sponsor.height,
+                  marginTop: sponsor.marginTop,
+                  marginBottom: sponsor.marginBottom,
+                  marginLeft: sponsor.marginLeft,
+                  marginRight: sponsor.marginRight,
+                  margin: sponsor.margin,
+                }}
+                >
+                <img src={sponsor.image} alt={sponsor.name} className="sponsor-logo" />
+              </Box>
+            </Link>
+          ))}
+        </Slider>
+      </MediaQuery>
+
+      <MediaQuery maxWidth={600}>
+        <Typography variant='h6' className="sponsor-title" >Festejä mahdollistamassa</Typography>
+        <Slider {...settings_mobile} >
+          {sponsors_mobile.map((sponsor, index) => (
+            <Link to={sponsor.link} target="_blank" key={index}>
+              <img src={sponsor.image} alt={sponsor.name} width={sponsor.width} height={sponsor.height} style={sponsor.style} className="sponsor-logo-mobile" />
+            </Link>
+          ))
+          }
+        </Slider>
+      </MediaQuery>
+    </div>
+  );
+}
 
 export default SponsorBar;
