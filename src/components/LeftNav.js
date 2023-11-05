@@ -4,7 +4,6 @@ import Button from 'react-bootstrap/Button';
 import { Spotify } from 'react-bootstrap-icons';
 import { Youtube } from 'react-bootstrap-icons';
 import { Telegram } from 'react-bootstrap-icons';
-import { Typography } from '@mui/material';
 import '../assets/styles/LeftNav.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
