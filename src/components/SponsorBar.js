@@ -100,7 +100,7 @@ function SponsorBar() {
           }
         }}>Festejä mahdollistamassa</Typography>
         <Slider {...settings} >
-          {sponsors.map((sponsor, index) => (
+          {sponsors_mobile.map((sponsor, index) => (
             <Link to={sponsor.link} target="_blank" className="sponsor-link" key={index}>
               <Box
                 sx={{
