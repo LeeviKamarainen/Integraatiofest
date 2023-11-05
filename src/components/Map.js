@@ -8,7 +8,6 @@ import { Typography } from '@mui/material';
 
 import map from '../assets/images/map.jpg'
 import '../assets/styles/Map.css'
-import { Padding } from '@mui/icons-material';
 
 function Map() {
 

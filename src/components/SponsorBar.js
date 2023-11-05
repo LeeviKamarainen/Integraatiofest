@@ -101,7 +101,7 @@ function CompanyBar() {
         }}>Festejä mahdollistamassa</Typography>
         <Slider {...settings} >
           {companies.map((company, index) => (
-            <Link to={company.link} className="company-link" key={index}>
+            <Link to={company.link} target="_blank" className="company-link" key={index}>
               <Box
                 sx={{
                   width: company.width,
