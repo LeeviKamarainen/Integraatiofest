@@ -2,18 +2,19 @@ import React from 'react'
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Unstable_Grid2';
 import Iframe from 'react-iframe';
-import { IdResponsiveRenderOnlyIn, Responsive } from 'responsive-react';
+import MediaQuery from "react-responsive";
 import {Link} from 'react-router-dom';
 import { Typography } from '@mui/material';
 
 import map from '../assets/images/map.jpg'
 import '../assets/styles/Map.css'
+import { Padding } from '@mui/icons-material';
 
 function Map() {
 
   return (
     <>
-    <Responsive displayIn={[IdResponsiveRenderOnlyIn.Mobile, IdResponsiveRenderOnlyIn.Tablet]}>
+    <MediaQuery maxWidth={1019}>
       <Box sx={{ flexGrow: 1 }} className="content-wrapper" >
         <Grid container className="map-wrapper" direction="column">
           <Grid xs={12} className="map-image-wrapper-mobile color-1" >
@@ -89,9 +90,9 @@ function Map() {
           </Grid>
         </Grid>
       </Box>
-    </Responsive>
+    </MediaQuery>
 
-    <Responsive displayIn={IdResponsiveRenderOnlyIn.Laptop}>
+    <MediaQuery minWidth={1020}>
       <Box sx={{ flexGrow: 1 }} className="content-wrapper" >
         <Grid container className="map-wrapper" >
           <Grid md={6} className="map-image-wrapper" >
@@ -165,7 +166,7 @@ function Map() {
           </Grid>
         </Grid>
         </Box>
-      </Responsive>
+      </MediaQuery>
     </>
 )}
 
