@@ -51,7 +51,6 @@
       ">0.3%",
       "defaults",
       "fully supports es6-module",
-      "maintained node versions",
       "not dead",
       "not op_mini all"
     ],
@@ -63,7 +62,6 @@
     ]
   },
   "devDependencies": {
-    "@babel/preset-env": "^7.22.3",
-    "@babel/preset-react": "^7.22.15"
+
   }
 }
