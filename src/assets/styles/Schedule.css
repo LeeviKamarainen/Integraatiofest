@@ -15,7 +15,7 @@
 }
 
 .indent {
-    margin-left: 7.75rem;
+    margin-left: 6.6rem;
 }
 
 .small-indent {
@@ -61,28 +61,25 @@
 }
 
 @media screen and (max-width: 1500px) {
-    .timetable-text {
-        font-size: 0.8rem;
-    }
 
     .indent {
-        margin-left: 6rem;
+        margin-left: 6.6rem;
     }
 }
 
 @media screen  and (max-width: 600px) {
     .timetable-text {
-        font-size: 0.7rem;
+        font-size: 0.8rem;
     }
 }
 
 @media  screen and (max-width: 450px)	 {
     .timetable-text {
-        font-size: 0.65rem;
+        font-size: 0.8rem;
     }
 
     .indent {
-        margin-left: 4.4rem;
+        margin-left: 4.2rem;
     }
 }
 
@@ -92,6 +89,6 @@
     }
 
     .indent {
-        margin-left: 9.3rem;
+        margin-left: 9.2rem;
     }
 }

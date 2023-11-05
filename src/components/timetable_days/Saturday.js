@@ -11,7 +11,7 @@ function Saturday() {
             <span className="timetable-item">08:30 - 10:00 <span className="location">Ylioppilastalon kellari:</span> Aamupala <br /></span>
             <span className="timetable-item">10:00 - 10:45 <span className="location">Viipuri-sali:</span> Otto "Indiana Jones" Salmela - Kadonneen approksimaation metsästys <br /></span>
             <span className="timetable-item">10:45 - 11:30 <span className="location">Viipuri-sali:</span> Henning Kirschemann - CERN research in Finland <br /></span>
-            <span className="timetable-item"> <b>12:00 - 14:00 </b> <span className="location">Yliopiston aula:</span> Posterisessio ja haalarimerkkitori<br /> </span> 
+            <span className="timetable-item">12:00 - 14:00 <span className="location">Yliopiston aula:</span> Posterisessio ja haalarimerkkitori<br /> </span> 
             <span className="timetable-item">12:00 - 12:45 <span className="location">Viipuri-sali:</span> Jesse Railo - Miten tomografiaa voidaan tutkia geometrian avulla <br /></span>
             <span className="timetable-item">13:00 - 14:00 <span className="location">Viipuri-sali:</span> Heikki Kälviäinen - Computer vision applications and challenges of machine learning <br /></span>
             <span className="timetable-item">14:00 - 14:45 <span className="location">Viipuri-sali:</span> Teemu Härkönen - Stokastiset prosessit, spektroskopia ja bayesiläiset neuroverkot <br /></span>
