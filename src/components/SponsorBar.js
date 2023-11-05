@@ -24,9 +24,9 @@ import cafeGbar from '../assets/sponsors/g_no_bg.png'
 import viba from '../assets/sponsors/viba_logo_black.png'
 import loas from '../assets/sponsors/LOAS-logo-vihr.png'
 
-function SponsorBar() {
+function CompanyBar() {
 
-  const sponsors = [
+  const companies = [
     { name: "TEK", link: "https://www.tek.fi/", image: tek, width: 143, height: 80, marginTop: { xs: 0 } },
     { name: "Lappeenranta Events", link: "https://lappeenrantaevents.fi/", image: lprVertical, width: { xs: 178 }, height: { xs: 45 }, marginTop: { xs: 2 } },
     { name: "Kotipizza", link: "https://kotipizza.fi/", image: kotipizza, width: { xs: 86 }, height: { xs: 60 }, marginTop: { xs: "0.3rem" } },
@@ -43,7 +43,7 @@ function SponsorBar() {
     { name: "LOAS", link:"https://www.loas.fi/", image: loas, width: { xs: 146 }, height: { xs: 40 }, marginTop: { xs: "0.8rem" }}
   ];
   
-  const sponsors_mobile = [
+  const companies_mobile = [
   { name: "TEK", link: "https://www.tek.fi/", image: tek, width: 179, height: 100, style: { marginTop: "0px" } },
   { name: "Lappeenranta Events", link: "https://lappeenrantaevents.fi/", image: lprVertical, width: 197, height: 50, style: { marginTop: "20px" } },
   { name: "Kotipizza", link: "https://kotipizza.fi/", image: kotipizza, width: 114, height: 80, style: { marginTop: "0px" }},
@@ -73,7 +73,7 @@ function SponsorBar() {
     slidesToScroll: 1,
     autoplaySpeed: 2000,
     pauseOnHover: false,
-    initialSlide: randomNumber(0, sponsors.length),
+    initialSlide: randomNumber(0, companies.length),
     variableWidth: true,
   };
 
@@ -86,34 +86,34 @@ function SponsorBar() {
     autoplay: true,
     autoplaySpeed: 1800,
     pauseOnHover: false,
-    initialSlide: randomNumber(0, sponsors_mobile.length)
+    initialSlide: randomNumber(0, companies.length)
   };
-  console.log(sponsors)
+  console.log(companies)
 
   return (
-    <div className="content-wrapper sponsor-bar">
+    <div className="content-wrapper logo-bar">
       <MediaQuery minWidth={601}>
-        <Typography variant='h6' className="sponsor-title" sx={{
+        <Typography variant='h6' className="logo-bar-title" sx={{
           marginBlockEnd: {
             lg: 0,
             xl: '0.2rem'
           }
         }}>Festejä mahdollistamassa</Typography>
         <Slider {...settings} >
-          {sponsors.map((sponsor, index) => (
-            <Link className="sponsor-link" key={index}>
+          {companies.map((company, index) => (
+            <Link to={company.link} className="company-link" key={index}>
               <Box
                 sx={{
-                  width: sponsor.width,
-                  height: sponsor.height,
-                  marginTop: sponsor.marginTop,
-                  marginBottom: sponsor.marginBottom,
-                  marginLeft: sponsor.marginLeft,
-                  marginRight: sponsor.marginRight,
-                  margin: sponsor.margin,
+                  width: company.width,
+                  height: company.height,
+                  marginTop: company.marginTop,
+                  marginBottom: company.marginBottom,
+                  marginLeft: company.marginLeft,
+                  marginRight: company.marginRight,
+                  margin: company.margin,
                 }}
                 >
-                <img src={sponsor.image} alt={sponsor.name} className="sponsor-logo" />
+                <img src={company.image} alt={company.name} className="company-logo" />
               </Box>
             </Link>
           ))}
@@ -121,11 +121,11 @@ function SponsorBar() {
       </MediaQuery>
 
       <MediaQuery maxWidth={600}>
-        <Typography variant='h6' className="sponsor-title" >Festejä mahdollistamassa</Typography>
+        <Typography variant='h6' className="logo-bar-title" >Festejä mahdollistamassa</Typography>
         <Slider {...settings_mobile} >
-          {sponsors_mobile.map((sponsor, index) => (
-            <Link to={sponsor.link} target="_blank" key={index}>
-              <img src={sponsor.image} alt={sponsor.name} width={sponsor.width} height={sponsor.height} style={sponsor.style} className="sponsor-logo-mobile" />
+          {companies_mobile.map((company, index) => (
+            <Link to={company.link} target="_blank" key={index}>
+              <img src={company.image} alt={company.name} width={company.width} height={company.height} style={company.style} className="company-logo-mobile" />
             </Link>
           ))
           }
@@ -135,4 +135,4 @@ function SponsorBar() {
   );
 }
 
-export default SponsorBar;
+export default CompanyBar;
