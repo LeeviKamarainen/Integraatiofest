@@ -27,7 +27,7 @@ import loas from '../assets/sponsors/LOAS-logo-vihr.png'
 function SponsorBar() {
 
   const sponsors = [
-    { name: "TEK", link: "https://www.tek.fi/", image: tek, width: { xs: 143 }, height: { xs: 80 }, marginTop: { xs: 0 } },
+    { name: "TEK", link: "https://www.tek.fi/", image: tek, width: 143, height: 80, marginTop: { xs: 0 } },
     { name: "Lappeenranta Events", link: "https://lappeenrantaevents.fi/", image: lprVertical, width: { xs: 178 }, height: { xs: 45 }, marginTop: { xs: 2 } },
     { name: "Kotipizza", link: "https://kotipizza.fi/", image: kotipizza, width: { xs: 86 }, height: { xs: 60 }, marginTop: { xs: "0.3rem" } },
     { name: "Visma", link: "https://www.visma.fi/", image: visma, width: { xs: 167 }, height: { xs: 60 }, marginTop: { xs: 0.5 } },
@@ -88,6 +88,7 @@ function SponsorBar() {
     pauseOnHover: false,
     initialSlide: randomNumber(0, sponsors_mobile.length)
   };
+  console.log(sponsors)
 
   return (
     <div className="content-wrapper sponsor-bar">
