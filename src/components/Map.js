@@ -20,7 +20,7 @@ function Map() {
             <img src={map} fetchPriority="high" className="map-mobile" alt="kartta" />
           </Grid>
           <Grid xs={12} className="map-description-wrapper-mobile color-1">
-            <Typography sx={{ typography: {xs: 'h6', sm: 'h4'} ,textAlign: "left"}} className="map-description-title-mobile color-1">
+            <Typography sx={{ typography: {xs: 'h6', sm: 'h4'} ,textAlign: "left"}} className="map-title-mobile color-1">
               Kartan selitteet <br />
             </Typography>
             <p className="color-1 description-text-mobile">
@@ -47,7 +47,7 @@ function Map() {
         </Grid>
         <Grid container className="bus-timetable-wrapper color-1" direction="row" >
           <Grid xs={12} className="bus-timetable-wrapper">
-            <Typography sx={{ typography: {xs: 'h6', sm: 'h4'}, textAlign: "left"}} className="map-title">
+            <Typography sx={{ typography: {xs: 'h6', sm: 'h4'}, textAlign: "left"}} className="map-title-mobile">
               Julkinen liikenne Lappeenrannassa 
             </Typography>
             <p className="color-1 description-text-mobile">
@@ -66,7 +66,7 @@ function Map() {
               Alapuolella valmiiksi haetut reitit LUT-yliopistolta Keskustaan ja takaisin. <br />
             </p>
 
-            <Typography variant='body1' className="map-title"> Reitti LUT-yliopisto - Lyseo (keskusta) </Typography>
+            <Typography variant='body1' className="map-title" sx={{textAlign: "center"}}> Reitti LUT-yliopisto - Lyseo (keskusta) </Typography>
               <Iframe 
                 url="https://lappeenranta.digitransit.fi/haku?&lang=fi&address1=Lappeenrannan teknillinen yliopisto, (LUT), Yliopistonkatu 34, Lappeenranta&lon1=28.09156&lat1=61.064525&address2=Lyseo I, Lappeenranta&lon2=28.180633&lat2=61.057604"
                 width="96%"
@@ -76,7 +76,7 @@ function Map() {
                 position="relative"
               />
 
-              <Typography variant='body1' className="map-title"> Reitti Lyseo (keskusta) - LUT-yliopisto </Typography>
+              <Typography variant='body1' className="map-title" sx={{textAlign: "center"}}> Reitti Lyseo (keskusta) - LUT-yliopisto </Typography>
               <Iframe 
                 url="https://lappeenranta.digitransit.fi/haku?&lang=fi&address1=Lyseo L, Lappeenranta&lon1=28.180236&lat1=61.057718&address2=Lappeenrannan teknillinen yliopisto, (LUT), Yliopistonkatu 34, Lappeenranta&lon2=28.09156&lat2=61.064525" 
                 width="96%"
@@ -98,7 +98,7 @@ function Map() {
             <img src={map} fetchPriority="high" className="map" alt="kartta" />
           </Grid>
           <Grid md={6} className="map-description-wrapper color-1">
-            <Typography variant="h4" className="map-description-title color-1">
+            <Typography variant="h4" className="map-title color-1">
               Kartan selitteet <br />
             </Typography>
             <p className="color-1 description-text">
@@ -125,7 +125,7 @@ function Map() {
         </Grid>
         <Grid container className="bus-timetable-wrapper color-1" direction="row" >
           <Grid md={6} className="bus-timetable-text-wrapper">
-            <Typography variant='h4' className="map-title"> Julkinen liikenne Lappeenrannassa </Typography>
+            <Typography variant='h4' className="map-title" sx={{textAlign: "left"}}> Julkinen liikenne Lappeenrannassa </Typography>
             <p className="color-1 description-text">
               Lappeenrannan paikallisliikenne keskustan ja yliopiston välillä ajetaan linjoilla
               <b> 1, 1X </b> ja <b> 5</b>, sekä viikonloppuöisin linja <b> 12</b>. <pre />
@@ -142,7 +142,7 @@ function Map() {
             </p>
           </Grid>
           <Grid md={6} className="bus-timetable-search-wrapper">
-            <Typography variant='h5' className="map-title"> Reitti LUT-yliopisto - Lyseo (keskusta) </Typography>
+            <Typography variant='h5' className="map-title" sx={{textAlign: "center"}}> Reitti LUT-yliopisto - Lyseo (keskusta) </Typography>
               <Iframe 
                 url="https://lappeenranta.digitransit.fi/haku?&lang=fi&address1=Lappeenrannan teknillinen yliopisto, (LUT), Yliopistonkatu 34, Lappeenranta&lon1=28.09156&lat1=61.064525&address2=Lyseo I, Lappeenranta&lon2=28.180633&lat2=61.057604"
                 width="96%"
@@ -152,7 +152,7 @@ function Map() {
                 position="relative"
               />
 
-              <Typography variant='h5' className="map-title"> Reitti Lyseo (keskusta) - LUT-yliopisto </Typography>
+              <Typography variant='h5' className="map-title" sx={{textAlign: "center"}}> Reitti Lyseo (keskusta) - LUT-yliopisto </Typography>
               <Iframe 
                 url="https://lappeenranta.digitransit.fi/haku?&lang=fi&address1=Lyseo L, Lappeenranta&lon1=28.180236&lat1=61.057718&address2=Lappeenrannan teknillinen yliopisto, (LUT), Yliopistonkatu 34, Lappeenranta&lon2=28.09156&lat2=61.064525" 
                 width="96%"

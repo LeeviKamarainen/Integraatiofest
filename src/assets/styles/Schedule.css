@@ -69,13 +69,13 @@
 
 @media screen  and (max-width: 600px) {
     .timetable-text {
-        font-size: 0.7rem;
+        font-size: 0.8rem;
     }
 }
 
 @media  screen and (max-width: 450px)	 {
     .timetable-text {
-        font-size: 0.7rem;
+        font-size: 0.8rem;
     }
 
     .indent {
