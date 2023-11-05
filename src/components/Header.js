@@ -3,7 +3,6 @@ import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import CountdownTimer from './CountdownTimer';
-import LeftNav from './LeftNav';
 
 import '../assets/styles/Header.css';
 
