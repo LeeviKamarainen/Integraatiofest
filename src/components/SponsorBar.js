@@ -91,7 +91,7 @@ function SponsorBar() {
 
   return (
     <div className="content-wrapper sponsor-bar">
-      <MediaQuery minWidth={600}>
+      <MediaQuery minWidth={601}>
         <Typography variant='h6' className="sponsor-title" sx={{
           marginBlockEnd: {
             lg: 0,
