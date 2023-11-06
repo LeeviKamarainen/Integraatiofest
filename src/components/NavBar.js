@@ -27,11 +27,13 @@ function Navbar() {
         {label: "Etusivu", href: '/'},
         {label: "Aikataulu", href: '/aikataulu'},
         {label: "Kartta ja bussit", href: '/kartta'},
-        // {label: "Majoitusinfo", href: '/majoitus'},
-        // {label: "In English", href: '/in-english'}
-        // {label: "Yhteystiedot", href: '/yhteystiedot'},
-        // {label: "Yhteistyökumppanit", href: '/yhteistyokumppanit'},
-        // {label: "Mistä saan lisää kaljaa?", href: '/kaljakaupat'},
+        {label: "Majoitusinfo", href: '/majoitus'},
+        {label: "In English", href: '/english'},
+        {label: "Loppu", href: '/loppu'},
+        {label: "Festihypetys", href: '/hypetys'},
+        {label: "Yhteystiedot", href: '/yhteystiedot'},
+        {label: "Yhteistyökumppanit", href: '/yhteistyokumppanit'},
+        {label: "Mistä saan lisää kaljaa?", href: '/kaljakaupat'},
     ]
 
 
@@ -50,11 +52,13 @@ function Navbar() {
                     textShadow: '0px 4px 3px rgba(0,0,0,0.4), 0px 8px 13px rgba(0,0,0,0.1), 0px 18px 23px rgba(0,0,0,0.1)',
                     fontWeight: 'bold',
                     textTransform: 'uppercase',
-                    letterSpacing: '1px',
-                    fontSize: {lg: '0.9rem'},
-                    wordBreak: 'break-word',
-                    ml: 3,
-                    mr: -2,
+                    letterSpacing: '0.2px',
+                    textOverflow: 'ellipsis',
+                    whiteSpace: 'nowrap',
+                    fontSize: {md: '0.65rem', lg: '0.65rem'},
+                    minWidth: {lg: '1px'},
+                    m: 0.5,
+                    p: 1,
                     display: {xs: 'none', md: 'none', lg: 'block'} // Hide on mobile
                 }}>
                     {item.label}
