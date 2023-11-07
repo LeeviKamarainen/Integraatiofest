@@ -1,7 +1,7 @@
 import React from 'react'
 import { Typography } from '@mui/material'
 
-import '../../assets/styles/Schedule.css'
+import '../../../assets/styles/Schedule.css'
 
 function Sunday() {
   return (

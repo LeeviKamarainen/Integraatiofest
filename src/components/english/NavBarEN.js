@@ -7,9 +7,9 @@ import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import Drawer from '@mui/material/Drawer';
 
-import title from '../assets/images/title.png';
+import title from '../../assets/images/title.png';
 
-import '../assets/styles/NavBar.css';
+import '../../assets/styles/NavBar.css';
 
 
 function Navbar() {
@@ -24,15 +24,14 @@ function Navbar() {
     }
 
     const menuItems = [
-        {label: "Etusivu", href: '/'},
-        {label: "Aikataulu", href: '/aikataulu'},
-        {label: "Kartta ja bussit", href: '/kartta'},
-        {label: "Majoitusinfo", href: '/majoitus'},
-        {label: "Yhteystiedot", href: '/yhteystiedot'},
-        {label: "Festihypetys", href: '/hype'},
-        {label: "In English", href: '/en'}
+        {label: "Home", href: '/en'},
+        {label: "Schedule", href: '/en/schedule'},
+        {label: "Map and busses", href: '/en/map'},
+        {label: "Accommodation", href: '/en/accommodation'},
+        {label: "Contact", href: '/en/contact'},
+        {label: "Festhype", href: '/en/hype'},
+        {label: "Suomeksi", href: '/'}
     ]
-
 
   return (
     <Box >
