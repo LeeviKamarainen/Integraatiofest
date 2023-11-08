@@ -14,11 +14,18 @@
     flex-direction: column;
 }
 
+.grid-video {
+    background-color: black;
+    margin: 1rem 0 1rem 0;
+}
+
 .button-wrapper {
     display: flex;
+    width: 100%;
+    height: 100%;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 
@@ -29,7 +36,7 @@
     display: block;
 }
 
-.song-title {
+.hype-title {
     color: white;
 
     font-weight: bold !important;
@@ -60,6 +67,7 @@
     align-content: flex-start;
     align-self: flex-start;
     flex-direction: row;
+    margin: 0 2rem 0.5rem 2rem;
 }
 
 .song-lyrics-column {
@@ -75,6 +83,7 @@ p {
 }
 
 .player-wrapper {
+    margin: 1rem;
     position: relative;
     padding-bottom: 56.25%; /* 16:9 */
 }

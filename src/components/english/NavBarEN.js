@@ -28,7 +28,7 @@ function Navbar() {
         {label: "Schedule", href: '/en/schedule'},
         {label: "Map and busses", href: '/en/map'},
         {label: "Accommodation", href: '/en/accommodation'},
-        {label: "Contact", href: '/en/contact'},
+        // {label: "Contact", href: '/en/contact'},
         {label: "Festhype", href: '/en/hype'},
         {label: "Suomeksi", href: '/'}
     ]

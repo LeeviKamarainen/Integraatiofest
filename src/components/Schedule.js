@@ -28,7 +28,7 @@ function Schedule() {
           <Grid xs={12} md={4} className="timetable-image">
             <img src={kreba} alt="Big Kreba" className="timetable-image-1" />
         </Grid>
-        <Grid xs={12} md={8} className="timetable-grid">
+        <Grid xs={12} md={8} className="timetable-grid" backgroundColor="white">
             <Saturday />
         </Grid>
       </Grid>

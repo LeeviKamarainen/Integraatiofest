@@ -8,7 +8,7 @@ function Saturday() {
     <>
         <Typography sx={{ typography: { xs: 'h6', md: 'h2'}}} component="h2" textAlign="left" className="timetable-title"> Lauantai </Typography>
         <p className="timetable-text">
-            <span className="timetable-item">08:30 - 10:00 <span className="location">Ylioppilastalon kellari:</span> Aamupala <br /></span>
+            <span className="timetable-item">08:30 - 10:00 <span className="location">Ylioppilastalon kellari:</span> Aamupala by VIBA <br /></span>
             <span className="timetable-item">10:00 - 10:45 <span className="location">Viipuri-sali:</span> Otto "Indiana Jones" Salmela - Kadonneen approksimaation metsästys <br /></span>
             <span className="timetable-item">10:45 - 11:30 <span className="location">Viipuri-sali:</span> Henning Kirschemann - CERN research in Finland <br /></span>
             <span className="timetable-item">12:00 - 14:00 <span className="location">Yliopiston aula:</span> Posterisessio ja haalarimerkkitori<br /> </span> 

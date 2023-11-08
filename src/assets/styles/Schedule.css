@@ -30,7 +30,7 @@
 
 .timetable-grid{
     background: black !important;
-    padding: 1rem 0% 0% 1rem !important;
+    padding: 1rem 0% 0.5rem 1rem !important;
 }
 
 .timetable-title {

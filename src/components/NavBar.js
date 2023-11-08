@@ -28,7 +28,7 @@ function Navbar() {
         {label: "Aikataulu", href: '/aikataulu'},
         {label: "Kartta ja bussit", href: '/kartta'},
         {label: "Majoitusinfo", href: '/majoitus'},
-        {label: "Yhteystiedot", href: '/yhteystiedot'},
+        // {label: "Yhteystiedot", href: '/yhteystiedot'},
         {label: "Festihypetys", href: '/hype'},
         {label: "In English", href: '/en'}
     ]
