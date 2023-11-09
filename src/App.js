@@ -11,6 +11,7 @@ import InEnglish from './components/InEnglish';
 import FestEnded from './components/FestEnded';
 import FestHype from './components/FestHype';
 import Accommodation from './components/Accommodation';
+import Excut from './components/Excut';
 
 // English versions
 import NavbarEN from './components/english/NavBarEN';
@@ -36,6 +37,7 @@ function App() {
           <Route path="/majoitus" element={<> <Header /> <Navbar /> <Accommodation /> <Footer /> </>} />
           <Route path="/hype" element={<> <Header /> <Navbar /> <FestHype /> <Footer /> </>} />
           <Route path="/english" element={<> <Header /> <Navbar /> <InEnglish /> <Footer /> </>} />
+          <Route path="/excursio" element={<><Header /> <Navbar /> <Excut /> <Footer /> </>} />
           <Route path="/loppu" element={<> <FestEnded /> </>} />
 
           <Route path="/en" element={<> <NavbarEN /> <HomeEN /> <FooterEN /> </>} />
