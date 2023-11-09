@@ -1,6 +1,7 @@
 import React from 'react';
 import {BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 
+// Finnish versions
 import Header from './components/Header';
 import Navbar from './components/NavBar';
 import Schedule from './components/Schedule';

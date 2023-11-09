@@ -20,7 +20,7 @@ function Excut() {
     <Box sx={{ flexGrow: 1 }} className="content-wrapper" >
       <Grid container className="excursion" >
           <Grid xs={12} md={4} className="timetable-image" backgroundColor="white">
-            <img src={upmKaukas} alt="UPM kaukas" className="grid-image" />
+            <img src={upmKaukas} alt="UPM kaukas" className="grid-image-excursion" />
           </Grid>
           <Grid xs={12} md={8} backgroundColor="black">
             <Typography variant="h4" className="excursion-title">
@@ -37,7 +37,7 @@ function Excut() {
       </Grid>
         <Grid container className="excursion" >
           <Grid xs={12} md={4} className="timetable-image" backgroundColor="white">
-            <img src={vismaOffice} alt="Visma office" className="grid-image" />
+            <img src={vismaOffice} alt="Visma office" className="grid-image-excursion" />
           </Grid>
           <Grid xs={12} md={8} backgroundColor="black">
             <Typography variant="h4" className="excursion-title">
@@ -66,7 +66,7 @@ function Excut() {
       </Grid>
       <Grid container className="excursion" >
           <Grid xs={12} md={4} className="timetable-image" backgroundColor="white">
-            <img src={syncronTech} alt="UPM kaukas" className="grid-image" />
+            <img src={syncronTech} alt="UPM kaukas" className="grid-image-excursion" />
           </Grid>
           <Grid xs={12} md={8} backgroundColor="black">
             <Typography variant="h4" className="excursion-title">
@@ -82,7 +82,7 @@ function Excut() {
       </Grid>
       <Grid container className="excursion" >
           <Grid xs={12} md={4} className="timetable-image" backgroundColor="black" border="4px solid white">
-            <img src={tujuTaproom} alt="UPM kaukas" className="grid-image" />
+            <img src={tujuTaproom} alt="UPM kaukas" className="grid-image-excursion" />
           </Grid>
           <Grid xs={12} md={8} backgroundColor="black">
             <Typography variant="h4" className="excursion-title">
@@ -108,7 +108,7 @@ function Excut() {
       </Grid>
       <Grid container className="excursion" >
           <Grid xs={12} md={4} className="timetable-image" backgroundColor="black">
-            <img src={lprCity} alt="Lappeenranta city" className="grid-image" />
+            <img src={lprCity} alt="Lappeenranta city" className="grid-image-excursion" />
           </Grid>
           <Grid xs={12} md={8} backgroundColor="black" className="lpr-text">
             <Typography variant="h4" className="excursion-title">

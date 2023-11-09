@@ -19,7 +19,7 @@ function Accommodation() {
           <Grid container className="grid" direction="row">
             <Grid md={6} className="grid-image">
               <img src={lyseo2} alt="Lyseo frontdoor" className="grid-image img1" />
-              <Typography variant="body2" sx={{alignSelf: "center"}}  className="accommodation-desc">
+              <Typography variant="body2" sx={{textAlign: "center"}}  className="accommodation-desc">
                 Etuovi majoitukseen
               </Typography>
             </Grid>
@@ -40,7 +40,7 @@ function Accommodation() {
             </Grid>
             <Grid md={6} className="grid-image">
               <img src={lyseo1} alt="Sports hall frontdoor" className="grid-image img2" />
-              <Typography variant="body2" sx={{alignSelf: "center"}}  className="accommodation-desc">
+              <Typography variant="body2" sx={{textAlign: "center"}}  className="accommodation-desc">
                 Etuovi liikuntahalliin (suihkuun)
               </Typography>
             </Grid>
@@ -69,13 +69,13 @@ function Accommodation() {
               </Grid>
             <Grid xs={12} className="grid-image">
               <img src={lyseo2} alt="Lyseo frontdoor" className="grid-image img1" />
-              <Typography variant="body2" sx={{alignSelf: "center"}}  className="accommodation-desc">
+              <Typography variant="body2" sx={{textAlign: "center"}}  className="accommodation-desc">
                 Etuovi majoitukseen
               </Typography>
             </Grid>
             <Grid xs={12} className="grid-image">
               <img src={lyseo1} alt="Sports hall frontdoor" className="grid-image img2" />
-              <Typography variant="body2" sx={{alignSelf: "center"}}  className="accommodation-desc">
+              <Typography variant="body2" sx={{textAlign: "center"}}  className="accommodation-desc">
                 Etuovi liikuntahalliin (suihkuun)
               </Typography>
             </Grid>
