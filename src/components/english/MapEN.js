@@ -58,9 +58,13 @@ function Map() {
               In Lappeenranta, you can also buy local transportation tickets through the <b> PayiQ tickets</b> and <b> Matkahuollon Reitit ja liput</b> mobile applications. Mobile tickets are more affordable than purchasing a single ticket on the bus.
               It's advisable to add a payment method to mobile apps well in advance of your journey. <pre />
 
+              <b>On weekends, and especially on Sundays, it's highly recommended to allocate extra time for local transportation!</b> <pre />
+
               <b>Last buses during weekend nights:</b> <br />
               University to City Center at 02:15 (bus line 12).  <br />
               City Center to University at 02:35 (bus line 12). <br /> <pre/>
+              A shuttle bus for Integraatiofest participants runs from Saturday night to Sunday morning between 03:00 - 04:00 from LUT University to the City Center (accommodation). <pre />
+
 
               It's recommended to always check the current schedules from <Link to="https://lappeenranta.digitransit.fi/" target='_blank' > Lappeenranta Public Transportation Route Planner.</Link> Below are pre-searched routes from LUT University to the City Center and back. <br />
             </p>
