@@ -66,7 +66,7 @@ function Map() {
               A shuttle bus for Integraatiofest participants runs from Saturday night to Sunday morning between 03:00 - 04:00 from LUT University to the City Center (accommodation). <pre />
 
 
-              It's recommended to always check the current schedules from <Link to="https://lappeenranta.digitransit.fi/" target='_blank' > Lappeenranta Public Transportation Route Planner.</Link> Below are pre-searched routes from LUT University to the City Center and back. <br />
+              It's recommended to always check the current schedules from <Link to="https://lappeenranta.digitransit.fi/?locale=en" target='_blank' > Lappeenranta Public Transportation Route Planner.</Link> Below are pre-searched routes from LUT University to the City Center and back. <br />
             </p>
 
             <Typography variant='body1' className="map-title" sx={{textAlign: "center"}}> Route LUT University - Lyseo (City Center) </Typography>
