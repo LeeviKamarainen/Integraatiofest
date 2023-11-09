@@ -27,11 +27,11 @@ function Navbar() {
         {label: "Etusivu", href: '/'},
         {label: "Aikataulu", href: '/aikataulu'},
         {label: "Kartta ja bussit", href: '/kartta'},
-        // {label: "Majoitusinfo", href: '/majoitus'},
-        // {label: "In English", href: '/in-english'}
-        // {label: "Yhteystiedot", href: '/yhteystiedot'},
-        // {label: "Yhteistyökumppanit", href: '/yhteistyokumppanit'},
-        // {label: "Mistä saan lisää kaljaa?", href: '/kaljakaupat'},
+        {label: "Majoitusinfo", href: '/majoitus'},
+        {label: "Excut ja kaupunkikierros", href: '/excu'},
+        {label: "Yhteystiedot", href: '/yhteystiedot'},
+        {label: "Festihypetys", href: '/hype'},
+        {label: "In English", href: '/en'}
     ]
 
 
@@ -50,12 +50,14 @@ function Navbar() {
                     textShadow: '0px 4px 3px rgba(0,0,0,0.4), 0px 8px 13px rgba(0,0,0,0.1), 0px 18px 23px rgba(0,0,0,0.1)',
                     fontWeight: 'bold',
                     textTransform: 'uppercase',
-                    letterSpacing: '1px',
+                    letterSpacing: '0.2px',
+                    textOverflow: 'ellipsis',
+                    whiteSpace: 'nowrap',
                     fontSize: {lg: '0.9rem'},
-                    wordBreak: 'break-word',
-                    ml: 3,
-                    mr: -2,
-                    display: {xs: 'none', md: 'none', lg: 'block'} // Hide on mobile
+                    minWidth: {lg: '1px'},
+                    m: 0.5,
+                    p: 1,
+                    display: {xs: 'none', lg: 'none', xl: 'block'} // Hide on mobile
                 }}>
                     {item.label}
                 </Button>
@@ -69,7 +71,7 @@ function Navbar() {
                 aria-label="menu"
                 onClick={handleDrawerOpen}
                 sx={{ ml: 2,
-                    display: {md: 'block', lg: 'none'},
+                    display: {md: 'block', lg: 'block', xl: 'none'},
             }}>
                 <MenuIcon />
             </IconButton>

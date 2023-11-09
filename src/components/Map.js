@@ -58,13 +58,15 @@ function Map() {
               Lappeenrannassa paikallisliikenteen lipun voi ostaa myös <b> PayiQ tickets</b> ja <b> Matkahuollon Reitit ja liput</b> -sovellusten kautta. Mobiililippu on bussista ostettua kertalippua edullisempi. 
               Mobiilisovelluksiin kannattaa lisätä maksutapa jo hyvissä ajoin ennen matkaa. <pre />
 
+              <b>Viikonloppuisin ja erityisesti sunnuntaisin paikallisliikenteellä liikkumiseen kannattaa varata aikaa!</b> <pre />
+
               <b >Viimeiset bussit viikonloppuöisin: </b> <br />
               Yliopisto-Keskusta klo 02:15 (linja 12).  <br />
               Keskusta-Yliopisto klo 02:35 (linja 12). <br /> <pre/>
+              Festikansalle kulkee non-stop shuttlebussi la - su yönä klo 03:00 - 04:00 välillä LUT-yliopisto - Keskusta (majoitus) <pre />
 
-              Ajankohtaiset aikataulut kannattaa aina tarkistaa <Link to="https://lappeenranta.digitransit.fi/" target='_blank' > Lappeenrannan joukkoliikenteen reittioppaasta.</Link> <br />
-              Alapuolella valmiiksi haetut reitit LUT-yliopistolta Keskustaan ja takaisin. <br />
-            </p>
+              Ajankohtaiset aikataulut kannattaa aina tarkistaa <Link to="https://lappeenranta.digitransit.fi/" target='_blank' > Lappeenrannan joukkoliikenteen reittioppaasta.</Link> Alapuolella valmiiksi haetut reitit LUT-yliopistolta Keskustaan ja takaisin. <br />
+           </p>
 
             <Typography variant='body1' className="map-title" sx={{textAlign: "center"}}> Reitti LUT-yliopisto - Lyseo (keskusta) </Typography>
               <Iframe 
@@ -134,9 +136,12 @@ function Map() {
               Lappeenrannassa paikallisliikenteen lipun voi ostaa myös <b> PayiQ tickets</b> ja <b> Matkahuollon Reitit ja liput</b> -sovellusten kautta. Mobiililippu on bussista ostettua kertalippua edullisempi. 
               Mobiilisovelluksiin kannattaa lisätä maksutapa jo hyvissä ajoin ennen matkaa. <pre />
 
+              <b>Viikonloppuisin ja erityisesti sunnuntaisin paikallisliikenteellä liikkumiseen kannattaa varata aikaa!</b> <pre />
+
               <b >Viimeiset bussit viikonloppuöisin: </b> <br />
               Yliopisto-Keskusta klo 02:15 (linja 12).  <br />
               Keskusta-Yliopisto klo 02:35 (linja 12). <br /> <pre/>
+              Festikansalle kulkee non-stop shuttlebussi la - su yönä klo 03:00 - 04:00 välillä LUT-yliopisto - Keskusta (majoitus) <pre />
 
               Ajankohtaiset aikataulut kannattaa aina tarkistaa <Link to="https://lappeenranta.digitransit.fi/" target='_blank' > Lappeenrannan joukkoliikenteen reittioppaasta.</Link> Oikealla valmiiksi haetut reitit LUT-yliopistolta Keskustaan ja takaisin. <br />
             </p>

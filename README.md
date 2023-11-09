@@ -2,9 +2,7 @@
 This is a website project for the student event Integraatiofest 2023 held in Lappeenranta. It serves as a front-end web application designed to provide information about the event to its participants. The application is made using React.js and the Material-UI framework.
 
 ### To-Do List
-- [ ] Add accommodation info
-- [ ] Add contact information
-- [ ] Create an english version of the page
+- NONE :) ENJOY INTEGRAATIOFEST 2023!
  
 ### How to add a new page to the site
 1. Start by creating a  new JavaScript file in the `src/components/` folder.
