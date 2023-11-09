@@ -12,6 +12,7 @@ import FestEnded from './components/FestEnded';
 import FestHype from './components/FestHype';
 import Accommodation from './components/Accommodation';
 import Excut from './components/Excut';
+import Contact from './components/Contact';
 
 // English versions
 import NavbarEN from './components/english/NavBarEN';
@@ -22,6 +23,7 @@ import MapEN from './components/english/MapEN';
 import AccommodationEN from './components/english/AccommodationEN';
 import ContactEN from './components/english/ContactEN';
 import FestHypeEN from './components/english/FestHypeEN';
+import ExcutEN from './components/english/ExcutEN';
 
 import './App.css';
 
@@ -37,13 +39,15 @@ function App() {
           <Route path="/majoitus" element={<> <Header /> <Navbar /> <Accommodation /> <Footer /> </>} />
           <Route path="/hype" element={<> <Header /> <Navbar /> <FestHype /> <Footer /> </>} />
           <Route path="/english" element={<> <Header /> <Navbar /> <InEnglish /> <Footer /> </>} />
-          <Route path="/excursio" element={<><Header /> <Navbar /> <Excut /> <Footer /> </>} />
+          <Route path="/excu" element={<><Header /> <Navbar /> <Excut /> <Footer /> </>} />
+          <Route path="/yhteystiedot" element={<><Header /> <Navbar /> <Contact /> <Footer /> </>} />
           <Route path="/loppu" element={<> <FestEnded /> </>} />
 
           <Route path="/en" element={<> <NavbarEN /> <HomeEN /> <FooterEN /> </>} />
           <Route path="/en/schedule" element={<> <NavbarEN /> <ScheduleEN /> <FooterEN /> </>} />
           <Route path="/en/map" element={<> <NavbarEN /> <MapEN /> <FooterEN /> </>} />
           <Route path="/en/accommodation" element={<> <NavbarEN /> <AccommodationEN /> <FooterEN /> </>} />
+          <Route path="/en/excursion" element={<> <NavbarEN /> <ExcutEN /> <FooterEN /> </>} />
           <Route path="/en/contact" element={<> <NavbarEN /> <ContactEN /> <FooterEN /> </>} />
           <Route path="/en/hype" element={<> <NavbarEN /> <FestHypeEN /> <FooterEN /> </>} />
 

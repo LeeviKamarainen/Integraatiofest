@@ -23,6 +23,7 @@ import emblica from '../assets/sponsors/emblica-logo-blue.png'
 import cafeGbar from '../assets/sponsors/g_no_bg.png'
 import viba from '../assets/sponsors/viba_logo_black.png'
 import loas from '../assets/sponsors/LOAS-logo-vihr.png'
+import kMarket from '../assets/sponsors/k-market.jpeg'
 
 function CompanyBar() {
 
@@ -40,7 +41,8 @@ function CompanyBar() {
     { name: "Emblica", link: "https://emblica.com/", image: emblica, width: { xs: 150 }, height: { xs: 32 }, margin: { xs: "1.4rem" } },
     { name: "Viba", image: viba, width: { xs: 100 }, height: { xs: 100 }, marginTop: { xs: "-0.8rem" }, marginBottom: { xs: "-1rem" }},
     { name: "Cafe Bar G", link: "https://www.facebook.com/CafeGbar/?locale=fi_FI", image: cafeGbar, width: { xs: 179 }, height: { xs: 73 }, marginTop: { xs: "0rem" } },
-    { name: "LOAS", link:"https://www.loas.fi/", image: loas, width: { xs: 146 }, height: { xs: 40 }, marginTop: { xs: "0.8rem" }}
+    { name: "LOAS", link: "https://www.loas.fi/", image: loas, width: { xs: 146 }, height: { xs: 40 }, marginTop: { xs: "0.8rem" }},
+    { name: "K-Supermarket Sammonlahti", link: "https://www.k-ruoka.fi/kauppa/k-supermarket-sammonlahti/", image: kMarket, width: { xs: 277 }, height: { xs: 70 }}
   ];
   
   const companies_mobile = [
@@ -57,7 +59,8 @@ function CompanyBar() {
   { name: "Emblica", link: "https://emblica.com/", image: emblica, width: 213, height: 45, style: { marginTop: "25px" } },
   { name: "Viba", image: viba, width: 100, height: 100 },
   { name: "Cafe Bar G", link: "https://www.facebook.com/CafeGbar/?locale=fi_FI", image: cafeGbar, width: 179, height: 73, style: { marginTop: "15px" } },
-  { name: "LOAS", link: "https://www.loas.fi/", image: loas, width: 146, height: 40, style: { marginTop: "25px" }}
+  { name: "LOAS", link: "https://www.loas.fi/", image: loas, width: 146, height: 40, style: { marginTop: "25px" }},
+  { name: "K-Supermarket Sammonlahti", link: "https://www.k-ruoka.fi/kauppa/k-supermarket-sammonlahti/", image: kMarket, width: 277, height: 70, style: { marginTop: "15px" }}
   ];
 
   const randomNumber = (min, max) => {

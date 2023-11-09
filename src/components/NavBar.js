@@ -28,8 +28,8 @@ function Navbar() {
         {label: "Aikataulu", href: '/aikataulu'},
         {label: "Kartta ja bussit", href: '/kartta'},
         {label: "Majoitusinfo", href: '/majoitus'},
-        {label: "Excut ja kaupunkikierros", href: '/excursio'},
-        // {label: "Yhteystiedot", href: '/yhteystiedot'},
+        {label: "Excut ja kaupunkikierros", href: '/excu'},
+        {label: "Yhteystiedot", href: '/yhteystiedot'},
         {label: "Festihypetys", href: '/hype'},
         {label: "In English", href: '/en'}
     ]
@@ -57,7 +57,7 @@ function Navbar() {
                     minWidth: {lg: '1px'},
                     m: 0.5,
                     p: 1,
-                    display: {xs: 'none', md: 'none', lg: 'block'} // Hide on mobile
+                    display: {xs: 'none', lg: 'none', xl: 'block'} // Hide on mobile
                 }}>
                     {item.label}
                 </Button>
@@ -71,7 +71,7 @@ function Navbar() {
                 aria-label="menu"
                 onClick={handleDrawerOpen}
                 sx={{ ml: 2,
-                    display: {md: 'block', lg: 'none'},
+                    display: {md: 'block', lg: 'block', xl: 'none'},
             }}>
                 <MenuIcon />
             </IconButton>

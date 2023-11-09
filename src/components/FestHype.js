@@ -4,7 +4,7 @@ import Grid from '@mui/material/Unstable_Grid2';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import { Spotify, Youtube } from 'react-bootstrap-icons';
-import ReactPlayerYoutube from 'react-player/lazy';
+import ReactPlayerYoutube from 'react-player/youtube';
 import ReactPlayer from 'react-player/lazy';
 
 import appleMusic from '../assets/images/appleMusic.png'
@@ -77,7 +77,7 @@ function FestHype() {
         <Grid container className="grid">
           <Grid xs={12} md={12} className="grid-text">
             <Typography variant='body1' className="hype-title">
-              Integraatiofest promovideot
+              Festihype
             </Typography>
           </Grid>
           <Grid xs={12} md={6} className="grid-video">
