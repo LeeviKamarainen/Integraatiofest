@@ -19,7 +19,7 @@ function Saturday() {
             <span className="timetable-item indent"><span className="location">3305 / 3306:</span> PLANCKS ja IMC qualifiers <br /></span> 
             <span className="timetable-item">15:00 - 17:00 Accommodation open <br /></span>
             <span className="timetable-item">17:00 - 21:00 <span className="location"> Campus area:</span> <b>Appro</b>Ξmaatio e<sup>it</sup>, t ∈ [0, 2π]  <br /></span>
-            <span className="timetable-item">21:00 - 00:00 <span className="location"> Student union building:</span> Afterparty and LaTe-Duo<br /></span>
+            <span className="timetable-item">20:00 - 00:00 <span className="location"> Student union building:</span> Afterparty and LaTe-Duo<br /></span>
             <span className="timetable-item">00:00 - <span className="jatkot">undefined</span> <span className="location">Student union building basement: </span> Afterparties afterparty</span>
         </p>
     </>

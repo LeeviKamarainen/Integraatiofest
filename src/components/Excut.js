@@ -19,7 +19,7 @@ function Excut() {
   return (
     <Box sx={{ flexGrow: 1 }} className="content-wrapper" >
       <Grid container className="excursion" >
-          <Grid xs={12} md={4} className="timetable-image">
+          <Grid xs={12} md={4} className="timetable-image" backgroundColor="white">
             <img src={upmKaukas} alt="UPM kaukas" className="grid-image" />
           </Grid>
           <Grid xs={12} md={8} backgroundColor="black">
@@ -27,8 +27,8 @@ function Excut() {
             UPM Kaukas
             </Typography>
             <Typography variant="body1" className="excursion-text">
-            Vierailijat pääsevät tutustumaan data-analytiikan ja tekoälyn hyödyntämiseen perinteisissä prosessiteollisuudessa. 
-            Lisäksi vierailulla pääsee tutustumaan Etelä-Karjalan suurimpaan tehdasintegraattiin bussiajelulla alueen halki. 
+            Vierailijat pääsevät tutustumaan data-analytiikan ja tekoälyn hyödyntämiseen perinteisessä prosessiteollisuudessa. 
+            Lisäksi ekskursion aikana on mahdollisuus kokea Etelä-Karjalan suurin tehdasintegraatti alueen halki suuntautuvalla bussiajelulla. 
             Yrityksen verkkosivut: <Link to="https://www.upm.com/fi/" target="_blank">UPM</Link>
             <pre />
             <b>Kuljetus exculle lähtee klo 14:30 LUT-yliopiston edestä.</b>
@@ -51,7 +51,7 @@ function Excut() {
             <pre />
             Visma Solutionsin toimisto sijaitsee aivan Lappeenrannan keskustassa, Assi Vapaudenaukion toimistotalossa (osoite: Villimiehenkatu 10, Lappeenranta). 
             Kulkeminen LUT-yliopistolta Visman toimistolle onnistuu helpoiten paikallisliikennettä hyödyntäen.
-            Lähin pysäkki sijaitsee vain muutaman sadan metrin kävelymatkan päästä Visman toimistolta. Alapuolella linkki aikataulujen hakemiseen. <br />
+            Lähin pysäkki sijaitsee vain muutaman sadan metrin kävelymatkan päästä Visman toimistolta. Alapuolella linkki aikataulujen hakemiseen. <br /> <pre />
             <b>Excu alkaa klo 15:00 ja kestää noin pari tuntia. Varmistakaa, että olette ajoissa paikalla!</b>
             </Typography>
             <Iframe
@@ -89,11 +89,11 @@ function Excut() {
             Tuju Taproom Olutmaistelu
             </Typography>
             <Typography variant="body1" className="excursion-text">
-            Tuju Taproom on Tuju panimoyhtiön kesällä 2023 avattu ravintola joka sijaitsee lappeen Rantojen Rakuunamäellä. 
-            Hanoja taproomissa on 16 kappaletta, jonka lisäksi janoista palvelee vaihtuvaa ja laadukas vierasvalikoima ja kylmäkaapit.
+            Tuju Taproom on panimoyhtiö Tujun kesällä 2023 avattu ravintola, joka sijaitsee lappeen Rantojen Rakuunamäellä. 
+            Hanoja Taproomissa on 16 kappaletta, jonka lisäksi janoista palvelee vaihtuva ja laadukas vierasvalikoima ja kylmäkaapit.
             Taproomin tuotteita voi käydä ihastelemasta osoitteesta: <Link to="https://www.panimotuju.fi/taproom/" target="_blank">Tuju Taproom</Link> <pre />
             <b>Excu alkaa klo 14:50 Tuju Taproomin edessä. Osoite on Soittokunnanraitti 3, Lappeenranta. Olethan ajoissa paikalla ja
-                muistathan, että kyseisen excu maksaa 30€/henkilö. </b> <br />
+                muistathan, että kyseinen excu maksaa 30€/henkilö. </b> <br />
             Tähänkin excuun helpoin siirtymistapa on paikallisliikenne, alla linkki aikataulun metsästämiseen. <br />
             </Typography>
             <Iframe
@@ -115,9 +115,9 @@ function Excut() {
             Lappeenrannan kaupunkikierros
             </Typography>
             <Typography variant="body1" className="excursion-text">
-            Excujen aikana on hyvä tutustua Lappeenrannan kulttuuri- ja kuppilatarjontaan. 
-            Alla olevaan karttaan on kerätty erinäisiä kohteita, joihin voi tutustua kauniin kaupunkimme keskustassa. 
-            Kuppilat osioon on kerätty lista paikallisista baareista, joihin (toivottavasti) pääsee haalarit jalassa perjantai-iltapäivästä. <pre />
+              Excuilla ei kannata jättää väliin lappeen Rantojen kulttuurista sykettä ja ainutlaatuista kuppilatarjontaa! <br />
+              Alla linkattu karttamme ohjaa sinut erilaisiin tutustumisen arvoisiin kohteisiin kaupunkimme keskustassa.
+              Kartan Kuppilat-osioon on kerätty lista paikallisista baareista, joissa (toivottavasti) on mahdollista viettää perjantai-iltapäivää myös haalarit jalassa. <pre />
             <b>Ota kaupunki haltuun ja lähde tutustumaan lappeen Rantojen mysteeriseen keskustaan! ;) </b><br />
             <b>Linkki karttaan: <Link to="https://www.google.com/maps/d/u/1/edit?mid=1BMMoVDAMG8mdiNEzBDsh2Ygk1Nl6Gf8&usp=sharing" target="_blank">Integraatiofest kaupunkikierros</Link> </b>
             </Typography>

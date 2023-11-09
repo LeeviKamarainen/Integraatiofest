@@ -32,9 +32,9 @@ function Accommodation() {
               </Typography>
               <br />
               <Typography variant="body1" className="accommodation-text">
-                <b>In the accommodation, consuming alcohol, drinking, and any similar indulgence is strictly forbidden!</b> <br /> <br />
+                <b>In the accommodation, consuming, drinking, and any similar indulgence of alcohol is strictly forbidden!</b> <br /> <br />
                 Accommodation is open during the day only at times separately announced in the schedule. 
-                During the night from 23:00 to 08:00, the doors to the accommodation are closed, and night attendants will open them for festival-goers upon arrival. 
+                During the nights from 23:00 to 08:00, the doors to the accommodation are closed, and night attendants will open them for Integraatiofest participants upon arrival. 
                 There is a shower opportunity in the accommodation on both mornings from 08:00 to 10:30. 
                 The showers are located in the same building as the sports hall.
               </Typography>

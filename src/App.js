@@ -7,12 +7,13 @@ import Schedule from './components/Schedule';
 import Footer from './components/Footer';
 import Home from './components/Home';
 import Map from './components/Map';
-import InEnglish from './components/InEnglish';
 import FestEnded from './components/FestEnded';
 import FestHype from './components/FestHype';
 import Accommodation from './components/Accommodation';
 import Excut from './components/Excut';
 import Contact from './components/Contact';
+
+import Kolmio from './components/Kolmio';
 
 // English versions
 import NavbarEN from './components/english/NavBarEN';
@@ -37,10 +38,11 @@ function App() {
           <Route path="/aikataulu" element={<> <Header /> <Navbar /> <Schedule /> <Footer /> </>} />
           <Route path="/kartta" element={<> <Header /> <Navbar /> <Map /> <Footer /> </>} />
           <Route path="/majoitus" element={<> <Header /> <Navbar /> <Accommodation /> <Footer /> </>} />
-          <Route path="/hype" element={<> <Header /> <Navbar /> <FestHype /> <Footer /> </>} />
-          <Route path="/english" element={<> <Header /> <Navbar /> <InEnglish /> <Footer /> </>} />
           <Route path="/excu" element={<><Header /> <Navbar /> <Excut /> <Footer /> </>} />
           <Route path="/yhteystiedot" element={<><Header /> <Navbar /> <Contact /> <Footer /> </>} />
+          <Route path="/hype" element={<> <Header /> <Navbar /> <FestHype /> <Footer /> </>} />
+
+          <Route path="/kolmio" element={<> <Kolmio /> </>} />
           <Route path="/loppu" element={<> <FestEnded /> </>} />
 
           <Route path="/en" element={<> <NavbarEN /> <HomeEN /> <FooterEN /> </>} />
