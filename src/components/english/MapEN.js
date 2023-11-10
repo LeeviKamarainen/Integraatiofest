@@ -36,11 +36,11 @@ function Map() {
                 Valtakatu 33, 53100 Lappeenranta <br />
             </p>
             <p className="color-1 description-text-mobile">
-              <b style={{color: '#1C39BB'}}>LUT University Bus Stop</b> <br />
+              <b style={{color: '#1b6acc'}}>LUT University Bus Stop</b> <br />
               Located in front of LUT University's main entrance <br />
-              <b style={{color: '#1C39BB'}}>City Center Bus Stop (Accommodation)</b> <br />
+              <b style={{color: '#1b6acc'}}>City Center Bus Stop (Accommodation)</b> <br />
               Located on Valtakatu near the accommodation <br />
-              <b style={{color: '#1C39BB'}}>City Center Bus Stop (Las Palmas)</b> <br />
+              <b style={{color: '#1b6acc'}}>City Center Bus Stop (Las Palmas)</b> <br />
               Located on Koulukatu near Kauppakeskus Armada <br />
             </p>
           </Grid>
@@ -117,11 +117,11 @@ function Map() {
                 Valtakatu 33, 53100 Lappeenranta <br />
             </p>
             <p className="color-1 description-text">
-              <b style={{color: '#1C39BB'}}>LUT University bus stop</b> <br />
+              <b style={{color: '#1b6acc'}}>LUT University bus stop</b> <br />
               Located in front of LUT University's main entrance <br />
-              <b style={{color: '#1C39BB'}}>City Center bus stop (Majoitus)</b> <br />
+              <b style={{color: '#1b6acc'}}>City Center bus stop (Majoitus)</b> <br />
               Located on Valtakatu near the accommodation <br />
-              <b style={{color: '#1C39BB'}}>City Center bus stop (Las Palmas)</b> <br />
+              <b style={{color: '#1b6acc'}}>City Center bus stop (Las Palmas)</b> <br />
               Located on Koulukatu near Kauppakeskus Armada <br />
             </p>
           </Grid>
