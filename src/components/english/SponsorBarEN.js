@@ -91,7 +91,7 @@ function CompanyBar() {
     pauseOnHover: false,
     initialSlide: randomNumber(0, companies.length)
   };
-  console.log(companies)
+
 
   return (
     <div className="content-wrapper logo-bar">
