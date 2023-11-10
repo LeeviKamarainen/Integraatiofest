@@ -36,11 +36,11 @@ function Map() {
                 Valtakatu 33, 53100 Lappeenranta <br />
             </p>
             <p className="color-1 description-text-mobile">
-              <b style={{color: '#1C39BB'}}>LUT-yliopiston pysäkki</b> <br />
+              <b style={{color: '#1b6acc'}}>LUT-yliopiston pysäkki</b> <br />
               Sijaitsee LUTin pääovien edessä <br />
-              <b style={{color: '#1C39BB'}}>Keskustan pysäkki (Majoitus)</b> <br />
+              <b style={{color: '#1b6acc'}}>Keskustan pysäkki (Majoitus)</b> <br />
               Sijaitsee Valtakadulla majoituksen vieressä <br />
-              <b style={{color: '#1C39BB'}}>Keskustan pysäkki (Las Palmas)</b> <br />
+              <b style={{color: '#1b6acc'}}>Keskustan pysäkki (Las Palmas)</b> <br />
               Sijaitsee Koulukadulla kauppakeskus Armadan vieressä <br />
             </p>
           </Grid>
@@ -65,7 +65,7 @@ function Map() {
               Keskusta-Yliopisto klo 02:35 (linja 12). <br /> <pre/>
               Festikansalle kulkee non-stop shuttlebussi la - su yönä klo 03:00 - 04:00 välillä LUT-yliopisto - Keskusta (majoitus) <pre />
 
-              Ajankohtaiset aikataulut kannattaa aina tarkistaa <Link to="https://lappeenranta.digitransit.fi/" target='_blank' > Lappeenrannan joukkoliikenteen reittioppaasta.</Link> Alapuolella valmiiksi haetut reitit LUT-yliopistolta Keskustaan ja takaisin. <br />
+              Ajankohtaiset aikataulut kannattaa aina tarkistaa <Link to="https://lappeenranta.digitransit.fi/" target='_blank'> Lappeenrannan joukkoliikenteen reittioppaasta.</Link> Alapuolella valmiiksi haetut reitit LUT-yliopistolta Keskustaan ja takaisin. <br />
            </p>
 
             <Typography variant='body1' className="map-title" sx={{textAlign: "center"}}> Reitti LUT-yliopisto - Lyseo (keskusta) </Typography>
@@ -116,11 +116,11 @@ function Map() {
                 Valtakatu 33, 53100 Lappeenranta <br />
             </p>
             <p className="color-1 description-text">
-              <b style={{color: '#1C39BB'}}>LUT-yliopiston pysäkki</b> <br />
+              <b style={{color: '#1b6acc'}}>LUT-yliopiston pysäkki</b> <br />
               Sijaitsee LUTin pääovien edessä <br />
-              <b style={{color: '#1C39BB'}}>Keskustan pysäkki (Majoitus)</b> <br />
+              <b style={{color: '#1b6acc'}}>Keskustan pysäkki (Majoitus)</b> <br />
               Sijaitsee Valtakadulla majoituksen vieressä <br />
-              <b style={{color: '#1C39BB'}}>Keskustan pysäkki (Las Palmas)</b> <br />
+              <b style={{color: '#1b6acc'}}>Keskustan pysäkki (Las Palmas)</b> <br />
               Sijaitsee Koulukadulla kauppakeskus Armadan vieressä <br />
             </p>
           </Grid>

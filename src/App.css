@@ -20,6 +20,10 @@ video {
   padding-bottom: 15rem;
 }
 
+a {
+  color: #ff239f;
+}
+
 @media screen and (max-width: 320px) {
   .App {
     overflow-x: hidden;
