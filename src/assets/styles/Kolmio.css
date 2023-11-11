@@ -1,19 +1,26 @@
-/* Kolmio.css or your CSS file */
-.scrollable-video-page {
-    height: 100vh; /* Set a minimum height to fill the viewport */
-    overflow-y: auto; /* Enable vertical scrolling */
-  }
-  
-  .video-container {
-    display: flex; /* Use flexbox to arrange videos vertically */
-    flex-wrap: wrap; /* Allow videos to wrap to the next row */
-    align-items: flex-start; /* Align videos to the start of the flex container */
-  }
-  
+/* Kolmio.css */
+
+.video-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.kolmio-video {
+  width: 100%;
+  height: auto;
+}
+
+/* Media query for screens smaller than 600 pixels (adjust the breakpoint as needed) */
+@media (max-width: 600px) {
   .video-wrapper {
-    margin: 0;
-    padding: 0;
-    width: 100%; /* Make each video wrapper take 100% width of its container */
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    height: 100%; /* Change height to auto for smaller screens */
   }
-  
+
+  .kolmio-video {
+    width: 100vw; /* Set video width to 100% of viewport width */
+    height: 100vh; /* Set video height to 100% of viewport height */
+    object-fit: cover; /* Ensure the video covers the entire container, cropping if needed */
+  }
+}
