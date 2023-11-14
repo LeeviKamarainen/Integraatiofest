@@ -40,7 +40,7 @@
     color: white;
     text-transform: uppercase;
     align-self: flex-start;
-    padding-left: 5%;
+    margin: 0 1rem 1rem 1rem !important;
 }
 
 .message-secret {
@@ -60,8 +60,6 @@
     background-color: #2c21f5 !important;
     color: #fff;
     border: none;
-    margin: 1%;
-    padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
 }

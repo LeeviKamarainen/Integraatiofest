@@ -32,13 +32,9 @@ function FestEnded() {
         shouldShowMessage ? (
         <div className="festended-message">
             <div className="message-content">
-            <video loop autoPlay muted playsInline width="100%" height="100%" className="message-video animate__animated animate__bounceIn animate__delay-5s">
-                <source src={kolmio} type="video/mp4" />
-             </video>
-            <Typography sx={{ typography: {xs: 'h5', sm: 'h3', md: 'h2', lg: 'h2', xl: 'h1'}}} className="message-title"> LATEKSII ry kiittää festikansaa  </Typography>
-            <Typography sx={{ typography: {xs: 'body1', sm: 'h5', md:'h4', lg: 'h4'}}} className="message-title secondary">Nähdään taas ensivuonna </Typography>
-            <Button variant="contained" className="message-button" onClick={handleDismiss}>Jatka sivustolle</Button>
-            <Typography variant='h4' className="animate__animated animate__bounceIn animate__delay-5s message-secret">π<sup>2</sup> = g</Typography>
+              <Typography sx={{ typography: {xs: 'h4', sm: 'h3', md: 'h2', lg: 'h2', xl: 'h1'}}} className="message-title"> LATEKSII ry kiittää festikansaa  </Typography>
+              <Typography sx={{ typography: {xs: 'h6', sm: 'h5', md:'h4', lg: 'h4'}}} className="message-title secondary">Nähdään taas ensivuonna </Typography>
+              <Button variant="contained" className="message-button" onClick={handleDismiss}>Jatka sivustolle</Button>
             </div>
         </div>
         ) : (

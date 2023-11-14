@@ -1,5 +1,6 @@
 import React from 'react'
 import { Typography, Box } from '@mui/material';
+import {TypeAnimation} from 'react-type-animation';
 
 import homeIntro from '../../assets/videos/homeIntro.mp4'
 
@@ -15,7 +16,22 @@ function Home() {
         <video loop autoPlay muted playsInline width="100%" height="100%" className="home-video">
           <source src={homeIntro} type="video/mp4" />
         </video>
-        <Typography sx={{ typography: {xs: 'h5', sm: 'h5', md:'h4', lg: 'h4'}}} className="home-text secondary-title"> Like never before </Typography>
+        <Typography sx={{ typography: {xs: 'h5', sm: 'h5', md:'h4', lg: 'h4'}}} className="home-text secondary-title">
+          <TypeAnimation
+            preRenderFirstString={true}
+            sequence={[
+              'Like never before',
+              1000,
+              '',
+              200,
+              'Like never again',
+              2500,
+            ]}
+            speed={50}
+            cursor={false}
+            infinite={true}
+            />
+        </Typography>
       </Box>
   )}
   
