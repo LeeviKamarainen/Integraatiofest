@@ -35,7 +35,7 @@ function App() {
     <Router>
       <div className="App">
         <Routes>
-          <Route path="/" element={<> <Header /> <Navbar /> <Home />  <Footer /> </>} />
+          <Route path="/" element={<> <Header /> <Navbar /> <Home /> <Footer /> </>} />
           <Route path="/aikataulu" element={<> <Header /> <Navbar /> <Schedule /> <Footer /> </>} />
           <Route path="/kartta" element={<> <Header /> <Navbar /> <Map /> <Footer /> </>} />
           <Route path="/majoitus" element={<> <Header /> <Navbar /> <Accommodation /> <Footer /> </>} />
